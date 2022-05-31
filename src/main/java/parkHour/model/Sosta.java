@@ -1,4 +1,2 @@
-package parkHour.model;
-
-public class Sosta {
+package parkHour.model;public class Sosta {
 }
