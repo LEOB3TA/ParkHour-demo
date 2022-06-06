@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="inserimento package">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParkHour-demo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/Sosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/model/Sosta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/parkhourdemo/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/parkhourdemo/hello-view.fxml" afterDir="false" />
+    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="inserimento classi model 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/letturaDati/StatisticheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/letturaDati/StatisticheController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/login/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +20,18 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
   </component>
@@ -96,6 +97,7 @@
       <workItem from="1653982693364" duration="1077000" />
       <workItem from="1653986562094" duration="1865000" />
       <workItem from="1653988434797" duration="315000" />
+      <workItem from="1654520027684" duration="3411000" />
     </task>
     <task id="LOCAL-00001" summary="inserimento package">
       <created>1653988128583</created>
@@ -104,7 +106,28 @@
       <option name="project" value="LOCAL" />
       <updated>1653988128583</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="inserimento classi model">
+      <created>1654520259638</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654520259638</updated>
+    </task>
+    <task id="LOCAL-00003" summary="inserimento classi model 1">
+      <created>1654522194810</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654522194810</updated>
+    </task>
+    <task id="LOCAL-00004" summary="inserimento classi model 2">
+      <created>1654522725122</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654522725122</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +146,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inserimento package" />
-    <option name="LAST_COMMIT_MESSAGE" value="inserimento package" />
+    <MESSAGE value="inserimento classi model" />
+    <MESSAGE value="inserimento classi model 1" />
+    <MESSAGE value="inserimento classi model 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="inserimento classi model 2" />
   </component>
 </project>
