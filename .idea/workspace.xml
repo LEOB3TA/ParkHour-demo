@@ -6,27 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="inserimento classi e interfacce">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/IAggiungiAbbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/IAggiungiAbbonamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/IGestioneAbbonamenti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/IGestioneAbbonamenti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/IRimuoviAbbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/IRimuoviAbbonamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IAggiungiAddetti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IAggiungiAddetti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IAggiungiTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IAggiungiTurno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IEliminaAddetti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IEliminaAddetti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IGestioneAddetti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IGestioneAddetti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IRimuoviTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IRimuoviTurno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneSosta/GestioneSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneSosta/GestioneSostaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneSosta/IFineSosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneSosta/IFineSosta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneSosta/IGestioneSosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneSosta/IGestioneSosta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneSosta/IInizioSosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneSosta/IInizioSosta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/letturaDati/IStatistiche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/letturaDati/IStatistiche.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/login/ILogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/login/ILogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/scritturaLog/ILogger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/scritturaLog/Logger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/Abbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/model/Abbonamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/InfoTarga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/model/InfoTarga.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/LetturaTarga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/model/LetturaTarga.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/Sosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/model/Sosta.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +95,7 @@
       <workItem from="1653986562094" duration="1865000" />
       <workItem from="1653988434797" duration="315000" />
       <workItem from="1654520027684" duration="3917000" />
-      <workItem from="1654530275734" duration="3417000" />
+      <workItem from="1654530275734" duration="3911000" />
     </task>
     <task id="LOCAL-00001" summary="inserimento package">
       <created>1653988128583</created>
@@ -153,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654523524754</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="inserimento classi e interfacce">
+      <created>1654533728150</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654533728150</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
