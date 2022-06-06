@@ -1,4 +1,4 @@
 package parkHour.controller.gestioneAbbonamenti;
 
-public class GestioneAbbonamentiController {
+public class GestioneAbbonamentiController implements IGestioneAbbonamenti {
 }

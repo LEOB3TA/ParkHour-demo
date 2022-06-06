@@ -1,4 +1,4 @@
 package parkHour.controller.letturaDati;
 
-public class StatisticheController {
+public class StatisticheController implements IStatistiche {
 }
