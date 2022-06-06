@@ -13,12 +13,10 @@ public class FineSostaController implements IFineSosta{
 
     @Override
     public boolean fineSosta(InfoTarga infoTarga, LocalDateTime dataOrarioFine) {
-        boolean trovato=false;
         List<Sosta> sosteAttive=GestioneSostaController.getSosteAttive();
         Sosta sostaConlusa;
-        for(int i=0;i< sosteAttive.size() && !trovato;i++){
+        for(int i=0;i< sosteAttive.size();i++){
             if(sosteAttive.get(i).getVeicolo().getNumeroTarga().equals(infoTarga.getTarga())){
-                trovato=true;
                 sostaConlusa=sosteAttive.get(i);
                 sostaConlusa.setDataOrarioFine(dataOrarioFine);
                 sostaConlusa.setCosto(calcolaCosto());

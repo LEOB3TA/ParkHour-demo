@@ -1,7 +1,8 @@
 package parkHour.controller.gestioneAddetti;
 
+import parkHour.model.Addetto;
 import parkHour.model.Turno;
 
 public interface IRimuoviTurno {
-    public boolean rimuoviTurno(Turno toRemove);
+     boolean rimuoviTurno(Addetto addetto,Turno toRemove);
 }
