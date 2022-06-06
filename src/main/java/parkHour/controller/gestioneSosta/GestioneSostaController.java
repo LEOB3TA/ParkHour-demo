@@ -1,4 +1,4 @@
 package parkHour.controller.gestioneSosta;
 
-public class GestioneSostaController {
+public class GestioneSostaController implements IGestioneSosta{
 }
