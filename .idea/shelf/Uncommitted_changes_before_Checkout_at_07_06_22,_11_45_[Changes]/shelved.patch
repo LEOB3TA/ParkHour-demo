@@ -1,0 +1,74 @@
+Index: src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package parkHour.controller.gestioneAddetti;\n\nimport parkHour.model.Addetto;\nimport parkHour.model.Turno;\n\npublic class RimuoviTurnoController  implements IRimuoviTurno{\n    @Override\n    public boolean rimuoviTurno(Addetto addetto,Turno toRemove) {\n        for(int i=0;i<GestioneAddettiController.getAddetti().size();i++){\n            if(GestioneAddettiController.getAddetti().get(i).equals(addetto)) {\n                return GestioneAddettiController.getAddetti().get(i).removeTurno(toRemove);\n            }\n        }\n        return false;\n    }\n}\n
+===================================================================
+diff --git a/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java b/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java
+--- a/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java	
++++ b/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java	
+@@ -4,6 +4,10 @@
+ import parkHour.model.Turno;
+ 
+ public class RimuoviTurnoController  implements IRimuoviTurno{
++
++    public RimuoviTurnoController() {
++    }
++
+     @Override
+     public boolean rimuoviTurno(Addetto addetto,Turno toRemove) {
+         for(int i=0;i<GestioneAddettiController.getAddetti().size();i++){
+Index: src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package parkHour.controller.gestioneAddetti;\n\nimport parkHour.model.Addetto;\n\npublic class AggiungiAddettiController implements IAggiungiAddetti{\n    @Override\n    public boolean inserisciAddetto(String nome, String cognome, String codFisc, String username, String password) {\n        return GestioneAddettiController.aggiungiAddetto(new Addetto(nome,cognome,codFisc,calcolaNumeroMatricola(),username,password));\n    }\n\n    private String calcolaNumeroMatricola(){ // da implementare non so se sta qui o nel GestioneAddettiController\n        return \"Paolo_Ciaccia_king_of_the_world\";\n    }\n}\n
+===================================================================
+diff --git a/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java b/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java
+--- a/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java	
++++ b/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java	
+@@ -3,6 +3,9 @@
+ import parkHour.model.Addetto;
+ 
+ public class AggiungiAddettiController implements IAggiungiAddetti{
++    public AggiungiAddettiController() {
++    }
++
+     @Override
+     public boolean inserisciAddetto(String nome, String cognome, String codFisc, String username, String password) {
+         return GestioneAddettiController.aggiungiAddetto(new Addetto(nome,cognome,codFisc,calcolaNumeroMatricola(),username,password));
+Index: src/main/java/parkHour/controller/gestioneAddetti/EliminaAddettiController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package parkHour.controller.gestioneAddetti;\n\nimport parkHour.model.Addetto;\n\npublic class EliminaAddettiController  implements IEliminaAddetti{\n    @Override\n    public boolean eliminaAddetto(Addetto toDelete) {\n        return GestioneAddettiController.rimuoviAddetto(toDelete);\n    }\n}\n
+===================================================================
+diff --git a/src/main/java/parkHour/controller/gestioneAddetti/EliminaAddettiController.java b/src/main/java/parkHour/controller/gestioneAddetti/EliminaAddettiController.java
+--- a/src/main/java/parkHour/controller/gestioneAddetti/EliminaAddettiController.java	
++++ b/src/main/java/parkHour/controller/gestioneAddetti/EliminaAddettiController.java	
+@@ -3,6 +3,10 @@
+ import parkHour.model.Addetto;
+ 
+ public class EliminaAddettiController  implements IEliminaAddetti{
++
++    public EliminaAddettiController() {
++    }
++
+     @Override
+     public boolean eliminaAddetto(Addetto toDelete) {
+         return GestioneAddettiController.rimuoviAddetto(toDelete);
+Index: src/main/java/parkHour/controller/gestioneAddetti/AggiungiTurnoController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package parkHour.controller.gestioneAddetti;\n\nimport parkHour.model.Addetto;\nimport parkHour.model.Turno;\n\nimport java.time.LocalDateTime;\n\npublic class AggiungiTurnoController implements IAggiungiTurno {\n\n    @Override\n    public boolean aggiungiTurno(Addetto addetto, LocalDateTime dataOrarioInizio, LocalDateTime dataOrarioFine) {\n        for(int i=0;i<GestioneAddettiController.getAddetti().size();i++){\n            if(GestioneAddettiController.getAddetti().get(i).equals(addetto)) {\n                return GestioneAddettiController.getAddetti().get(i).addTurno(new Turno(dataOrarioInizio, dataOrarioFine));\n            }\n        }\n        return false;\n    }\n}\n
+===================================================================
+diff --git a/src/main/java/parkHour/controller/gestioneAddetti/AggiungiTurnoController.java b/src/main/java/parkHour/controller/gestioneAddetti/AggiungiTurnoController.java
+--- a/src/main/java/parkHour/controller/gestioneAddetti/AggiungiTurnoController.java	
++++ b/src/main/java/parkHour/controller/gestioneAddetti/AggiungiTurnoController.java	
+@@ -7,6 +7,9 @@
+ 
+ public class AggiungiTurnoController implements IAggiungiTurno {
+ 
++    public AggiungiTurnoController() {
++    }
++
+     @Override
+     public boolean aggiungiTurno(Addetto addetto, LocalDateTime dataOrarioInizio, LocalDateTime dataOrarioFine) {
+         for(int i=0;i<GestioneAddettiController.getAddetti().size();i++){
