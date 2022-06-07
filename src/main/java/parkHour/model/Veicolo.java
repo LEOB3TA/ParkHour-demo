@@ -19,11 +19,11 @@ public class Veicolo {
     }
 
     public boolean inserisciAbbonamento(Abbonamento abbonamento){
-        return true;
+        return abbonamenti.add(abbonamento);
     }
 
     public boolean rimuoviAbbonamento(Abbonamento abbonamento){
-        return true;
+        return abbonamenti.add(abbonamento);
     }
 
 }
