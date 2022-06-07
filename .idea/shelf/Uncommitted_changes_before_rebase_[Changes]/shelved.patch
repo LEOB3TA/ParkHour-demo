@@ -1,0 +1,74 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"adf379bc-04d2-41f9-9536-09c0d86e7443\" name=\"Changes\" comment=\"inserimento classi e interfacce\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IRimuoviTurno.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IRimuoviTurno.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"JavaFXApplication\" />\n        <option value=\"FxmlFile\" />\n        <option value=\"Enum\" />\n        <option value=\"Interface\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n    <option name=\"RESET_MODE\" value=\"MIXED\" />\n  </component>\n  <component name=\"GitSEFilterConfiguration\">\n    <file-type-list>\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\n      <filtered-out-file-type name=\"TAG\" />\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\n    </file-type-list>\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"29v8qWFo5tFP8kVFBautbLGKvvb\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"jdk.selected.JAVA_MODULE\" value=\"13\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"project.structure.last.edited\" value=\"Modules\" />\n    <property name=\"project.structure.proportion\" value=\"0.15\" />\n    <property name=\"project.structure.side.proportion\" value=\"0.2\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.pluginManager\" />\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"HelloApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.parkhourdemo.HelloApplication\" />\n      <module name=\"ParkHour-demo\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.example.parkhourdemo.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.HelloApplication\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"adf379bc-04d2-41f9-9536-09c0d86e7443\" name=\"Changes\" comment=\"\" />\n      <created>1653982392874</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1653982392874</updated>\n      <workItem from=\"1653982394274\" duration=\"275000\" />\n      <workItem from=\"1653982693364\" duration=\"1077000\" />\n      <workItem from=\"1653986562094\" duration=\"1865000\" />\n      <workItem from=\"1653988434797\" duration=\"315000\" />\n      <workItem from=\"1654520027684\" duration=\"3917000\" />\n      <workItem from=\"1654530275734\" duration=\"5960000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"inserimento package\">\n      <created>1653988128583</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1653988128583</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"inserimento classi model\">\n      <created>1654520259638</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1654520259638</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"inserimento classi model 1\">\n      <created>1654522194810</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1654522194810</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"inserimento classi model 2\">\n      <created>1654522725122</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1654522725122</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"inserimento classi e interfacce\">\n      <created>1654523524754</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1654523524754</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"inserimento classi e interfacce\">\n      <created>1654533728150</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1654533728150</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"inserimento classi e interfacce\">\n      <created>1654534223736</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1654534223736</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"8\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"inserimento package\" />\n    <MESSAGE value=\"inserimento classi model\" />\n    <MESSAGE value=\"inserimento classi model 1\" />\n    <MESSAGE value=\"inserimento classi model 2\" />\n    <MESSAGE value=\"inserimento classi e interfacce\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"inserimento classi e interfacce\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b57f6b66d4e46bc280810d4bbb0c25a85590b2aa)
++++ b/.idea/workspace.xml	(date 1654547295416)
+@@ -6,9 +6,6 @@
+   <component name="ChangeListManager">
+     <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="inserimento classi e interfacce">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IRimuoviTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IRimuoviTurno.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -45,6 +42,9 @@
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProblemsViewState">
++    <option name="selectedTabId" value="CurrentFile" />
+   </component>
+   <component name="ProjectId" id="29v8qWFo5tFP8kVFBautbLGKvvb" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+@@ -63,7 +63,7 @@
+     <property name="project.structure.last.edited" value="Modules" />
+     <property name="project.structure.proportion" value="0.15" />
+     <property name="project.structure.side.proportion" value="0.2" />
+-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
++    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+   </component>
+   <component name="RunManager">
+     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+@@ -99,6 +99,8 @@
+       <workItem from="1653988434797" duration="315000" />
+       <workItem from="1654520027684" duration="3917000" />
+       <workItem from="1654530275734" duration="5960000" />
++      <workItem from="1654545194696" duration="1638000" />
++      <workItem from="1654546872082" duration="422000" />
+     </task>
+     <task id="LOCAL-00001" summary="inserimento package">
+       <created>1653988128583</created>
+@@ -149,7 +151,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1654534223736</updated>
+     </task>
+-    <option name="localTasksCounter" value="8" />
++    <task id="LOCAL-00008" summary="inserimento classi e interfacce">
++      <created>1654546322770</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1654546322770</updated>
++    </task>
++    <option name="localTasksCounter" value="9" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -174,4 +183,8 @@
+     <MESSAGE value="inserimento classi e interfacce" />
+     <option name="LAST_COMMIT_MESSAGE" value="inserimento classi e interfacce" />
+   </component>
++  <component name="XSLT-Support.FileAssociations.UIState">
++    <expand />
++    <select />
++  </component>
+ </project>
+\ No newline at end of file

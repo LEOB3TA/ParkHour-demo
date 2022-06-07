@@ -2,6 +2,7 @@ package parkHour.model;
 
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Abbonamento {
     private LocalDate dataInizio;
@@ -30,5 +31,23 @@ public class Abbonamento {
         this.valido = valido;
     }
 
-    //metodo privato per aggiornare i validi o no
+    private void verificaValidità(){
+        switch (this.tipologiaAbbonamento){
+            case ANNUALE:
+                if(this.dataInizio.plusYears(1).compareTo(LocalDate.now())>0){
+                    this.setValido(false);
+                }
+                break;
+            case MENSILE:
+                if(this.dataInizio.plusMonths(1).compareTo(LocalDate.now())>0){
+                    this.setValido(false);
+                }
+                break;
+            case GIORNALIERO:
+                if(this.dataInizio.plusDays(1).compareTo(LocalDate.now())>0){
+                    this.setValido(false);
+                }
+                break;
+        }
+    }
 }

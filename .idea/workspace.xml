@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="inserimento classi model 2">
+    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="inserimento classi e interfacce">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/letturaDati/StatisticheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/letturaDati/StatisticheController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/login/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +18,8 @@
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,6 +43,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="29v8qWFo5tFP8kVFBautbLGKvvb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -63,7 +63,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -97,7 +97,12 @@
       <workItem from="1653982693364" duration="1077000" />
       <workItem from="1653986562094" duration="1865000" />
       <workItem from="1653988434797" duration="315000" />
-      <workItem from="1654520027684" duration="3411000" />
+      <workItem from="1654520027684" duration="3917000" />
+      <workItem from="1654530275734" duration="5960000" />
+      <workItem from="1654545194696" duration="1638000" />
+      <workItem from="1654546872082" duration="422000" />
+      <workItem from="1654547315447" duration="101000" />
+      <workItem from="1654586682837" duration="558000" />
     </task>
     <task id="LOCAL-00001" summary="inserimento package">
       <created>1653988128583</created>
@@ -127,7 +132,35 @@
       <option name="project" value="LOCAL" />
       <updated>1654522725122</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="inserimento classi e interfacce">
+      <created>1654523524754</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654523524754</updated>
+    </task>
+    <task id="LOCAL-00006" summary="inserimento classi e interfacce">
+      <created>1654533728150</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654533728150</updated>
+    </task>
+    <task id="LOCAL-00007" summary="inserimento classi e interfacce">
+      <created>1654534223736</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654534223736</updated>
+    </task>
+    <task id="LOCAL-00008" summary="inserimento classi e interfacce">
+      <created>1654546322770</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654546322770</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +182,11 @@
     <MESSAGE value="inserimento classi model" />
     <MESSAGE value="inserimento classi model 1" />
     <MESSAGE value="inserimento classi model 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="inserimento classi model 2" />
+    <MESSAGE value="inserimento classi e interfacce" />
+    <option name="LAST_COMMIT_MESSAGE" value="inserimento classi e interfacce" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

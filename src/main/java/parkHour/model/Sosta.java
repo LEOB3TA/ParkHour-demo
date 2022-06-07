@@ -9,11 +9,10 @@ public class Sosta {
     private float costo;
     private Veicolo veicolo;
 
-    public Sosta(LocalDateTime dataOrarioInizio,Veicolo veicolo) {
+    public Sosta(LocalDateTime dataOrarioInizio,Veicolo veicolo,int posto) {
         this.dataOrarioInizio = dataOrarioInizio;
         this.veicolo=veicolo;
-        this.posto=0;
-        //selezionare posto in modo automatico
+        this.posto=posto;
     }
 
     public int getPosto() {
