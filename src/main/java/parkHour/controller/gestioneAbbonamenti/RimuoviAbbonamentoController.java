@@ -13,13 +13,11 @@ public class RimuoviAbbonamentoController implements IRimuoviAbbonamento {
     @Override
     public boolean rimuoviAbbonamento(String targa, Abbonamento toRemove) {
 
-        for (Veicolo a : GestioneAbbonamentiController.getVeicoli()
-        ) {
+        for (Veicolo a : GestioneAbbonamentiController.getVeicoli()) {
             if (a.getNumeroTarga().equals(targa)) {
                 return a.rimuoviAbbonamento(toRemove);
             }
         }
-
         return false;
     }
 }
