@@ -12,7 +12,6 @@ public class GestioneAbbonamentiController implements IGestioneAbbonamenti {
     private AggiungiAbbonamentoController aggiungiAbbonamentoController;
     private RimuoviAbbonamentoController   rimuoviAbbonamentoController;
     private static List<Veicolo> veicoli=new ArrayList<Veicolo>();
-
     private static  List<Abbonamento> abbonamenti=new ArrayList<Abbonamento>();
 
 
@@ -44,8 +43,8 @@ public static boolean aggiungiAbbonamento(Abbonamento a){
         return abbonamenti.remove(a);
     }
 
-    public boolean eliminaAbbonamento(String targa,Abbonamento toRemove) {
-        return rimuoviAbbonamentoController.rimuoviAbbonamento(targa,toRemove);
+    public boolean eliminaAbbonamento(Abbonamento toRemove) {
+        return rimuoviAbbonamentoController.rimuoviAbbonamento(toRemove);
     }
 
 

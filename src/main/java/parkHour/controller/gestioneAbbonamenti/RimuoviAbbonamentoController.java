@@ -1,23 +1,21 @@
 package parkHour.controller.gestioneAbbonamenti;
 
 import parkHour.model.Abbonamento;
-import parkHour.model.Veicolo;
 
 import java.util.List;
 
-public class RimuoviAbbonamentoController implements IRimuoviAbbonamento {
-
-    public RimuoviAbbonamentoController() {
-    }
+public class RimuoviAbbonamentoController implements IRimuoviAbbonamento{
 
     @Override
-    public boolean rimuoviAbbonamento(String targa, Abbonamento toRemove) {
+    public boolean rimuoviAbbonamento(Abbonamento toRemove) {
 
-        for (Veicolo a : GestioneAbbonamentiController.getVeicoli()) {
-            if (a.getNumeroTarga().equals(targa)) {
-                return a.rimuoviAbbonamento(toRemove);
-            }
+        for (Abbonamento a:GestioneAbbonamentiController.getAbbonamenti()
+             ) {
+     if(a.equals(toRemove)){
+    return GestioneAbbonamentiController.rimuoviAbbonamento(a);
+}
         }
+
         return false;
     }
 }
