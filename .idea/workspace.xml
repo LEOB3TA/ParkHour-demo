@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="inserimento classi e interfacce">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IRimuoviTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IRimuoviTurno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +43,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="29v8qWFo5tFP8kVFBautbLGKvvb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -63,7 +63,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -99,6 +99,10 @@
       <workItem from="1653988434797" duration="315000" />
       <workItem from="1654520027684" duration="3917000" />
       <workItem from="1654530275734" duration="5960000" />
+      <workItem from="1654545194696" duration="1638000" />
+      <workItem from="1654546872082" duration="422000" />
+      <workItem from="1654547315447" duration="101000" />
+      <workItem from="1654586682837" duration="558000" />
     </task>
     <task id="LOCAL-00001" summary="inserimento package">
       <created>1653988128583</created>
@@ -149,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654534223736</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="inserimento classi e interfacce">
+      <created>1654546322770</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654546322770</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,5 +184,9 @@
     <MESSAGE value="inserimento classi model 2" />
     <MESSAGE value="inserimento classi e interfacce" />
     <option name="LAST_COMMIT_MESSAGE" value="inserimento classi e interfacce" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
