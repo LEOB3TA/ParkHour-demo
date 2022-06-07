@@ -1,0 +1,194 @@
+Index: src/main/java/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package parkHour.controller.gestioneAbbonamenti;\r\n\r\npublic class GestioneAbbonamentiController implements IGestioneAbbonamenti {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java b/src/main/java/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java
+--- a/src/main/java/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
++++ b/src/main/java/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java	(date 1654588730355)
+@@ -1,4 +1,5 @@
+ package parkHour.controller.gestioneAbbonamenti;
+ 
+ public class GestioneAbbonamentiController implements IGestioneAbbonamenti {
++
+ }
+Index: src/main/java/parkHour/controller/gestioneAbbonamenti/IAggiungiAbbonamento.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package parkHour.controller.gestioneAbbonamenti;\r\n\r\npublic interface IAggiungiAbbonamento {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/parkHour/controller/gestioneAbbonamenti/IAggiungiAbbonamento.java b/src/main/java/parkHour/controller/gestioneAbbonamenti/IAggiungiAbbonamento.java
+--- a/src/main/java/parkHour/controller/gestioneAbbonamenti/IAggiungiAbbonamento.java	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
++++ b/src/main/java/parkHour/controller/gestioneAbbonamenti/IAggiungiAbbonamento.java	(date 1654588857819)
+@@ -1,4 +1,7 @@
+ package parkHour.controller.gestioneAbbonamenti;
+ 
++import parkHour.model.TipologiaAbbonamento;
++
+ public interface IAggiungiAbbonamento {
++    boolean aggiungiAbbonamento(string targa, TipologiaAbbonamento type)
+ }
+Index: .idea/libraries/Maven__org_openjfx_javafx_graphics_mac_13_0_2.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_13_0_2.xml b/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_13_0_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_13_0_2.xml	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
++++ /dev/null	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-graphics:mac:13.0.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/13.0.2/javafx-graphics-13.0.2-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/13.0.2/javafx-graphics-13.0.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/13.0.2/javafx-graphics-13.0.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_web_mac_13_0_2.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_web_mac_13_0_2.xml b/.idea/libraries/Maven__org_openjfx_javafx_web_mac_13_0_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_web_mac_13_0_2.xml	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
++++ /dev/null	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-web:mac:13.0.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-web/13.0.2/javafx-web-13.0.2-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-web/13.0.2/javafx-web-13.0.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-web/13.0.2/javafx-web-13.0.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_base_mac_13_0_2.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_base_mac_13_0_2.xml b/.idea/libraries/Maven__org_openjfx_javafx_base_mac_13_0_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_base_mac_13_0_2.xml	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
++++ /dev/null	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-base:mac:13.0.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/13.0.2/javafx-base-13.0.2-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/13.0.2/javafx-base-13.0.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/13.0.2/javafx-base-13.0.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_controls_mac_13_0_2.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_13_0_2.xml b/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_13_0_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_13_0_2.xml	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
++++ /dev/null	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-controls:mac:13.0.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/13.0.2/javafx-controls-13.0.2-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/13.0.2/javafx-controls-13.0.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/13.0.2/javafx-controls-13.0.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_media_mac_13_0_2.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_media_mac_13_0_2.xml b/.idea/libraries/Maven__org_openjfx_javafx_media_mac_13_0_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_media_mac_13_0_2.xml	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
++++ /dev/null	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-media:mac:13.0.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-media/13.0.2/javafx-media-13.0.2-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-media/13.0.2/javafx-media-13.0.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-media/13.0.2/javafx-media-13.0.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_fxml_mac_13_0_2.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_13_0_2.xml b/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_13_0_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_13_0_2.xml	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
++++ /dev/null	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-fxml:mac:13.0.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/13.0.2/javafx-fxml-13.0.2-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/13.0.2/javafx-fxml-13.0.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/13.0.2/javafx-fxml-13.0.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: ParkHour-demo.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule=\"true\" type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" LANGUAGE_LEVEL=\"JDK_13\">\r\n    <output url=\"file://$MODULE_DIR$/target/classes\" />\r\n    <output-test url=\"file://$MODULE_DIR$/target/test-classes\" />\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/java\" isTestSource=\"false\" />\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/resources\" type=\"java-resource\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/target\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-controls:13.0.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-controls:mac:13.0.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-graphics:13.0.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-graphics:mac:13.0.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-base:13.0.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-base:mac:13.0.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-fxml:13.0.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-fxml:mac:13.0.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-web:13.0.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-web:mac:13.0.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-media:13.0.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-media:mac:13.0.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.controlsfx:controlsfx:11.1.0\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: com.dlsc.formsfx:formsfx-core:11.3.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: net.synedra:validatorfx:0.1.13\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.kordamp.ikonli:ikonli-javafx:12.2.0\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.kordamp.ikonli:ikonli-core:12.2.0\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: eu.hansolo:tilesfx:11.48\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.jupiter:junit-jupiter-api:5.8.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.opentest4j:opentest4j:1.2.0\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.platform:junit-platform-commons:1.8.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.apiguardian:apiguardian-api:1.1.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.jupiter:junit-jupiter-engine:5.8.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.platform:junit-platform-engine:1.8.1\" level=\"project\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ParkHour-demo.iml b/ParkHour-demo.iml
+--- a/ParkHour-demo.iml	(revision 666b31221e597d93b7e2edd3a33bae8f1cbf182e)
++++ b/ParkHour-demo.iml	(date 1654588732001)
+@@ -11,17 +11,17 @@
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:13.0.2" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:mac:13.0.2" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:13.0.2" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:13.0.2" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:mac:13.0.2" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:win:13.0.2" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-base:13.0.2" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:mac:13.0.2" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:13.0.2" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:13.0.2" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:mac:13.0.2" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:13.0.2" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-web:13.0.2" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-web:mac:13.0.2" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-web:win:13.0.2" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-media:13.0.2" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-media:mac:13.0.2" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-media:win:13.0.2" level="project" />
+     <orderEntry type="library" name="Maven: org.controlsfx:controlsfx:11.1.0" level="project" />
+     <orderEntry type="library" name="Maven: com.dlsc.formsfx:formsfx-core:11.3.2" level="project" />
+     <orderEntry type="library" name="Maven: net.synedra:validatorfx:0.1.13" level="project" />
