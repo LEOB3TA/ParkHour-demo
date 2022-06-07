@@ -5,5 +5,5 @@ import parkHour.model.Abbonamento;
 import java.util.List;
 
 public interface IGestioneAbbonamenti {
-    public List<Abbonamento> getAbbonamenti();
+    static List<Abbonamento> getAbbonamenti(){return null;};
 }
