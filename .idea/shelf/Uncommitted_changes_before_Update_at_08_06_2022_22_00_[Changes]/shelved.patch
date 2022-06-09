@@ -1,0 +1,576 @@
+Index: src/main/resources/parkHour.view.interfacciaAddetto/homeAddetto.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.Button?>\r\n<?import javafx.scene.control.SplitPane?>\r\n<?import javafx.scene.control.TextArea?>\r\n<?import javafx.scene.image.Image?>\r\n<?import javafx.scene.image.ImageView?>\r\n<?import javafx.scene.layout.AnchorPane?>\r\n<?import javafx.scene.layout.HBox?>\r\n<?import javafx.scene.layout.VBox?>\r\n<?import javafx.scene.text.Font?>\r\n\r\n\r\n<AnchorPane prefHeight=\"400.0\" prefWidth=\"600.0\" xmlns=\"http://javafx.com/javafx/18\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"parkHour.view.interfacciaAddetto.HomeAddetto\">\r\n   <children>\r\n      <AnchorPane layoutX=\"5.0\" layoutY=\"5.0\" prefHeight=\"400.0\" prefWidth=\"600.0\">\r\n         <children>\r\n            <SplitPane dividerPositions=\"0.15808823529411764\" layoutX=\"-1.0\" layoutY=\"-5.0\" orientation=\"VERTICAL\" prefHeight=\"410.0\" prefWidth=\"600.0\" AnchorPane.topAnchor=\"-5.0\">\r\n               <items>\r\n                  <AnchorPane minHeight=\"0.0\" minWidth=\"0.0\" prefHeight=\"100.0\" prefWidth=\"160.0\">\r\n                     <children>\r\n                        <HBox alignment=\"CENTER\" fillHeight=\"false\" layoutY=\"1.0\" prefHeight=\"66.0\" prefWidth=\"606.0\" spacing=\"10.0\">\r\n                           <children>\r\n                              <ImageView fitHeight=\"66.0\" fitWidth=\"177.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\r\n                                 <image>\r\n                                    <Image url=\"@../logoLittleBlue.png\" />\r\n                                 </image>\r\n                              </ImageView>\r\n                              <TextArea editable=\"false\" prefHeight=\"68.0\" prefWidth=\"360.0\" text=\"      HOME ADDETTO\">\r\n                                 <font>\r\n                                    <Font name=\"Times New Roman\" size=\"24.0\" />\r\n                                 </font>\r\n                              </TextArea>\r\n                              <Button alignment=\"CENTER\" contentDisplay=\"CENTER\" mnemonicParsing=\"false\" text=\"LOGOUT\">\r\n                                 <font>\r\n                                    <Font name=\"Times New Roman\" size=\"14.0\" />\r\n                                 </font>\r\n                              </Button>\r\n                           </children>\r\n                        </HBox>\r\n                     </children>\r\n                  </AnchorPane>\r\n                  <AnchorPane minHeight=\"0.0\" minWidth=\"0.0\" prefHeight=\"100.0\" prefWidth=\"160.0\">\r\n                     <children>\r\n                        <VBox alignment=\"TOP_CENTER\" layoutY=\"-3.0\" prefHeight=\"342.0\" prefWidth=\"598.0\" spacing=\"5.0\" AnchorPane.topAnchor=\"5.0\">\r\n                           <children>\r\n                              <Button id=\"AggAbb\" lineSpacing=\"1.0\" mnemonicParsing=\"false\" prefHeight=\"42.0\" prefWidth=\"583.0\" text=\"AGGIUNGI ABBONAMENTO\">\r\n                                 <font>\r\n                                    <Font name=\"Times New Roman\" size=\"14.0\" />\r\n                                 </font>\r\n                              </Button>\r\n                              <Button id=\"RimAbb\" lineSpacing=\"1.0\" mnemonicParsing=\"false\" prefHeight=\"42.0\" prefWidth=\"583.0\" text=\"RIMUOVI ABBONAMENTO\">\r\n                                 <font>\r\n                                    <Font name=\"Times New Roman\" size=\"14.0\" />\r\n                                 </font>\r\n                              </Button>\r\n                           </children>\r\n                        </VBox>\r\n                     </children>\r\n                  </AnchorPane>\r\n               </items>\r\n            </SplitPane>\r\n         </children>\r\n      </AnchorPane>\r\n   </children>\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/parkHour.view.interfacciaAddetto/homeAddetto.fxml b/src/main/resources/parkHour.view.interfacciaAddetto/homeAddetto.fxml
+--- a/src/main/resources/parkHour.view.interfacciaAddetto/homeAddetto.fxml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ b/src/main/resources/parkHour.view.interfacciaAddetto/homeAddetto.fxml	(date 1654624445988)
+@@ -1,17 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import javafx.scene.control.Button?>
+-<?import javafx.scene.control.SplitPane?>
+-<?import javafx.scene.control.TextArea?>
+-<?import javafx.scene.image.Image?>
+-<?import javafx.scene.image.ImageView?>
+-<?import javafx.scene.layout.AnchorPane?>
+-<?import javafx.scene.layout.HBox?>
+-<?import javafx.scene.layout.VBox?>
+-<?import javafx.scene.text.Font?>
++<?import javafx.geometry.*?>
++<?import javafx.scene.control.*?>
++<?import javafx.scene.image.*?>
++<?import javafx.scene.layout.*?>
++<?import javafx.scene.text.*?>
+ 
+-
+-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parkHour.view.interfacciaAddetto.HomeAddetto">
++<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parkHour.view.interfacciaAddetto.HomeAddetto">
+    <children>
+       <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="400.0" prefWidth="600.0">
+          <children>
+@@ -19,22 +14,28 @@
+                <items>
+                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                      <children>
+-                        <HBox alignment="CENTER" fillHeight="false" layoutY="1.0" prefHeight="66.0" prefWidth="606.0" spacing="10.0">
++                        <HBox alignment="TOP_CENTER" fillHeight="false" layoutY="1.0" prefHeight="66.0" prefWidth="606.0" spacing="10.0">
+                            <children>
+-                              <ImageView fitHeight="66.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true">
++                              <ImageView fitHeight="66.0" fitWidth="177.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                     <Image url="@../logoLittleBlue.png" />
+                                  </image>
+                               </ImageView>
+-                              <TextArea editable="false" prefHeight="68.0" prefWidth="360.0" text="      HOME ADDETTO">
++                              <TextArea editable="false" prefHeight="68.0" prefWidth="272.0" text="     HOME ADDETTO">
+                                  <font>
+                                     <Font name="Times New Roman" size="24.0" />
+                                  </font>
++                                 <HBox.margin>
++                                    <Insets right="10.0" />
++                                 </HBox.margin>
+                               </TextArea>
+-                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="LOGOUT">
++                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="108.0" text="LOGOUT">
+                                  <font>
+                                     <Font name="Times New Roman" size="14.0" />
+                                  </font>
++                                 <HBox.margin>
++                                    <Insets right="20.0" top="15.0" />
++                                 </HBox.margin>
+                               </Button>
+                            </children>
+                         </HBox>
+Index: src/main/resources/parkHour.view.interfacciaAmministratore/homeAmm.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.Button?>\r\n<?import javafx.scene.control.SplitPane?>\r\n<?import javafx.scene.control.TextArea?>\r\n<?import javafx.scene.image.Image?>\r\n<?import javafx.scene.image.ImageView?>\r\n<?import javafx.scene.layout.AnchorPane?>\r\n<?import javafx.scene.layout.HBox?>\r\n<?import javafx.scene.layout.VBox?>\r\n<?import javafx.scene.text.Font?>\r\n\r\n\r\n<AnchorPane prefHeight=\"400.0\" prefWidth=\"600.0\" xmlns=\"http://javafx.com/javafx/18\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"parkHour.view.interfacciaAmministratore.HomeAmm\">\r\n   <children>\r\n      <SplitPane dividerPositions=\"0.15808823529411764\" layoutX=\"-1.0\" layoutY=\"-5.0\" orientation=\"VERTICAL\" prefHeight=\"410.0\" prefWidth=\"600.0\" AnchorPane.topAnchor=\"-5.0\">\r\n        <items>\r\n          <AnchorPane minHeight=\"0.0\" minWidth=\"0.0\" prefHeight=\"100.0\" prefWidth=\"160.0\">\r\n               <children>\r\n                  <HBox alignment=\"CENTER\" fillHeight=\"false\" layoutY=\"1.0\" prefHeight=\"66.0\" prefWidth=\"606.0\" spacing=\"10.0\">\r\n                     <children>\r\n                        <ImageView fitHeight=\"66.0\" fitWidth=\"177.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\r\n                           <image>\r\n                              <Image url=\"@../logoLittleBlue.png\" />\r\n                           </image>\r\n                        </ImageView>\r\n                        <TextArea editable=\"false\" prefHeight=\"68.0\" prefWidth=\"360.0\" text=\"HOME AMMINISTRATORE\">\r\n                           <font>\r\n                              <Font name=\"Times New Roman\" size=\"24.0\" />\r\n                           </font>\r\n                        </TextArea>\r\n                        <Button alignment=\"CENTER\" contentDisplay=\"CENTER\" mnemonicParsing=\"false\" text=\"LOGOUT\">\r\n                           <font>\r\n                              <Font name=\"Times New Roman\" size=\"14.0\" />\r\n                           </font>\r\n                        </Button>\r\n                     </children>\r\n                  </HBox>\r\n               </children>\r\n            </AnchorPane>\r\n          <AnchorPane minHeight=\"0.0\" minWidth=\"0.0\" prefHeight=\"100.0\" prefWidth=\"160.0\">\r\n               <children>\r\n                  <VBox alignment=\"TOP_CENTER\" layoutY=\"-3.0\" prefHeight=\"342.0\" prefWidth=\"598.0\" spacing=\"5.0\" AnchorPane.topAnchor=\"5.0\">\r\n                     <children>\r\n                        <Button id=\"InAddetto\" lineSpacing=\"1.0\" mnemonicParsing=\"false\" prefHeight=\"42.0\" prefWidth=\"583.0\" text=\"INSERISCI ADDETTO\">\r\n                           <font>\r\n                              <Font name=\"Times New Roman\" size=\"14.0\" />\r\n                           </font>\r\n                        </Button>\r\n                        <Button id=\"ElAddetto\" lineSpacing=\"1.0\" mnemonicParsing=\"false\" prefHeight=\"42.0\" prefWidth=\"583.0\" text=\"ELIMINA ADDETTO\">\r\n                           <font>\r\n                              <Font name=\"Times New Roman\" size=\"14.0\" />\r\n                           </font>\r\n                        </Button>\r\n                        <Button id=\"AggTurno\" lineSpacing=\"1.0\" mnemonicParsing=\"false\" prefHeight=\"42.0\" prefWidth=\"583.0\" text=\"AGGIUNGI TURNO\">\r\n                           <font>\r\n                              <Font name=\"Times New Roman\" size=\"14.0\" />\r\n                           </font>\r\n                        </Button>\r\n                        <Button id=\"RimTurno\" lineSpacing=\"1.0\" mnemonicParsing=\"false\" prefHeight=\"42.0\" prefWidth=\"583.0\" text=\"RIMUOVI TURNO\">\r\n                           <font>\r\n                              <Font name=\"Times New Roman\" size=\"14.0\" />\r\n                           </font>\r\n                        </Button>\r\n                        <Button id=\"Statistiche\" lineSpacing=\"1.0\" mnemonicParsing=\"false\" prefHeight=\"42.0\" prefWidth=\"583.0\" text=\"MOSTRA STATISTICHE\">\r\n                           <font>\r\n                              <Font name=\"Times New Roman\" size=\"14.0\" />\r\n                           </font>\r\n                        </Button>\r\n                        <Button id=\"AggAbb\" lineSpacing=\"1.0\" mnemonicParsing=\"false\" prefHeight=\"42.0\" prefWidth=\"583.0\" text=\"AGGIUNGI ABBONAMENTO\">\r\n                           <font>\r\n                              <Font name=\"Times New Roman\" size=\"14.0\" />\r\n                           </font>\r\n                        </Button>\r\n                        <Button id=\"RimAbb\" lineSpacing=\"1.0\" mnemonicParsing=\"false\" prefHeight=\"42.0\" prefWidth=\"583.0\" text=\"RIMUOVI ABBONAMENTO\">\r\n                           <font>\r\n                              <Font name=\"Times New Roman\" size=\"14.0\" />\r\n                           </font>\r\n                        </Button>\r\n                     </children>\r\n                  </VBox>\r\n               </children>\r\n            </AnchorPane>\r\n        </items>\r\n      </SplitPane>\r\n   </children>\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/parkHour.view.interfacciaAmministratore/homeAmm.fxml b/src/main/resources/parkHour.view.interfacciaAmministratore/homeAmm.fxml
+--- a/src/main/resources/parkHour.view.interfacciaAmministratore/homeAmm.fxml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ b/src/main/resources/parkHour.view.interfacciaAmministratore/homeAmm.fxml	(date 1654624445997)
+@@ -1,30 +1,24 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import javafx.scene.control.Button?>
+-<?import javafx.scene.control.SplitPane?>
+-<?import javafx.scene.control.TextArea?>
+-<?import javafx.scene.image.Image?>
+-<?import javafx.scene.image.ImageView?>
+-<?import javafx.scene.layout.AnchorPane?>
+-<?import javafx.scene.layout.HBox?>
+-<?import javafx.scene.layout.VBox?>
+-<?import javafx.scene.text.Font?>
++<?import javafx.scene.control.*?>
++<?import javafx.scene.image.*?>
++<?import javafx.scene.layout.*?>
++<?import javafx.scene.text.*?>
+ 
+-
+-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parkHour.view.interfacciaAmministratore.HomeAmm">
++<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parkHour.view.interfacciaAmministratore.HomeAmm">
+    <children>
+       <SplitPane dividerPositions="0.15808823529411764" layoutX="-1.0" layoutY="-5.0" orientation="VERTICAL" prefHeight="410.0" prefWidth="600.0" AnchorPane.topAnchor="-5.0">
+         <items>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                <children>
+-                  <HBox alignment="CENTER" fillHeight="false" layoutY="1.0" prefHeight="66.0" prefWidth="606.0" spacing="10.0">
++                  <HBox alignment="CENTER" fillHeight="false" layoutX="-8.0" layoutY="-3.0" prefHeight="66.0" prefWidth="606.0" spacing="10.0">
+                      <children>
+                         <ImageView fitHeight="66.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                               <Image url="@../logoLittleBlue.png" />
+                            </image>
+                         </ImageView>
+-                        <TextArea editable="false" prefHeight="68.0" prefWidth="360.0" text="HOME AMMINISTRATORE">
++                        <TextArea editable="false" prefHeight="68.0" prefWidth="356.0" text="HOME AMMINISTRATORE">
+                            <font>
+                               <Font name="Times New Roman" size="24.0" />
+                            </font>
+Index: src/main/resources/parkHour.view.interfacciaAddetto/viewAggiungiAbb.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import java.lang.*?>\r\n<?import java.util.*?>\r\n<?import javafx.scene.*?>\r\n<?import javafx.scene.control.*?>\r\n<?import javafx.scene.layout.*?>\r\n\r\n<AnchorPane xmlns=\"http://javafx.com/javafx\"\r\n            xmlns:fx=\"http://javafx.com/fxml\"\r\n            fx:controller=\"parkHour.view.interfacciaAddetto.ViewAggiungiAbb\"\r\n            prefHeight=\"400.0\" prefWidth=\"600.0\">\r\n\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/parkHour.view.interfacciaAddetto/viewAggiungiAbb.fxml b/src/main/resources/parkHour.view.interfacciaAddetto/viewAggiungiAbb.fxml
+--- a/src/main/resources/parkHour.view.interfacciaAddetto/viewAggiungiAbb.fxml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ b/src/main/resources/parkHour.view.interfacciaAddetto/viewAggiungiAbb.fxml	(date 1654625168393)
+@@ -1,14 +1,18 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import java.lang.*?>
+-<?import java.util.*?>
+-<?import javafx.scene.*?>
+ <?import javafx.scene.control.*?>
+ <?import javafx.scene.layout.*?>
+ 
+-<AnchorPane xmlns="http://javafx.com/javafx"
+-            xmlns:fx="http://javafx.com/fxml"
+-            fx:controller="parkHour.view.interfacciaAddetto.ViewAggiungiAbb"
+-            prefHeight="400.0" prefWidth="600.0">
+-
++<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parkHour.view.interfacciaAddetto.ViewAggiungiAbb">
++   <children>
++      <SplitPane dividerPositions="0.23645320197044334" layoutY="-11.0" orientation="VERTICAL" prefHeight="408.0" prefWidth="600.0">
++        <items>
++          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="29.0" prefWidth="598.0">
++               <children>
++                  <HBox layoutX="-5.0" layoutY="10.0" prefHeight="87.0" prefWidth="607.0" />
++               </children></AnchorPane>
++          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
++        </items>
++      </SplitPane>
++   </children>
+ </AnchorPane>
+Index: .idea/libraries/Maven__org_openjfx_javafx_graphics_mac_13_0_2.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_13_0_2.xml b/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_13_0_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_13_0_2.xml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ /dev/null	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-graphics:mac:13.0.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/13.0.2/javafx-graphics-13.0.2-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/13.0.2/javafx-graphics-13.0.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/13.0.2/javafx-graphics-13.0.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_controls_mac_13_0_2.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_13_0_2.xml b/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_13_0_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_13_0_2.xml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ /dev/null	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-controls:mac:13.0.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/13.0.2/javafx-controls-13.0.2-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/13.0.2/javafx-controls-13.0.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/13.0.2/javafx-controls-13.0.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_controls.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_controls.xml b/.idea/libraries/Maven__org_openjfx_javafx_controls.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_controls.xml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ /dev/null	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-controls">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/13.0.2/javafx-controls-13.0.2.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/13.0.2/javafx-controls-13.0.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/13.0.2/javafx-controls-13.0.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_media_mac_13_0_2.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_media_mac_13_0_2.xml b/.idea/libraries/Maven__org_openjfx_javafx_media_mac_13_0_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_media_mac_13_0_2.xml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ /dev/null	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-media:mac:13.0.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-media/13.0.2/javafx-media-13.0.2-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-media/13.0.2/javafx-media-13.0.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-media/13.0.2/javafx-media-13.0.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: ParkHour-demo.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ParkHour-demo.iml b/ParkHour-demo.iml
+deleted file mode 100644
+--- a/ParkHour-demo.iml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ /dev/null	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
+@@ -1,111 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_13">
+-    <output url="file://$MODULE_DIR$/target/classes" />
+-    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+-    <content url="file://$MODULE_DIR$">
+-      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+-      <excludeFolder url="file://$MODULE_DIR$/target" />
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-    <orderEntry type="library" exported="" name="Maven: org.openjfx:javafx-controls" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.openjfx:javafx-controls:win:13.0.2" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.openjfx:javafx-graphics:13.0.2" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.openjfx:javafx-graphics:win:13.0.2" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.openjfx:javafx-base:13.0.2" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.openjfx:javafx-base:win:13.0.2" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.openjfx:javafx-fxml:13.0.2" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.openjfx:javafx-fxml:win:13.0.2" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.openjfx:javafx-web:13.0.2" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.openjfx:javafx-web:win:13.0.2" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.openjfx:javafx-media:13.0.2" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.openjfx:javafx-media:win:13.0.2" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.controlsfx:controlsfx:11.1.0" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: com.dlsc.formsfx:formsfx-core:11.3.2" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: net.synedra:validatorfx:0.1.13" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.kordamp.ikonli:ikonli-javafx:12.2.0" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.kordamp.ikonli:ikonli-core:12.2.0" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0" level="project" />
+-    <orderEntry type="library" exported="" name="Maven: eu.hansolo:tilesfx:11.48" level="project" />
+-    <orderEntry type="library" exported="" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.8.1" level="project" />
+-    <orderEntry type="library" exported="" scope="TEST" name="Maven: org.opentest4j:opentest4j:1.2.0" level="project" />
+-    <orderEntry type="library" exported="" scope="TEST" name="Maven: org.junit.platform:junit-platform-commons:1.8.1" level="project" />
+-    <orderEntry type="library" exported="" scope="TEST" name="Maven: org.apiguardian:apiguardian-api:1.1.2" level="project" />
+-    <orderEntry type="library" exported="" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-engine:5.8.1" level="project" />
+-    <orderEntry type="library" exported="" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.8.1" level="project" />
+-    <orderEntry type="module-library" exported="">
+-      <library>
+-        <CLASSES>
+-          <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-18.0.1/lib/javafx-swt.jar!/" />
+-        </CLASSES>
+-        <JAVADOC />
+-        <SOURCES />
+-      </library>
+-    </orderEntry>
+-    <orderEntry type="module-library" exported="">
+-      <library>
+-        <CLASSES>
+-          <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-18.0.1/lib/javafx.base.jar!/" />
+-        </CLASSES>
+-        <JAVADOC />
+-        <SOURCES />
+-      </library>
+-    </orderEntry>
+-    <orderEntry type="module-library" exported="">
+-      <library>
+-        <CLASSES>
+-          <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-18.0.1/lib/javafx.controls.jar!/" />
+-        </CLASSES>
+-        <JAVADOC />
+-        <SOURCES />
+-      </library>
+-    </orderEntry>
+-    <orderEntry type="module-library" exported="">
+-      <library>
+-        <CLASSES>
+-          <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-18.0.1/lib/javafx.fxml.jar!/" />
+-        </CLASSES>
+-        <JAVADOC />
+-        <SOURCES />
+-      </library>
+-    </orderEntry>
+-    <orderEntry type="module-library" exported="">
+-      <library>
+-        <CLASSES>
+-          <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-18.0.1/lib/javafx.graphics.jar!/" />
+-        </CLASSES>
+-        <JAVADOC />
+-        <SOURCES />
+-      </library>
+-    </orderEntry>
+-    <orderEntry type="module-library" exported="">
+-      <library>
+-        <CLASSES>
+-          <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-18.0.1/lib/javafx.media.jar!/" />
+-        </CLASSES>
+-        <JAVADOC />
+-        <SOURCES />
+-      </library>
+-    </orderEntry>
+-    <orderEntry type="module-library">
+-      <library>
+-        <CLASSES>
+-          <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-18.0.1/lib/javafx.swing.jar!/" />
+-        </CLASSES>
+-        <JAVADOC />
+-        <SOURCES />
+-      </library>
+-    </orderEntry>
+-    <orderEntry type="module-library">
+-      <library>
+-        <CLASSES>
+-          <root url="jar:///Library/Java/JavaVirtualMachines/javafx-sdk-18.0.1/lib/javafx.web.jar!/" />
+-        </CLASSES>
+-        <JAVADOC />
+-        <SOURCES />
+-      </library>
+-    </orderEntry>
+-  </component>
+-</module>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_fxml_mac_13_0_2.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_13_0_2.xml b/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_13_0_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_13_0_2.xml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ /dev/null	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-fxml:mac:13.0.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/13.0.2/javafx-fxml-13.0.2-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/13.0.2/javafx-fxml-13.0.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/13.0.2/javafx-fxml-13.0.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_web_mac_13_0_2.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_web_mac_13_0_2.xml b/.idea/libraries/Maven__org_openjfx_javafx_web_mac_13_0_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_web_mac_13_0_2.xml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ /dev/null	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-web:mac:13.0.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-web/13.0.2/javafx-web-13.0.2-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-web/13.0.2/javafx-web-13.0.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-web/13.0.2/javafx-web-13.0.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_base_mac_13_0_2.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_base_mac_13_0_2.xml b/.idea/libraries/Maven__org_openjfx_javafx_base_mac_13_0_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_base_mac_13_0_2.xml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ /dev/null	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-base:mac:13.0.2">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/13.0.2/javafx-base-13.0.2-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/13.0.2/javafx-base-13.0.2-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/13.0.2/javafx-base-13.0.2-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/ParkHour-demo.iml\" filepath=\"$PROJECT_DIR$/ParkHour-demo.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ b/.idea/modules.xml	(date 1654624029901)
+@@ -3,6 +3,7 @@
+   <component name="ProjectModuleManager">
+     <modules>
+       <module fileurl="file://$PROJECT_DIR$/ParkHour-demo.iml" filepath="$PROJECT_DIR$/ParkHour-demo.iml" />
++      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/demo/pom.xml\" />\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_17\" default=\"true\" project-jdk-name=\"17\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ b/.idea/misc.xml	(date 1654624029931)
+@@ -8,7 +8,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <module name=\"ParkHour-demo\" />\r\n      </profile>\r\n    </annotationProcessing>\r\n    <bytecodeTargetLevel>\r\n      <module name=\"demo\" target=\"13\" />\r\n      <module name=\"ParkHour-demo\" target=\"13\" />\r\n    </bytecodeTargetLevel>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ b/.idea/compiler.xml	(date 1654624029920)
+@@ -6,6 +6,7 @@
+         <sourceOutputDir name="target/generated-sources/annotations" />
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
++        <module name="demo" />
+         <module name="ParkHour-demo" />
+       </profile>
+     </annotationProcessing>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"adf379bc-04d2-41f9-9536-09c0d86e7443\" name=\"Changes\" comment=\"inserimento classi e interfacce\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_13_0_2.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ParkHour-demo.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ParkHour-demo.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/RimuoviAbbonamentoController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/RimuoviAbbonamentoController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiTurnoController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiTurnoController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/EliminaAddettiController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/EliminaAddettiController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/letturaDati/StatisticheController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/letturaDati/StatisticheController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/login/LoginController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/parkHour/controller/login/LoginController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/homeAmm.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/homeAmm.fxml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewEntrata.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewEntrata.fxml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewUscita.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewUscita.fxml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/example/parkhourdemo/hello-view.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/example/parkhourdemo/hello-view.fxml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/module-info.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/module-info.class\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JavaFXApplication\" />\r\n        <option value=\"FxmlFile\" />\r\n        <option value=\"Enum\" />\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"RESET_MODE\" value=\"HARD\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"29v8qWFo5tFP8kVFBautbLGKvvb\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"jdk.selected.JAVA_MODULE\" value=\"13\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"project.structure.last.edited\" value=\"Modules\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.15\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.47356322\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.JavaFX\" />\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"HelloApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.parkhourdemo.HelloApplication\" />\r\n      <module name=\"ParkHour-demo\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.example.parkhourdemo.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.HelloApplication\" />\r\n        <item itemvalue=\"Application.HelloApplication\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"adf379bc-04d2-41f9-9536-09c0d86e7443\" name=\"Changes\" comment=\"\" />\r\n      <created>1653982392874</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1653982392874</updated>\r\n      <workItem from=\"1653982394274\" duration=\"275000\" />\r\n      <workItem from=\"1653982693364\" duration=\"1077000\" />\r\n      <workItem from=\"1653986562094\" duration=\"1865000\" />\r\n      <workItem from=\"1653988434797\" duration=\"315000\" />\r\n      <workItem from=\"1654520027684\" duration=\"3917000\" />\r\n      <workItem from=\"1654530275734\" duration=\"5960000\" />\r\n      <workItem from=\"1654545194696\" duration=\"1638000\" />\r\n      <workItem from=\"1654546872082\" duration=\"422000\" />\r\n      <workItem from=\"1654547315447\" duration=\"101000\" />\r\n      <workItem from=\"1654586682837\" duration=\"558000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"inserimento package\">\r\n      <created>1653988128583</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1653988128583</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"inserimento classi model\">\r\n      <created>1654520259638</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1654520259638</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"inserimento classi model 1\">\r\n      <created>1654522194810</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1654522194810</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"inserimento classi model 2\">\r\n      <created>1654522725122</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1654522725122</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"inserimento classi e interfacce\">\r\n      <created>1654523524754</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1654523524754</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"inserimento classi e interfacce\">\r\n      <created>1654533728150</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1654533728150</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"inserimento classi e interfacce\">\r\n      <created>1654534223736</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1654534223736</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"inserimento classi e interfacce\">\r\n      <created>1654546322770</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1654546322770</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"9\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"inserimento package\" />\r\n    <MESSAGE value=\"inserimento classi model\" />\r\n    <MESSAGE value=\"inserimento classi model 1\" />\r\n    <MESSAGE value=\"inserimento classi model 2\" />\r\n    <MESSAGE value=\"inserimento classi e interfacce\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"inserimento classi e interfacce\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 83f7482102d5e43d495471dac9109a4b9f24f7c4)
++++ b/.idea/workspace.xml	(date 1654625185052)
+@@ -4,22 +4,32 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="inserimento classi e interfacce">
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_13_0_2.xml" beforeDir="false" />
++    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="inserimento package">
++      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_13_0_2.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_13_0_2.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_13_0_2.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_13_0_2.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_media_mac_13_0_2.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_web_mac_13_0_2.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__10_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__10_01__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_1.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_10_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_10_00__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ParkHour-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ParkHour-demo.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/RimuoviAbbonamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/RimuoviAbbonamentoController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiTurnoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiTurnoController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/EliminaAddettiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/EliminaAddettiController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/letturaDati/StatisticheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/letturaDati/StatisticheController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parkHour/controller/login/LoginController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ParkHour-demo.iml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/homeAddetto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/homeAddetto.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/viewAggiungiAbb.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/viewAggiungiAbb.fxml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/homeAmm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/homeAmm.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewEntrata.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewEntrata.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewUscita.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewUscita.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/parkhourdemo/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/parkhourdemo/hello-view.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/parkhourdemo/HelloApplication.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/parkhourdemo/HelloController.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -56,9 +66,16 @@
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
++  </component>
++  <component name="MavenImportPreferences">
++    <option name="generalSettings">
++      <MavenGeneralSettings>
++        <option name="useMavenConfig" value="true" />
++      </MavenGeneralSettings>
++    </option>
+   </component>
+   <component name="ProblemsViewState">
+-    <option name="selectedTabId" value="CurrentFile" />
++    <option name="selectedTabId" value="ProjectErrors" />
+   </component>
+   <component name="ProjectId" id="29v8qWFo5tFP8kVFBautbLGKvvb" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+@@ -72,9 +89,9 @@
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="jdk.selected.JAVA_MODULE" value="13" />
++    <property name="jdk.selected.JAVA_MODULE" value="17" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+-    <property name="project.structure.last.edited" value="Modules" />
++    <property name="project.structure.last.edited" value="SDKs" />
+     <property name="project.structure.proportion" value="0.15" />
+     <property name="project.structure.side.proportion" value="0.47356322" />
+     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+@@ -118,6 +135,10 @@
+       <workItem from="1654546872082" duration="422000" />
+       <workItem from="1654547315447" duration="101000" />
+       <workItem from="1654586682837" duration="558000" />
++      <workItem from="1654623950912" duration="527000" />
++      <workItem from="1654624512329" duration="77000" />
++      <workItem from="1654624958158" duration="60000" />
++      <workItem from="1654625067515" duration="118000" />
+     </task>
+     <task id="LOCAL-00001" summary="inserimento package">
+       <created>1653988128583</created>
