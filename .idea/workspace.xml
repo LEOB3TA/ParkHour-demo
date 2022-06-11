@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="prova">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_19_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_19_40__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_06_2022_22_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_06_2022_22_00__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/viewRimuoviAbb.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/viewRimuoviAbb.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewRimuoviTur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewRimuoviTur.fxml" afterDir="false" />
+    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="controlli inserisciAddetto">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewRimuoviTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewRimuoviTurno.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +31,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -146,10 +143,7 @@
       <workItem from="1654586682837" duration="558000" />
       <workItem from="1654718650148" duration="6572000" />
       <workItem from="1654759853636" duration="11960000" />
-      <workItem from="1654948166416" duration="5241000" />
-      <workItem from="1654953689964" duration="115000" />
-      <workItem from="1654953823005" duration="64000" />
-      <workItem from="1654953907920" duration="938000" />
+      <workItem from="1654948166416" duration="4743000" />
     </task>
     <task id="LOCAL-00001" summary="inserimento package">
       <created>1653988128583</created>
@@ -214,14 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654780950116</updated>
     </task>
-    <task id="LOCAL-00010" summary="prova">
-      <created>1654953185890</created>
+    <task id="LOCAL-00010" summary="controlli inserisciAddetto">
+      <created>1654954057464</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1654953185890</updated>
+      <updated>1654954057464</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="controlli inserisciAddetto">
+      <created>1654954810835</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654954810835</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,24 +233,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="CUSTOM_BOOLEAN_PROPERTIES">
-                <map>
-                  <entry key="Show.Git.Branches" value="true" />
-                </map>
-              </option>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -262,8 +246,8 @@
     <MESSAGE value="inserimento classi model 2" />
     <MESSAGE value="inserimento classi e interfacce" />
     <MESSAGE value="prime interfacce grafiche fino ad elimina addetto che non funziona un gran che bene" />
-    <MESSAGE value="prova" />
-    <option name="LAST_COMMIT_MESSAGE" value="prova" />
+    <MESSAGE value="controlli inserisciAddetto" />
+    <option name="LAST_COMMIT_MESSAGE" value="controlli inserisciAddetto" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
