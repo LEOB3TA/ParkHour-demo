@@ -12,9 +12,16 @@ public class AggiungiTurnoController implements IAggiungiTurno {
 
     @Override
     public boolean aggiungiTurno(Addetto addetto, LocalDateTime dataOrarioInizio, LocalDateTime dataOrarioFine) {
-        for(int i=0;i<GestioneAddettiController.getAddetti().size();i++){
-            if(GestioneAddettiController.getAddetti().get(i).equals(addetto)) {
-                return GestioneAddettiController.getAddetti().get(i).addTurno(new Turno(dataOrarioInizio, dataOrarioFine));
+    int i=0;
+        for (Addetto a : GestioneAddettiController.getAddetti()) {
+            i++;
+            for (Turno t : a.getTurni()) {
+                if(dataOrarioInizio.isAfter(t.getDataOrarioInizio()) && dataOrarioInizio.isBefore(t.getDataOrarioFine())
+                || dataOrarioFine.isAfter(t.getDataOrarioInizio()) && dataOrarioFine.isBefore(t.getDataOrarioFine())){
+                    return false;
+                } else{
+                   return GestioneAddettiController.getAddetti().get(i).addTurno(new Turno(dataOrarioInizio, dataOrarioFine));
+                }
             }
         }
         return false;
