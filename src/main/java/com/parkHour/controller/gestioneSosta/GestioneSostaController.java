@@ -43,7 +43,6 @@ public class GestioneSostaController implements IGestioneSosta{
         return sosteConcluse.remove(s);
     }
 
-
     public static List<Sosta> getSosteAttive() {
         return sosteAttive;
     }

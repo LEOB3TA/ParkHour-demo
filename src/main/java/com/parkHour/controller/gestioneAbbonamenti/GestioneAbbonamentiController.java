@@ -32,7 +32,8 @@ public class GestioneAbbonamentiController implements IGestioneAbbonamenti {
     public static List<Veicolo> getVeicoli(){
         return veicoli;
     }
-public static boolean aggiungiAbbonamento(Abbonamento a){
+
+    public static boolean aggiungiAbbonamento(Abbonamento a){
        return abbonamenti.add(a);
 }
 
