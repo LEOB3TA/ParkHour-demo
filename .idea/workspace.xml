@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="prime interfacce grafiche fino ad elimina addetto che non funziona un gran che bene">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_13_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_13_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_13_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_13_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_media_win_13_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_web_win_13_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParkHour-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ParkHour-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/viewAggiungiAbb.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/viewAggiungiAbb.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/viewRimuoviAbb.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/viewRimuoviAbb.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/homeAmm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/homeAmm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewRimuoviTur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewRimuoviTur.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewEntrata.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewEntrata.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewUscita.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewUscita.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="interfacce grafiche finite, tranne lettura dati" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -220,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654780950116</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="interfacce grafiche finite, tranne lettura dati">
+      <created>1654965015062</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1654965015062</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +236,8 @@
     <MESSAGE value="inserimento classi model 2" />
     <MESSAGE value="inserimento classi e interfacce" />
     <MESSAGE value="prime interfacce grafiche fino ad elimina addetto che non funziona un gran che bene" />
-    <option name="LAST_COMMIT_MESSAGE" value="prime interfacce grafiche fino ad elimina addetto che non funziona un gran che bene" />
+    <MESSAGE value="interfacce grafiche finite, tranne lettura dati" />
+    <option name="LAST_COMMIT_MESSAGE" value="interfacce grafiche finite, tranne lettura dati" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
