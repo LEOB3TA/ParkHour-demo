@@ -14,8 +14,6 @@ import java.io.IOException;
 public class ViewInserisciAddetto extends viewWindow{
     private static GestioneAddettiController gestioneAddettiController;
     @FXML
-    private AnchorPane anchorPane;
-    @FXML
     private TextField nome;
     @FXML
     private TextField cognome;

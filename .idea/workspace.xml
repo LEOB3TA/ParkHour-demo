@@ -4,90 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="inserimento package">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAutenticazione/ViewLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_13_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_13_0_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__10_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__10_01__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_10_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_10_00__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" afterDir="false" />
+    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="prime interfacce grafiche fino ad elimina addetto che non funziona un gran che bene">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParkHour-demo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/AggiungiAbbonamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/AggiungiAbbonamentoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/IAggiungiAbbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/IAggiungiAbbonamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/IGestioneAbbonamenti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/IGestioneAbbonamenti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/IRimuoviAbbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/IRimuoviAbbonamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAbbonamenti/RimuoviAbbonamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/RimuoviAbbonamentoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/AggiungiTurnoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/AggiungiTurnoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/EliminaAddettiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/EliminaAddettiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/GestioneAddettiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/GestioneAddettiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IAggiungiAddetti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/IAggiungiAddetti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IAggiungiTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/IAggiungiTurno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IEliminaAddetti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/IEliminaAddetti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IGestioneAddetti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/IGestioneAddetti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/IRimuoviTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/IRimuoviTurno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/RimuoviTurnoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneSosta/FineSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/FineSostaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneSosta/GestioneSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/GestioneSostaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneSosta/IFineSosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/IFineSosta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneSosta/IGestioneSosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/IGestioneSosta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneSosta/IInizioSosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/IInizioSosta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/gestioneSosta/InizioSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/InizioSostaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/letturaDati/IStatistiche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/letturaDati/IStatistiche.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/letturaDati/StatisticheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/letturaDati/StatisticheController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/login/ILogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/login/ILogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/login/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/Abbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Abbonamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/Addetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Addetto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/Amministratore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Amministratore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/Auto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Auto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/ILetturaTarga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/ILetturaTarga.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/InfoTarga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/InfoTarga.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/LetturaTarga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/LetturaTarga.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Moto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/Sosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Sosta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/Statistiche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Statistiche.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/TipologiaAbbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/TipologiaAbbonamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/TipologiaAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/TipologiaAuto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/Turno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Turno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/model/Veicolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Veicolo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/view/interfacciaAddetto/HomeAddetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAddetto/HomeAddetto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/view/interfacciaAddetto/ViewAggiungiAbbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAddetto/ViewAggiungiAbbonamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/view/interfacciaAddetto/ViewRimuoviAbbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAddetto/ViewRimuoviAbbonamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/view/interfacciaAmministratore/HomeAmministratore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/HomeAmministratore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/view/interfacciaAmministratore/ViewAggiungiTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewAggiungiTurno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/view/interfacciaAmministratore/ViewEliminaAddetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewEliminaAddetto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/view/interfacciaAmministratore/ViewInserisciAddetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewInserisciAddetto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/view/interfacciaAmministratore/ViewLetturaDati.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewLetturaDati.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/view/interfacciaAmministratore/ViewRimuoviTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewRimuoviTurno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/view/interfacciaAuntenticazione/ViewLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/view/interfacciaVeicolo/ViewEntrata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaVeicolo/ViewEntrata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parkHour/view/interfacciaVeicolo/ViewUscita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaVeicolo/ViewUscita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/homeAddetto.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/homeAddetto.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/viewAggiungiAbb.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/viewAggiungiAbb.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/viewRimuoviAbb.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAddetto/viewRimuoviAbb.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/homeAmm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/homeAmm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewAggiungiTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewAggiungiTurno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewEliminaAddetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewEliminaAddetto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewInserisciAddetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewInserisciAddetto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewAggiungiTurno.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewAggiungiTurno.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewEliminaAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewEliminaAdd.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewInserisciAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewInserisciAdd.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewLetturaDati.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewLetturaDati.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewRimuoviTur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewRimuoviTur.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAutenticazione/viewLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAutenticazione/viewLogin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewEntrata.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewEntrata.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewUscita.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaVeicolo/viewUscita.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/parkhourdemo/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/parkhourdemo/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/parkhourdemo/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/parkhourdemo/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +146,8 @@
       <workItem from="1654547315447" duration="101000" />
       <workItem from="1654586682837" duration="558000" />
       <workItem from="1654718650148" duration="6572000" />
-      <workItem from="1654759853636" duration="11807000" />
+      <workItem from="1654759853636" duration="11960000" />
+      <workItem from="1654948166416" duration="4743000" />
     </task>
     <task id="LOCAL-00001" summary="inserimento package">
       <created>1653988128583</created>
@@ -281,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654546322770</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="prime interfacce grafiche fino ad elimina addetto che non funziona un gran che bene">
+      <created>1654780950116</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654780950116</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +235,8 @@
     <MESSAGE value="inserimento classi model 1" />
     <MESSAGE value="inserimento classi model 2" />
     <MESSAGE value="inserimento classi e interfacce" />
-    <option name="LAST_COMMIT_MESSAGE" value="inserimento classi e interfacce" />
+    <MESSAGE value="prime interfacce grafiche fino ad elimina addetto che non funziona un gran che bene" />
+    <option name="LAST_COMMIT_MESSAGE" value="prime interfacce grafiche fino ad elimina addetto che non funziona un gran che bene" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
