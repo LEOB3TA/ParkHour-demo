@@ -2,6 +2,7 @@ package com.parkHour.view.interfacciaAmministratore;
 
 import com.parkHour.controller.BigController;
 import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
+import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
 import com.parkHour.model.Addetto;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -16,9 +17,9 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class ViewAggiungiTurno extends viewWindow{
-    private static GestioneAddettiController gestioneAddettiController;
+    private static IGestioneAddetti gestioneAddettiController;
     @FXML
-    private ChoiceBox<Addetto> listaAddetto=new ChoiceBox<Addetto>();
+    private ChoiceBox<Addetto> listaAddetto=new ChoiceBox<>();
     @FXML
     private DatePicker dataFine;
     @FXML

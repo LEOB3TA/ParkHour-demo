@@ -7,14 +7,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestioneSostaController implements IGestioneSosta{
-    private InizioSostaController inizioSostaController;
-    private FineSostaController fineSostaController;
-    private static List<Sosta> sosteAttive=new ArrayList<>();
-    private static List<Sosta> sosteConcluse=new ArrayList<>(); //simuliamo il db, non carichiamo nulla sul db ma su soste concluse
+    private static IInizioSosta inizioSostaController;
+    private static IFineSosta fineSostaController;
 
-    public GestioneSostaController(InizioSostaController inizioSostaController, FineSostaController fineSostaController) {
-        this.inizioSostaController = inizioSostaController;
-        this.fineSostaController = fineSostaController;
+
+
+
+    public GestioneSostaController() {
+        inizioSostaController = new InizioSostaController();
+        fineSostaController = new FineSostaController();
     }
 
     @Override
@@ -43,8 +44,9 @@ public class GestioneSostaController implements IGestioneSosta{
         return sosteConcluse.remove(s);
     }
 
-
     public static List<Sosta> getSosteAttive() {
         return sosteAttive;
     }
+
+    public static List<Sosta>getSosteConcluse(){return sosteConcluse;}
 }
