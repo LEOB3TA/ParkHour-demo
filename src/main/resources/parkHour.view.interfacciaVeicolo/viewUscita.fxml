@@ -2,7 +2,6 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -79,33 +78,48 @@
                               </AnchorPane>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                                  <children>
-                                    <VBox layoutY="-3.0" prefHeight="350.0" prefWidth="366.0">
+                                    <VBox alignment="TOP_CENTER" layoutY="-3.0" prefHeight="350.0" prefWidth="366.0">
                                        <children>
-                                          <TextField id="Targa" fx:id="targa" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="366.0" promptText="AA000BB">
+                                          <Text fx:id="targa1" strokeType="OUTSIDE" strokeWidth="0.0" text="AA000BB">
                                              <font>
-                                                <Font name="Times New Roman Bold" size="24.0" />
+                                                <Font name="Times New Roman" size="24.0" />
                                              </font>
-                                          </TextField>
-                                          <TextField id="Abbonamento" fx:id="abbonamento" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="231.0" promptText="SI/NO">
+                                             <VBox.margin>
+                                                <Insets top="25.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                          <Text fx:id="tipologia" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipologia">
                                              <font>
-                                                <Font name="Times New Roman Bold" size="24.0" />
+                                                <Font name="Times New Roman" size="24.0" />
                                              </font>
-                                          </TextField>
-                                          <TextField id="DurataSosta" fx:id="durataSosta" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="231.0" promptText="0 ore 0 minuti">
+                                             <VBox.margin>
+                                                <Insets top="40.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                          <Text fx:id="durata" strokeType="OUTSIDE" strokeWidth="0.0" text="0 ore 0 minuti">
                                              <font>
-                                                <Font name="Times New Roman Bold" size="24.0" />
+                                                <Font name="Times New Roman" size="24.0" />
                                              </font>
-                                          </TextField>
-                                          <TextField id="DaPagare" fx:id="daPagare" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="366.0" promptText="0.00 €">
+                                             <VBox.margin>
+                                                <Insets top="40.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                          <Text fx:id="daPagare" layoutX="126.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00 €">
                                              <font>
-                                                <Font name="Times New Roman Bold" size="24.0" />
+                                                <Font name="Times New Roman" size="24.0" />
                                              </font>
-                                          </TextField>
-                                          <TextField id="Versato" fx:id="versato" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="366.0" promptText="0.00 €">
+                                             <VBox.margin>
+                                                <Insets top="40.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                          <Text fx:id="versato" layoutX="163.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00 €">
                                              <font>
-                                                <Font name="Times New Roman Bold" size="24.0" />
+                                                <Font name="Times New Roman" size="24.0" />
                                              </font>
-                                          </TextField>
+                                             <VBox.margin>
+                                                <Insets top="40.0" />
+                                             </VBox.margin>
+                                          </Text>
                                        </children>
                                     </VBox>
                                  </children>
