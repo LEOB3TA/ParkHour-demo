@@ -18,6 +18,7 @@ module com.example.parkhourdemo {
     opens com.parkHour.view.interfacciaAmministratore to javafx.fxml;
     opens com.parkHour.view.interfacciaVeicolo to javafx.fxml;
     opens com.parkHour.view.interfacciaAutenticazione to javafx.fxml;
+    opens com.parkHour.view.interfacciaSimulazione to javafx.fxml;
     exports com.parkHour.view.interfacciaAmministratore;
     exports com.parkHour.view.interfacciaAddetto;
     exports com.parkHour.view.interfacciaVeicolo;
