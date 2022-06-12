@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="interfacce grafiche finite, tranne lettura dati" />
+    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="view simulazione">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +16,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -141,6 +143,7 @@
       <workItem from="1654718650148" duration="6572000" />
       <workItem from="1654759853636" duration="11960000" />
       <workItem from="1654948166416" duration="4743000" />
+      <workItem from="1655042408770" duration="1079000" />
     </task>
     <task id="LOCAL-00001" summary="inserimento package">
       <created>1653988128583</created>
@@ -212,7 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654965015062</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="interfacce grafiche riviste">
+      <created>1654966156654</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654966156654</updated>
+    </task>
+    <task id="LOCAL-00012" summary="view simulazione">
+      <created>1655042889229</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655042889229</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +254,9 @@
     <MESSAGE value="inserimento classi e interfacce" />
     <MESSAGE value="prime interfacce grafiche fino ad elimina addetto che non funziona un gran che bene" />
     <MESSAGE value="interfacce grafiche finite, tranne lettura dati" />
-    <option name="LAST_COMMIT_MESSAGE" value="interfacce grafiche finite, tranne lettura dati" />
+    <MESSAGE value="interfacce grafiche riviste" />
+    <MESSAGE value="view simulazione" />
+    <option name="LAST_COMMIT_MESSAGE" value="view simulazione" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
