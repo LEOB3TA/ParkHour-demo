@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="view simulazione">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="cambio da textfiled a text in view entrata e uscita" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +141,7 @@
       <workItem from="1654718650148" duration="6572000" />
       <workItem from="1654759853636" duration="11960000" />
       <workItem from="1654948166416" duration="4743000" />
-      <workItem from="1655042408770" duration="1079000" />
+      <workItem from="1655042408770" duration="1521000" />
     </task>
     <task id="LOCAL-00001" summary="inserimento package">
       <created>1653988128583</created>
@@ -229,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655042889229</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="cambio da textfiled a text in view entrata e uscita">
+      <created>1655044683602</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1655044683602</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +261,8 @@
     <MESSAGE value="interfacce grafiche finite, tranne lettura dati" />
     <MESSAGE value="interfacce grafiche riviste" />
     <MESSAGE value="view simulazione" />
-    <option name="LAST_COMMIT_MESSAGE" value="view simulazione" />
+    <MESSAGE value="cambio da textfiled a text in view entrata e uscita" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambio da textfiled a text in view entrata e uscita" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
