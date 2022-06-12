@@ -3,6 +3,7 @@ package com.parkHour.view.interfacciaAmministratore;
 import com.parkHour.ParkHourApplication;
 import com.parkHour.controller.BigController;
 import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
+import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Alert;
@@ -12,7 +13,7 @@ import javafx.scene.layout.AnchorPane;
 import java.io.IOException;
 
 public class ViewInserisciAddetto extends viewWindow{
-    private static GestioneAddettiController gestioneAddettiController;
+    private static IGestioneAddetti gestioneAddettiController;
     @FXML
     private TextField nome;
     @FXML

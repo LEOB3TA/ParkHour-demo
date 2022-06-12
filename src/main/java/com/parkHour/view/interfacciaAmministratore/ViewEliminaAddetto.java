@@ -2,6 +2,7 @@ package com.parkHour.view.interfacciaAmministratore;
 
 import com.parkHour.controller.BigController;
 import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
+import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
 import com.parkHour.model.Addetto;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -9,7 +10,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 
 public class ViewEliminaAddetto extends viewWindow{
-    private static GestioneAddettiController gestioneAddettiController;
+    private static IGestioneAddetti gestioneAddettiController;
     private ObservableList<Addetto> adde;
 
 
