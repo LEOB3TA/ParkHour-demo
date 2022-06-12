@@ -9,12 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestioneAddettiController implements IGestioneAddetti{
-    private static final Amministratore amministratore=new Amministratore("Leonardo","Focardi","FCRLD00000000","0000","leob3ta","1234");
-    private AggiungiAddettiController aggiungiAddettiController;
-    private AggiungiTurnoController aggiungiTurnoController;
-    private RimuoviTurnoController rimuoviTurnoController;
-    private EliminaAddettiController eliminaAddettiController;
-    private static List<Addetto>addetti=new ArrayList<>();
+
+    private final IAggiungiAddetti aggiungiAddettiController;
+    private final IAggiungiTurno aggiungiTurnoController;
+    private final IRimuoviTurno rimuoviTurnoController;
+    private final IEliminaAddetti eliminaAddettiController;
+
 
     public GestioneAddettiController() {
         this.aggiungiAddettiController=new AggiungiAddettiController();
