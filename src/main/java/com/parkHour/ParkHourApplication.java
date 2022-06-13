@@ -33,4 +33,8 @@ public class ParkHourApplication extends Application {
         pane.getChildren().clear();
         scene.setRoot(parent);
     }
+
+    public static IBigController getBigController() {
+        return bigController;
+    }
 }

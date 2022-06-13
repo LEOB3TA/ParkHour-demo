@@ -30,6 +30,7 @@ public class ViewAggiungiTurno extends viewWindow{
     private TextField orarioFine;
 
     public ViewAggiungiTurno() {
+
         gestioneAddettiController=BigController.getGestioneAddettiController();
         ObservableList<Addetto> observableSegni= FXCollections.observableList(GestioneAddettiController.getAddetti());
         this.listaAddetto.setItems(observableSegni);
