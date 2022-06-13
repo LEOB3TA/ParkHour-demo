@@ -1,6 +1,7 @@
 package com.parkHour;
 
 import com.parkHour.controller.BigController;
+import com.parkHour.controller.IBigController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,7 +14,7 @@ import java.io.IOException;
 public class ParkHourApplication extends Application {
 
     public static Scene scene;
-    private static BigController bigController;
+    private static IBigController bigController;
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ParkHourApplication.class.getResource("/parkHour.view.interfacciaAutenticazione/viewLogin.fxml"));

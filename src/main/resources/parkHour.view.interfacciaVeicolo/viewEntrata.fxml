@@ -63,17 +63,17 @@
                            <children>
                               <VBox layoutY="-3.0" prefHeight="295.0" prefWidth="366.0">
                                  <children>
-                                    <TextField id="Targa" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="366.0" promptText="AA000BB">
+                                    <TextField id="Targa" fx:id="targa" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="366.0" promptText="AA000BB">
                                        <font>
                                           <Font name="Times New Roman Bold" size="24.0" />
                                        </font>
                                     </TextField>
-                                    <TextField id="Tipologia" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="231.0" promptText="Tipologia">
+                                    <TextField id="Tipologia" fx:id="tipologia" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="231.0" promptText="Tipologia">
                                        <font>
                                           <Font name="Times New Roman Bold" size="24.0" />
                                        </font>
                                     </TextField>
-                                    <TextField id="Posto" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="231.0" promptText="000">
+                                    <TextField id="Posto" fx:id="posto" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="231.0" promptText="000">
                                        <font>
                                           <Font name="Times New Roman Bold" size="24.0" />
                                        </font>

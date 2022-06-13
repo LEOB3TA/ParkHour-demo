@@ -3,6 +3,7 @@ package com.parkHour.view.interfacciaAutenticazione;
 
 import com.parkHour.ParkHourApplication;
 import com.parkHour.controller.BigController;
+import com.parkHour.controller.login.ILogin;
 import com.parkHour.controller.login.LoginController;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,10 +13,11 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 
 public class ViewLogin {
-    private static LoginController loginController;
+    private static ILogin loginController;
     private Button login;
     @FXML
     private AnchorPane anchorPane;
@@ -30,7 +32,7 @@ public class ViewLogin {
     public ViewLogin() {
         loginController=BigController.getLoginController();
     }
-/* commentato soltanto per fare il fast login,( entrre sen<a credenziali)
+/*commentato soltanto per fare il fast login,( entrre sen<a credenziali)
     @FXML
     public void onLoginButtonClick() throws IOException {
         Alert alert=new Alert(Alert.AlertType.ERROR);
@@ -53,6 +55,6 @@ public class ViewLogin {
  */
     @FXML
     public void onLoginButtonClick() throws IOException {
-        ParkHourApplication.setRoot(anchorPane,FXMLLoader.load(ViewLogin.class.getResource("/parkHour.view.interfacciaAmministratore/homeAmm.fxml")));
+        ParkHourApplication.setRoot(anchorPane,FXMLLoader.load(Objects.requireNonNull(ViewLogin.class.getResource("/parkHour.view.interfacciaAmministratore/homeAmm.fxml"))));
     }
 }
