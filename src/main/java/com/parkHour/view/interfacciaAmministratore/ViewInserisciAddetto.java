@@ -35,6 +35,7 @@ public class ViewInserisciAddetto extends viewWindow{
 
     @FXML
     protected void onAggiungiClick(){
+
         if(nome.getText().isEmpty()|| cognome.getText().isEmpty() || codFisc.getText().isEmpty() || username.getText().isEmpty() || password.getText().isEmpty()){
             Alert alert=new Alert(Alert.AlertType.ERROR);
             alert.setContentText("nessun campo può essere vuoto");
