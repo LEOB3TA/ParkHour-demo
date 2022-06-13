@@ -4,13 +4,10 @@ package com.parkHour.view.interfacciaAutenticazione;
 import com.parkHour.ParkHourApplication;
 import com.parkHour.controller.BigController;
 import com.parkHour.controller.login.ILogin;
-import com.parkHour.controller.login.LoginController;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Objects;

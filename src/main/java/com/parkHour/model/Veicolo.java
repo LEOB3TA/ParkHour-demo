@@ -1,5 +1,6 @@
 package com.parkHour.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Veicolo {
@@ -8,6 +9,7 @@ public class Veicolo {
 
     public Veicolo(String numeroTarga) {
         this.numeroTarga = numeroTarga;
+        this.abbonamenti=new ArrayList<>();
     }
 
     public String getNumeroTarga() {

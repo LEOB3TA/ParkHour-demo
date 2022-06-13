@@ -22,7 +22,12 @@ public class GestioneSostaController implements IGestioneSosta{
 
     @Override
     public boolean inputEntrata(InfoTarga infoTarga) {
-       return inizioSostaController.InizioSosta(infoTarga,LocalDateTime.now());
+        try {
+            return inizioSostaController.InizioSosta(infoTarga,LocalDateTime.now());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     @Override

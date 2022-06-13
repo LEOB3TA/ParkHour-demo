@@ -13,28 +13,51 @@ import java.io.IOException;
 
 public class ParkHourApplication extends Application {
 
-    public static Scene scene;
+    public static Scene sceneLogin;
+    public static Scene sceneEntrata;
+    public static Scene sceneUscita;
+    public static Scene sceneSimulazione;
     private static IBigController bigController;
-    @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(ParkHourApplication.class.getResource("/parkHour.view.interfacciaAutenticazione/viewLogin.fxml"));
-        scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Login");
-        stage.setScene(scene);
-        stage.show();
-    }
 
     public static void main(String[] args) {
-        bigController=new BigController();
+        bigController=BigController.getInstance();
         launch();
     }
 
-    public static void setRoot(AnchorPane pane, Parent parent) {
-        pane.getChildren().clear();
-        scene.setRoot(parent);
+    @Override
+    public void start(Stage stageLogin) throws IOException {
+        Stage stateSimulazione=new Stage();
+        Stage stateEntrata=new Stage();
+        Stage stateUscita=new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(ParkHourApplication.class.getResource("/parkHour.view.interfacciaAutenticazione/viewLogin.fxml"));
+        sceneLogin = new Scene(fxmlLoader.load());
+        fxmlLoader = new FXMLLoader(ParkHourApplication.class.getResource("/parkHour.view.interfacciaVeicolo/viewEntrata.fxml"));
+        sceneEntrata = new Scene(fxmlLoader.load());
+        BigController.setViewEntrata(fxmlLoader.getController());
+        fxmlLoader = new FXMLLoader(ParkHourApplication.class.getResource("/parkHour.view.interfacciaVeicolo/viewUscita.fxml"));
+        sceneUscita = new Scene(fxmlLoader.load());
+        BigController.setViewUscita(fxmlLoader.getController());
+        fxmlLoader = new FXMLLoader(ParkHourApplication.class.getResource("/parkHour.view.interfacciaSimulazione/viewSimulazione.fxml"));
+        sceneSimulazione = new Scene(fxmlLoader.load());
+        stageLogin.setTitle("Login");
+        stageLogin.setScene(sceneLogin);
+        stateEntrata.setTitle("CaselloEntrata");
+        stateEntrata.setScene(sceneEntrata);
+        stateUscita.setTitle("CaselloUscita");
+        stateUscita.setScene(sceneUscita);
+        stateSimulazione.setTitle("Simulazione");
+        stateSimulazione.setScene(sceneSimulazione);
+        stageLogin.show();
+        stateEntrata.show();
+        stateUscita.show();
+        stateSimulazione.show();
     }
 
-    public static IBigController getBigController() {
-        return bigController;
+
+
+    public static void setRoot(AnchorPane pane, Parent parent) {
+        pane.getChildren().clear();
+        sceneLogin.setRoot(parent);
     }
+
 }
