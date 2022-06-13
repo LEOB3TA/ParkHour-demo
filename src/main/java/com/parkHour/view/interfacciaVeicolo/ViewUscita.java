@@ -36,7 +36,7 @@ public class ViewUscita {
         else {
             abbonamento.setText("No");
         }
-        durataSosta.setText(minuti/60 + " ore "+ minuti%60+" minuti ");
+        durataSosta.setText((int)minuti/60 + " ore "+ (int)minuti%60+" minuti ");
         importoDaPagare=daPagareV;
         daPagare.setText(String. format("%.2f", daPagareV)+" €");
         versato.setText("0,00 €");

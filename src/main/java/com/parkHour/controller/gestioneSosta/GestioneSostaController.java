@@ -32,7 +32,7 @@ public class GestioneSostaController implements IGestioneSosta{
 
     @Override
     public boolean inputUscita(InfoTarga infoTarga) {
-        return fineSostaController.fineSosta(infoTarga,LocalDateTime.now());
+        return fineSostaController.fineSosta(infoTarga,LocalDateTime.now().plusHours(2));
     }
 
     public static boolean aggiungiSostaAttiva(Sosta s){
