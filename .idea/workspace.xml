@@ -4,13 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="prime interfacce grafiche fino ad elimina addetto che non funziona un gran che bene">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="view simulazione">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkHour-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ParkHour-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/ParkHourApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/ParkHourApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/BigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/BigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/IGestioneAbbonamenti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/IGestioneAbbonamenti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/GestioneAddettiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/GestioneAddettiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/IGestioneAddetti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/IGestioneAddetti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/GestioneSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/GestioneSostaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/IGestioneSosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/IGestioneSosta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewAggiungiTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewAggiungiTurno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewEliminaAddetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewEliminaAddetto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewInserisciAddetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewInserisciAddetto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewAggiungiTurno.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewAggiungiTurno.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewEliminaAdd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaAmministratore/viewEliminaAdd.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/viewWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/viewWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAutenticazione/ViewLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAutenticazione/ViewLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaSimulazione/ViewSimulazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaSimulazione/ViewSimulazione.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaVeicolo/ViewEntrata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaVeicolo/ViewEntrata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaVeicolo/ViewUscita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaVeicolo/ViewUscita.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +33,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="Enum" />
-        <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -72,7 +84,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="13" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAuntenticazione" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.47356322" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -123,6 +135,8 @@
       <list>
         <item itemvalue="Application.ParkHourApplication" />
         <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.ParkHourApplication" />
+        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
@@ -148,6 +162,7 @@
       <workItem from="1654718650148" duration="6572000" />
       <workItem from="1654759853636" duration="11960000" />
       <workItem from="1654948166416" duration="4743000" />
+      <workItem from="1655042408770" duration="1079000" />
     </task>
     <task id="LOCAL-00001" summary="inserimento package">
       <created>1653988128583</created>
@@ -212,7 +227,35 @@
       <option name="project" value="LOCAL" />
       <updated>1654780950116</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="interfacce grafiche finite, tranne lettura dati">
+      <created>1654965015062</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1654965015062</updated>
+    </task>
+    <task id="LOCAL-00011" summary="interfacce grafiche riviste">
+      <created>1654966156654</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654966156654</updated>
+    </task>
+    <task id="LOCAL-00012" summary="view simulazione">
+      <created>1655042889229</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655042889229</updated>
+    </task>
+    <task id="LOCAL-00013" summary="bestemmio finio a domain">
+      <created>1655052688998</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1655052688998</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +279,12 @@
     <MESSAGE value="inserimento classi model 2" />
     <MESSAGE value="inserimento classi e interfacce" />
     <MESSAGE value="prime interfacce grafiche fino ad elimina addetto che non funziona un gran che bene" />
-    <option name="LAST_COMMIT_MESSAGE" value="prime interfacce grafiche fino ad elimina addetto che non funziona un gran che bene" />
+    <MESSAGE value="interfacce grafiche finite, tranne lettura dati" />
+    <MESSAGE value="interfacce grafiche riviste" />
+    <MESSAGE value="view simulazione" />
+    <MESSAGE value="inserimento interfaccia per la simulazione con annesso controller, aggiunte interfacce sia per la simuazione sia per BigController, tolte tutte le liste statichge dalle implementazioni e messe nelle interfacce, tolti un botto di warning" />
+    <MESSAGE value="bestemmio finio a domain" />
+    <option name="LAST_COMMIT_MESSAGE" value="bestemmio finio a domain" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

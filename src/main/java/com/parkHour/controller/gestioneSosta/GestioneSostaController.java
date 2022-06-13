@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestioneSostaController implements IGestioneSosta{
+    private static List<Sosta> sosteAttive=new ArrayList<>();
+    private static List<Sosta> sosteConcluse=new ArrayList<>(); //simuliamo il db, non carichiamo nulla sul db ma su soste concluse
     private static IInizioSosta inizioSostaController;
     private static IFineSosta fineSostaController;
 
@@ -20,12 +22,17 @@ public class GestioneSostaController implements IGestioneSosta{
 
     @Override
     public boolean inputEntrata(InfoTarga infoTarga) {
-       return inizioSostaController.InizioSosta(infoTarga,LocalDateTime.now());
+        try {
+            return inizioSostaController.InizioSosta(infoTarga,LocalDateTime.now());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     @Override
     public boolean inputUscita(InfoTarga infoTarga) {
-        return fineSostaController.fineSosta(infoTarga,LocalDateTime.now());
+        return fineSostaController.fineSosta(infoTarga,LocalDateTime.now().plusHours(2));
     }
 
     public static boolean aggiungiSostaAttiva(Sosta s){

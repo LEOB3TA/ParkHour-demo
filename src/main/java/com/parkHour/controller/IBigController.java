@@ -12,10 +12,7 @@ import com.parkHour.controller.login.ILogin;
 import com.parkHour.controller.login.LoginController;
 
 public interface IBigController {
-      IGestioneAddetti gestioneAddettiController= new GestioneAddettiController();
-      ILogin loginController=new LoginController();
-      IGestioneSosta gestioneSostaController=new GestioneSostaController();
-      IGestioneAbbonamenti gestioneAbbonamentiController=new GestioneAbbonamentiController();
-      IGestioneSimulazioneController gestioneSimulazioneController=new GestioneSimulazioneController();
+
+
 }
 

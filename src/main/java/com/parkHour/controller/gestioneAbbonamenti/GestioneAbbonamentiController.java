@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestioneAbbonamentiController implements IGestioneAbbonamenti {
+    private static List<Veicolo> veicoli=new ArrayList<>();
+    private static List<Abbonamento> abbonamenti=new ArrayList<>();
     private IAggiungiAbbonamento aggiungiAbbonamentoController;
     private IRimuoviAbbonamento  rimuoviAbbonamentoController;
 
