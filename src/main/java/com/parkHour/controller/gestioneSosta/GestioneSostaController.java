@@ -7,24 +7,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestioneSostaController implements IGestioneSosta{
-    private InizioSostaController inizioSostaController;
-    private FineSostaController fineSostaController;
     private static List<Sosta> sosteAttive=new ArrayList<>();
     private static List<Sosta> sosteConcluse=new ArrayList<>(); //simuliamo il db, non carichiamo nulla sul db ma su soste concluse
+    private static IInizioSosta inizioSostaController;
+    private static IFineSosta fineSostaController;
 
-    public GestioneSostaController(InizioSostaController inizioSostaController, FineSostaController fineSostaController) {
-        this.inizioSostaController = inizioSostaController;
-        this.fineSostaController = fineSostaController;
+
+
+
+    public GestioneSostaController() {
+        inizioSostaController = new InizioSostaController();
+        fineSostaController = new FineSostaController();
     }
 
     @Override
     public boolean inputEntrata(InfoTarga infoTarga) {
-       return inizioSostaController.InizioSosta(infoTarga,LocalDateTime.now());
+        try {
+            return inizioSostaController.InizioSosta(infoTarga,LocalDateTime.now());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     @Override
     public boolean inputUscita(InfoTarga infoTarga) {
-        return fineSostaController.fineSosta(infoTarga,LocalDateTime.now());
+        return fineSostaController.fineSosta(infoTarga,LocalDateTime.now().plusHours(2));
     }
 
     public static boolean aggiungiSostaAttiva(Sosta s){
@@ -46,4 +54,6 @@ public class GestioneSostaController implements IGestioneSosta{
     public static List<Sosta> getSosteAttive() {
         return sosteAttive;
     }
+
+    public static List<Sosta>getSosteConcluse(){return sosteConcluse;}
 }

@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b13b63b-ec26-4841-be09-12460cc1440b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="risolti problemi con il discorso liste nelle interfacce">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_13_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_13_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_13_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_13_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__10_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__10_01__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_1.xml" afterDir="false" />
@@ -17,10 +26,22 @@
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ParkHour-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ParkHour-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/ParkHourApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/ParkHourApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/BigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/BigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSimulazione/GestioneSimulazioneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSimulazione/GestioneSimulazioneController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/FineSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/FineSostaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/GestioneSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/GestioneSostaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/IInizioSosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/IInizioSosta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/InizioSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/InizioSostaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Veicolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Veicolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/HomeAmministratore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/HomeAmministratore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewInserisciAddetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewInserisciAddetto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/viewWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/viewWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAutenticazione/ViewLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAutenticazione/ViewLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaVeicolo/ViewEntrata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaVeicolo/ViewEntrata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaVeicolo/ViewUscita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaVeicolo/ViewUscita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +52,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
+        <option value="Enum" />
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -43,7 +66,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -55,6 +78,16 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="29v8qWFo5tFP8kVFBautbLGKvvb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -68,18 +101,30 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="13" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAuntenticazione" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="project.structure.side.proportion" value="0.47356322" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\leona\Desktop\ParkHour-demo\src\main\java\com\parkHour\view\interfacciaAuntenticazione" />
+      <recent name="C:\Users\leona\Desktop\ParkHour-demo\src\main\resources\com" />
+      <recent name="C:\Users\leona\Desktop\ParkHour-demo\src\main\resources\com\parkHour" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\leona\Desktop\ParkHour-demo\src\main\resources\parkHour\view\interfacciaAutenticazione" />
+      <recent name="C:\Users\leona\Desktop\ParkHour-demo\src\main\resources\com" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ParkHourApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.parkhourdemo.HelloApplication" />
       <module name="ParkHour-demo" />
@@ -93,8 +138,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ParkHourApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.parkHour.ParkHourApplication" />
+      <module name="ParkHour-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.parkHour.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkHourApplicationEntrata" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.parkHour.view.ParkHourApplicationEntrata" />
+      <module name="ParkHour-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.parkHour.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkHourEntrataApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.parkHour.ParkHourEntrataApplication" />
+      <module name="ParkHour-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.parkHour.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkHourStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.parkHour.ParkHourStart" />
+      <module name="ParkHour-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.parkHour.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ParkHourApplication" />
+        <item itemvalue="Application.ParkHourEntrataApplication" />
+        <item itemvalue="Application.ParkHourStart" />
+        <item itemvalue="Application.ParkHourApplicationEntrata" />
         <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
@@ -102,7 +203,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0b13b63b-ec26-4841-be09-12460cc1440b" name="Changes" comment="" />
+      <changelist id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="" />
       <created>1653982392874</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -111,7 +212,21 @@
       <workItem from="1653982693364" duration="1077000" />
       <workItem from="1653986562094" duration="1865000" />
       <workItem from="1653988434797" duration="315000" />
-      <workItem from="1654952178811" duration="8198000" />
+      <workItem from="1654520027684" duration="3917000" />
+      <workItem from="1654530275734" duration="5960000" />
+      <workItem from="1654545194696" duration="1638000" />
+      <workItem from="1654546872082" duration="422000" />
+      <workItem from="1654547315447" duration="101000" />
+      <workItem from="1654586682837" duration="558000" />
+      <workItem from="1654718650148" duration="6572000" />
+      <workItem from="1654759853636" duration="11960000" />
+      <workItem from="1654948166416" duration="4743000" />
+      <workItem from="1655042408770" duration="1079000" />
+      <workItem from="1655113041661" duration="873000" />
+      <workItem from="1655113962975" duration="249000" />
+      <workItem from="1655115995288" duration="246000" />
+      <workItem from="1655116598498" duration="632000" />
+      <workItem from="1655130450301" duration="5922000" />
     </task>
     <task id="LOCAL-00001" summary="inserimento package">
       <created>1653988128583</created>
@@ -120,7 +235,105 @@
       <option name="project" value="LOCAL" />
       <updated>1653988128583</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="inserimento classi model">
+      <created>1654520259638</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654520259638</updated>
+    </task>
+    <task id="LOCAL-00003" summary="inserimento classi model 1">
+      <created>1654522194810</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654522194810</updated>
+    </task>
+    <task id="LOCAL-00004" summary="inserimento classi model 2">
+      <created>1654522725122</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654522725122</updated>
+    </task>
+    <task id="LOCAL-00005" summary="inserimento classi e interfacce">
+      <created>1654523524754</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654523524754</updated>
+    </task>
+    <task id="LOCAL-00006" summary="inserimento classi e interfacce">
+      <created>1654533728150</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654533728150</updated>
+    </task>
+    <task id="LOCAL-00007" summary="inserimento classi e interfacce">
+      <created>1654534223736</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654534223736</updated>
+    </task>
+    <task id="LOCAL-00008" summary="inserimento classi e interfacce">
+      <created>1654546322770</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654546322770</updated>
+    </task>
+    <task id="LOCAL-00009" summary="prime interfacce grafiche fino ad elimina addetto che non funziona un gran che bene">
+      <created>1654780950116</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654780950116</updated>
+    </task>
+    <task id="LOCAL-00010" summary="interfacce grafiche finite, tranne lettura dati">
+      <created>1654965015062</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1654965015062</updated>
+    </task>
+    <task id="LOCAL-00011" summary="interfacce grafiche riviste">
+      <created>1654966156654</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654966156654</updated>
+    </task>
+    <task id="LOCAL-00012" summary="view simulazione">
+      <created>1655042889229</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655042889229</updated>
+    </task>
+    <task id="LOCAL-00013" summary="bestemmio finio a domain">
+      <created>1655052688998</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1655052688998</updated>
+    </task>
+    <task id="LOCAL-00014" summary="bestemmio finio a domain">
+      <created>1655052810098</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1655052810098</updated>
+    </task>
+    <task id="LOCAL-00015" summary="risolti problemi con il discorso liste nelle interfacce">
+      <created>1655116172215</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1655116172215</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,16 +347,33 @@
             <State />
           </value>
         </entry>
-        <entry key="fc2fa4f6-3bf6-4076-9d4f-d71d060fb97b">
-          <value>
-            <State />
-          </value>
-        </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inserimento package" />
-    <option name="LAST_COMMIT_MESSAGE" value="inserimento package" />
+    <MESSAGE value="inserimento classi model" />
+    <MESSAGE value="inserimento classi model 1" />
+    <MESSAGE value="inserimento classi model 2" />
+    <MESSAGE value="inserimento classi e interfacce" />
+    <MESSAGE value="prime interfacce grafiche fino ad elimina addetto che non funziona un gran che bene" />
+    <MESSAGE value="interfacce grafiche finite, tranne lettura dati" />
+    <MESSAGE value="interfacce grafiche riviste" />
+    <MESSAGE value="view simulazione" />
+    <MESSAGE value="inserimento interfaccia per la simulazione con annesso controller, aggiunte interfacce sia per la simuazione sia per BigController, tolte tutte le liste statichge dalle implementazioni e messe nelle interfacce, tolti un botto di warning" />
+    <MESSAGE value="bestemmio finio a domain" />
+    <MESSAGE value="risolti problemi con il discorso liste nelle interfacce" />
+    <option name="LAST_COMMIT_MESSAGE" value="risolti problemi con il discorso liste nelle interfacce" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="fxmlLoader" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

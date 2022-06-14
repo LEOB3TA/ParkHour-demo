@@ -81,27 +81,27 @@
                                  <children>
                                     <VBox layoutY="-3.0" prefHeight="350.0" prefWidth="366.0">
                                        <children>
-                                          <TextField id="Targa" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="366.0" promptText="AA000BB">
+                                          <TextField id="Targa" fx:id="targa" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="366.0" promptText="AA000BB">
                                              <font>
                                                 <Font name="Times New Roman Bold" size="24.0" />
                                              </font>
                                           </TextField>
-                                          <TextField id="Abbonamento" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="231.0" promptText="SI/NO">
+                                          <TextField id="Abbonamento" fx:id="abbonamento" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="231.0" promptText="SI/NO">
                                              <font>
                                                 <Font name="Times New Roman Bold" size="24.0" />
                                              </font>
                                           </TextField>
-                                          <TextField id="DurataSosta" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="231.0" promptText="0 ore 0 minuti">
+                                          <TextField id="DurataSosta" fx:id="durataSosta" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="231.0" promptText="0 ore 0 minuti">
                                              <font>
                                                 <Font name="Times New Roman Bold" size="24.0" />
                                              </font>
                                           </TextField>
-                                          <TextField id="DaPagare" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="366.0" promptText="0.00 €">
+                                          <TextField id="DaPagare" fx:id="daPagare" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="366.0" promptText="0.00 €">
                                              <font>
                                                 <Font name="Times New Roman Bold" size="24.0" />
                                              </font>
                                           </TextField>
-                                          <TextField id="Versato" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="366.0" promptText="0.00 €">
+                                          <TextField id="Versato" fx:id="versato" alignment="CENTER" editable="false" prefHeight="71.0" prefWidth="366.0" promptText="0.00 €">
                                              <font>
                                                 <Font name="Times New Roman Bold" size="24.0" />
                                              </font>

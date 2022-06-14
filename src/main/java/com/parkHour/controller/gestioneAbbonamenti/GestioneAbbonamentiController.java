@@ -9,15 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestioneAbbonamentiController implements IGestioneAbbonamenti {
-    private AggiungiAbbonamentoController aggiungiAbbonamentoController;
-    private RimuoviAbbonamentoController   rimuoviAbbonamentoController;
-    private static List<Veicolo> veicoli=new ArrayList<Veicolo>();
+    private static List<Veicolo> veicoli=new ArrayList<>();
+    private static List<Abbonamento> abbonamenti=new ArrayList<>();
+    private IAggiungiAbbonamento aggiungiAbbonamentoController;
+    private IRimuoviAbbonamento  rimuoviAbbonamentoController;
 
-    private static  List<Abbonamento> abbonamenti=new ArrayList<Abbonamento>();
 
 
-    public GestioneAbbonamentiController(List<Veicolo> v){
-        veicoli=v;
+    public GestioneAbbonamentiController(){
     }
 
     public static boolean aggiungiVeicolo(Veicolo v){

@@ -2,34 +2,40 @@ package com.parkHour.view.interfacciaAmministratore;
 
 import com.parkHour.controller.BigController;
 import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
+import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
 import com.parkHour.model.Addetto;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.collections.ObservableListBase;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ComboBox;
 
 public class ViewEliminaAddetto extends viewWindow{
-    private static GestioneAddettiController gestioneAddettiController;
+    private static IGestioneAddetti gestioneAddettiController;
     private ObservableList<Addetto> adde;
+
+
     @FXML
-    private ChoiceBox<Addetto> addetti=new ChoiceBox<>();
+    private ComboBox listaAddetti;
 
     public ViewEliminaAddetto() {
+        ObservableList<String> observableSegni=FXCollections.observableArrayList("a","b","c");
+        listaAddetti.setItems(observableSegni);
+        listaAddetti.setEditable(false);
+        listaAddetti.setValue(observableSegni.get(0));
         gestioneAddettiController= BigController.getGestioneAddettiController();
-        adde= FXCollections.observableList(GestioneAddettiController.getAddetti());
-        System.out.println(adde.get(0).toString());
-        addetti.setItems(adde);
+
+      //  for(Addetto a: GestioneAddettiController.getAddetti()){
+
+      //  }
     }
 
     @FXML
     protected void onEliminaClick(){
-        if(!gestioneAddettiController.eliminaAddetto((Addetto) addetti.getValue())){
+       /* if(!gestioneAddettiController.eliminaAddetto((String) listaAddetti.getValue())){
             Alert alert=new Alert(Alert.AlertType.ERROR);
             alert.setContentText("impossibile eliminare l'addetto specificato");
             alert.show();
-        }
+        }*/
     }
 
 

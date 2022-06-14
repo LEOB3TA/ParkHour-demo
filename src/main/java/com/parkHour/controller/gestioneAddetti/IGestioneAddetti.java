@@ -1,12 +1,15 @@
 package com.parkHour.controller.gestioneAddetti;
 
 import com.parkHour.model.Addetto;
+import com.parkHour.model.Amministratore;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 public interface IGestioneAddetti {
 
- static List<Addetto> getAddetti() {
-        return null;
-    }
+    boolean aggiungiTurno(Addetto addetto, LocalDateTime dataOraInizio, LocalDateTime dataOraFine);
+
+    boolean aggiungiAddetto(String text, String text1, String text2, String text3, String text4);
 }
