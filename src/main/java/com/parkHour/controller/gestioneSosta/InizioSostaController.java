@@ -76,7 +76,7 @@ public class InizioSostaController implements IInizioSosta {
                 } else maxOccupato=s.getPosto();
             }
         }
-        return -1;
+        return min;
     }
 
 }

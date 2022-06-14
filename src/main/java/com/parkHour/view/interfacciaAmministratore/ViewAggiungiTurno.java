@@ -4,8 +4,6 @@ import com.parkHour.controller.BigController;
 import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
 import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
 import com.parkHour.model.Addetto;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ChoiceBox;
@@ -16,7 +14,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
-public class ViewAggiungiTurno extends viewWindow{
+public class ViewAggiungiTurno extends ViewWindow {
     private static IGestioneAddetti gestioneAddettiController;
     @FXML
     private ChoiceBox<String> listaAddetti;
@@ -43,10 +41,12 @@ public class ViewAggiungiTurno extends viewWindow{
 
     @FXML
     public void onAggiungiClick(){
+        Alert alert;
         Addetto found=null;
         for(Addetto a:GestioneAddettiController.getAddetti()) {
             if (listaAddetti.getValue().equals(a.toString())) {
                 found = a;
+                break;
             }
         }
         LocalTime orarioI=LocalTime.parse(orarioInizio.getText(), DateTimeFormatter.ofPattern("HH:mm"));
@@ -54,12 +54,12 @@ public class ViewAggiungiTurno extends viewWindow{
         LocalDateTime dataOraInizio=LocalDateTime.of(dataInizio.getValue(), orarioI);
         LocalDateTime dataOraFine=LocalDateTime.of(dataFine.getValue(), orarioF);
         if(gestioneAddettiController.aggiungiTurno(found,dataOraInizio,dataOraFine)){
-            Alert alert=new Alert(Alert.AlertType.CONFIRMATION);
+            alert=new Alert(Alert.AlertType.INFORMATION);
             alert.setContentText("aggiunto turno correttamente");
             alert.show();
         }
         else{
-            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert=new Alert(Alert.AlertType.ERROR);
             alert.setContentText("impossibile aggiungere turno");
             alert.show();
         }

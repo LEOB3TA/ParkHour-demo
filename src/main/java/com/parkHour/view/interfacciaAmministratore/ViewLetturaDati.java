@@ -1,22 +1,15 @@
 package com.parkHour.view.interfacciaAmministratore;
 
-import com.parkHour.ParkHourApplication;
 import com.parkHour.controller.BigController;
 import com.parkHour.controller.letturaDati.IStatistiche;
 import com.parkHour.model.Sosta;
 import com.parkHour.model.Statistiche;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.chart.PieChart;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
-import javafx.stage.WindowEvent;
 
-
-import java.io.IOException;
-import java.net.URL;
-
-public class ViewLetturaDati extends viewWindow {
+public class ViewLetturaDati extends ViewWindow {
     private static IStatistiche statistiche;
     @FXML
     private ListView<String> elencoSoste;

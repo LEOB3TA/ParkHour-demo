@@ -119,7 +119,7 @@
                                                                   <Insets left="10.0" right="10.0" top="23.0" />
                                                                </VBox.margin>
                                                             </ChoiceBox>
-                                                            <DatePicker id="DataInizio" fx:id="dataInizio" prefHeight="26.0" prefWidth="418.0" promptText="01/01/2022">
+                                                            <DatePicker id="DataInizio" fx:id="dataInizio" editable="false" prefHeight="26.0" prefWidth="418.0" promptText="01/01/2022">
                                                                <VBox.margin>
                                                                   <Insets left="10.0" right="10.0" top="23.0" />
                                                                </VBox.margin>
@@ -132,7 +132,7 @@
                                                                   <Font name="Times New Roman" size="14.0" />
                                                                </font>
                                                             </TextField>
-                                                            <DatePicker id="DataFine" fx:id="dataFine" prefHeight="26.0" prefWidth="418.0" promptText="01/01/2022">
+                                                            <DatePicker id="DataFine" fx:id="dataFine" editable="false" prefHeight="26.0" prefWidth="418.0" promptText="01/01/2022">
                                                                <VBox.margin>
                                                                   <Insets left="10.0" right="10.0" top="23.0" />
                                                                </VBox.margin>

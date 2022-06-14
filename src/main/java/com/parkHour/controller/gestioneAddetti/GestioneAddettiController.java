@@ -10,7 +10,7 @@ import java.util.List;
 
 public class GestioneAddettiController implements IGestioneAddetti{
     private static final Amministratore amministratore=new Amministratore("Leonardo","Focardi","FCRLD00000000","0000","leob3ta","1234");
-    private static List<Addetto>addetti=new ArrayList<>();
+    private static List<Addetto>addetti;
     private final IAggiungiAddetti aggiungiAddettiController;
     private final IAggiungiTurno aggiungiTurnoController;
     private final IRimuoviTurno rimuoviTurnoController;
@@ -18,6 +18,8 @@ public class GestioneAddettiController implements IGestioneAddetti{
 
 
     public GestioneAddettiController() {
+        addetti=new ArrayList<>();
+        addetti.add(amministratore);
         this.aggiungiAddettiController=new AggiungiAddettiController();
         this.aggiungiTurnoController=new AggiungiTurnoController();
         this.rimuoviTurnoController=new RimuoviTurnoController();

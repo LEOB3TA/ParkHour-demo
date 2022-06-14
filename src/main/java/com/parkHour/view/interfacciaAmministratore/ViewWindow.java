@@ -11,7 +11,7 @@ import javafx.scene.layout.AnchorPane;
 import java.io.IOException;
 import java.util.Objects;
 
-public class viewWindow {
+public class ViewWindow {
     @FXML
     AnchorPane anchorPane;
 

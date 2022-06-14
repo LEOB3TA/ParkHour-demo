@@ -7,7 +7,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class ViewInserisciAddetto extends viewWindow{
+public class ViewInserisciAddetto extends ViewWindow {
     private static IGestioneAddetti gestioneAddettiController;
     @FXML
     private TextField nome;
@@ -59,7 +59,9 @@ public class ViewInserisciAddetto extends viewWindow{
         }
 
         if(gestioneAddettiController.aggiungiAddetto(nome.getText(),cognome.getText(),codFisc.getText(),username.getText(),password.getText())){
-            nome.clear();cognome.clear();codFisc.clear();username.clear();password.clear();
+            nome.clear();cognome.clear();codFisc.clear();username.clear();password.clear();    Alert alert=new Alert(Alert.AlertType.INFORMATION);
+            alert.setContentText("aggiunto addetto correttamente");
+            alert.show();
         }else{
             Alert alert=new Alert(Alert.AlertType.ERROR);
             alert.setContentText("impossibile inserire un nuovo addetto");

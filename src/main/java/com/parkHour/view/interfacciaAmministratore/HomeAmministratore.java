@@ -7,7 +7,7 @@ import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
-public class HomeAmministratore extends viewWindow{
+public class HomeAmministratore extends ViewWindow {
 
     @FXML
     private AnchorPane anchorPane;

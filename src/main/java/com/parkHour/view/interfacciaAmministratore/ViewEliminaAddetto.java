@@ -4,14 +4,12 @@ import com.parkHour.controller.BigController;
 import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
 import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
 import com.parkHour.model.Addetto;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.VBox;
 
-public class ViewEliminaAddetto extends viewWindow {
+public class ViewEliminaAddetto extends ViewWindow {
     private static IGestioneAddetti gestioneAddettiController;
     @FXML
     private ComboBox<String> listaAddetti;
@@ -38,6 +36,7 @@ public class ViewEliminaAddetto extends viewWindow {
         for(Addetto a:GestioneAddettiController.getAddetti()) {
             if (listaAddetti.getValue().equals(a.toString())) {
                 found = a;
+                break;
             }
         }
        if(!gestioneAddettiController.eliminaAddetto(found)){
