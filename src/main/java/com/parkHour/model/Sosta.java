@@ -2,7 +2,7 @@ package com.parkHour.model;
 
 import java.time.LocalDateTime;
 
-public class Sosta {
+public class Sosta implements Comparable{
     private final int posto;
     private final LocalDateTime dataOrarioInizio;
     private LocalDateTime dataOrarioFine;
@@ -41,5 +41,11 @@ public class Sosta {
 
     public Veicolo getVeicolo() {
         return veicolo;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Sosta s=(Sosta) o;
+        return this.getPosto()-s.getPosto();
     }
 }
