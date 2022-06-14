@@ -1,5 +1,6 @@
 package com.parkHour.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Addetto {
@@ -18,6 +19,7 @@ public class Addetto {
         this.numMatricola = numMatricola;
         this.username = username;
         this.passwordHash = passwordHash;
+        this.turni=new ArrayList<>();
     }
 
     public void setUsername(String username) {

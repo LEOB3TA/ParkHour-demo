@@ -4,38 +4,46 @@ import com.parkHour.controller.BigController;
 import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
 import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
 import com.parkHour.model.Addetto;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
+import javafx.scene.layout.VBox;
 
-public class ViewEliminaAddetto extends viewWindow{
+public class ViewEliminaAddetto extends ViewWindow {
     private static IGestioneAddetti gestioneAddettiController;
-    private ObservableList<Addetto> adde;
-
-
     @FXML
-    private ComboBox listaAddetti;
+    private ComboBox<String> listaAddetti;
+    @FXML
+    private VBox vbox;
+
 
     public ViewEliminaAddetto() {
-        ObservableList<String> observableSegni=FXCollections.observableArrayList("a","b","c");
-        listaAddetti.setItems(observableSegni);
-        listaAddetti.setEditable(false);
-        listaAddetti.setValue(observableSegni.get(0));
-        gestioneAddettiController= BigController.getGestioneAddettiController();
+        gestioneAddettiController = BigController.getGestioneAddettiController();
+    }
 
-      //  for(Addetto a: GestioneAddettiController.getAddetti()){
 
-      //  }
+    @Override
+    protected void initialize() {
+        for(Addetto a:GestioneAddettiController.getAddetti()){
+            listaAddetti.getItems().add(a.toString());
+        }
+        listaAddetti.setValue(listaAddetti.getItems().get(0));
     }
 
     @FXML
-    protected void onEliminaClick(){
-       /* if(!gestioneAddettiController.eliminaAddetto((String) listaAddetti.getValue())){
+    protected void onEliminaClick() {
+        Addetto found=null;
+        for(Addetto a:GestioneAddettiController.getAddetti()) {
+            if (listaAddetti.getValue().equals(a.toString())) {
+                found = a;
+                break;
+            }
+        }
+       if(!gestioneAddettiController.eliminaAddetto(found)){
             Alert alert=new Alert(Alert.AlertType.ERROR);
             alert.setContentText("impossibile eliminare l'addetto specificato");
             alert.show();
-        }*/
+        }
     }
 
 

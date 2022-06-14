@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import java.io.IOException;
 
@@ -31,7 +32,7 @@ public class ParkHourApplication extends Application {
         Stage stateUscita=new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(ParkHourApplication.class.getResource("/parkHour.view.interfacciaAutenticazione/viewLogin.fxml"));
         sceneLogin = new Scene(fxmlLoader.load());
-        fxmlLoader = new FXMLLoader(ParkHourApplication.class.getResource("/parkHour.view.interfacciaVeicolo/viewEntrata.fxml"));
+       fxmlLoader = new FXMLLoader(ParkHourApplication.class.getResource("/parkHour.view.interfacciaVeicolo/viewEntrata.fxml"));
         sceneEntrata = new Scene(fxmlLoader.load());
         BigController.setViewEntrata(fxmlLoader.getController());
         fxmlLoader = new FXMLLoader(ParkHourApplication.class.getResource("/parkHour.view.interfacciaVeicolo/viewUscita.fxml"));
@@ -41,18 +42,17 @@ public class ParkHourApplication extends Application {
         sceneSimulazione = new Scene(fxmlLoader.load());
         stageLogin.setTitle("Login");
         stageLogin.setScene(sceneLogin);
-        stateEntrata.setTitle("CaselloEntrata");
+      stateEntrata.setTitle("CaselloEntrata");
         stateEntrata.setScene(sceneEntrata);
         stateUscita.setTitle("CaselloUscita");
         stateUscita.setScene(sceneUscita);
         stateSimulazione.setTitle("Simulazione");
         stateSimulazione.setScene(sceneSimulazione);
         stageLogin.show();
-        stateEntrata.show();
+      stateEntrata.show();
         stateUscita.show();
         stateSimulazione.show();
     }
-
 
 
     public static void setRoot(AnchorPane pane, Parent parent) {

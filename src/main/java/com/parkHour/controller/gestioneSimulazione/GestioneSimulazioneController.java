@@ -30,7 +30,11 @@ public class GestioneSimulazioneController implements IGestioneSimulazioneContro
         informazioniTargheNonEntrate.add(i);
         i = new InfoTarga("GG000HH", true, true, false, 526);
         informazioniTargheNonEntrate.add(i);
+        i = new InfoTarga("ZZ000SS", true, true, false, 526);
+        informazioniTargheNonEntrate.add(i);
         i = new InfoTarga("II000LL", true, false, false, 430);
+        informazioniTargheNonEntrate.add(i);
+        i = new InfoTarga("HH00000", false, false, false, 20);
         informazioniTargheNonEntrate.add(i);
     }
 

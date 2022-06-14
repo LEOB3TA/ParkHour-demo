@@ -18,4 +18,12 @@ public class Turno {
     public LocalDateTime getDataOrarioFine() {
         return dataOrarioFine;
     }
+
+    @Override
+    public String toString() {
+        return "Turno{" +
+                "dataOrarioInizio=" + dataOrarioInizio +
+                ", dataOrarioFine=" + dataOrarioFine +
+                '}';
+    }
 }

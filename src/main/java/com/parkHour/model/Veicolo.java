@@ -28,4 +28,10 @@ public class Veicolo {
         return abbonamenti.add(abbonamento);
     }
 
+    @Override
+    public String toString() {
+        return "Veicolo{" +
+                "numeroTarga='" + numeroTarga +
+                '}';
+    }
 }

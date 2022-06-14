@@ -17,10 +17,10 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
-public class ViewAggiungiTurno extends viewWindow{
+public class ViewAggiungiTurno extends viewWindow {
     private static IGestioneAddetti gestioneAddettiController;
     @FXML
-    private ChoiceBox<Addetto> listaAddetto=new ChoiceBox<>();
+    private ChoiceBox<String> listaAddetti;
     @FXML
     private DatePicker dataFine;
     @FXML
@@ -31,18 +31,27 @@ public class ViewAggiungiTurno extends viewWindow{
     private TextField orarioFine;
 
     public ViewAggiungiTurno() {
+        gestioneAddettiController = BigController.getGestioneAddettiController();
+    }
 
-        gestioneAddettiController=BigController.getGestioneAddettiController();
-        ObservableList<Addetto> observableSegni= FXCollections.observableList(GestioneAddettiController.getAddetti());
-        this.listaAddetto.setItems(observableSegni);
+    @Override
+    protected void initialize() {
+        for (Addetto a : GestioneAddettiController.getAddetti()) {
+            listaAddetti.getItems().add(a.toString());
+        }
+        listaAddetti.setValue(listaAddetti.getItems().get(0));
     }
 
     @FXML
-    public void onAggiungiClick(){
-        Addetto addetto=listaAddetto.getValue();
-
-
-
+    public void onAggiungiClick() {
+        Alert alert;
+        Addetto found = null;
+        for (Addetto a : GestioneAddettiController.getAddetti()) {
+            if (listaAddetti.getValue().equals(a.toString())) {
+                found = a;
+                break;
+            }
+        }
 
         try {
             LocalTime orarioI=LocalTime.parse(orarioInizio.getText(), DateTimeFormatter.ofPattern("HH:mm"));
@@ -51,33 +60,31 @@ public class ViewAggiungiTurno extends viewWindow{
             LocalDateTime dataOraFine=LocalDateTime.of(dataFine.getValue(), orarioF);
 
             if(dataOraFine.isBefore(dataOraInizio)){
-                Alert alert=new Alert(Alert.AlertType.ERROR);
+                 alert=new Alert(Alert.AlertType.ERROR);
                 alert.setContentText("La data di fine deve essere successiva alla data di inizio");
                 alert.show();
             }
 
             if(!dataOraFine.minusHours(8).equals(dataOraInizio)){
-                Alert alert=new Alert(Alert.AlertType.ERROR);
+                 alert=new Alert(Alert.AlertType.ERROR);
                 alert.setContentText("Il turno deve essere di 8 ore");
                 alert.show();
             }
 
-            if(gestioneAddettiController.aggiungiTurno(addetto,dataOraInizio,dataOraFine)){
-                Alert alert=new Alert(Alert.AlertType.CONFIRMATION);
+            if(gestioneAddettiController.aggiungiTurno(found,dataOraInizio,dataOraFine)){
+                 alert=new Alert(Alert.AlertType.CONFIRMATION);
                 alert.setContentText("aggiunto turno correttamente");
                 alert.show();
             }
             else{
-                Alert alert=new Alert(Alert.AlertType.ERROR);
+                 alert=new Alert(Alert.AlertType.ERROR);
                 alert.setContentText("impossibile aggiungere turno");
                 alert.show();
             }
         } catch (DateTimeParseException e){
-            Alert alert=new Alert(Alert.AlertType.ERROR);
+             alert=new Alert(Alert.AlertType.ERROR);
             alert.setContentText("Formato orario sabgliato, deve essere HH:mm");
             alert.show();
         }
-
-
     }
 }
