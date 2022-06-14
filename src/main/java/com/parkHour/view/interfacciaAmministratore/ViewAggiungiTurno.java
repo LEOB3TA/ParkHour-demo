@@ -34,7 +34,7 @@ public class ViewAggiungiTurno extends viewWindow {
         gestioneAddettiController = BigController.getGestioneAddettiController();
     }
 
-    @Override
+
     protected void initialize() {
         for (Addetto a : GestioneAddettiController.getAddetti()) {
             listaAddetti.getItems().add(a.toString());
@@ -58,6 +58,8 @@ public class ViewAggiungiTurno extends viewWindow {
             LocalTime orarioF=LocalTime.parse(orarioFine.getText(), DateTimeFormatter.ofPattern("HH:mm"));
             LocalDateTime dataOraInizio=LocalDateTime.of(dataInizio.getValue(), orarioI);
             LocalDateTime dataOraFine=LocalDateTime.of(dataFine.getValue(), orarioF);
+
+
 
             if(dataOraFine.isBefore(dataOraInizio)){
                  alert=new Alert(Alert.AlertType.ERROR);

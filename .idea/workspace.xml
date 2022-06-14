@@ -4,44 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="risolti problemi con il discorso liste nelle interfacce">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_13_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_13_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_13_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_13_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__10_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__10_01__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_10_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_10_00__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_19_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_19_40__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_06_2022_22_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_06_2022_22_00__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" afterDir="false" />
+    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ParkHour-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ParkHour-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/ParkHourApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/ParkHourApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/BigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/BigController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSimulazione/GestioneSimulazioneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSimulazione/GestioneSimulazioneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/FineSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/FineSostaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/GestioneSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/GestioneSostaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/IInizioSosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/IInizioSosta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/InizioSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/InizioSostaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Veicolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Veicolo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/HomeAmministratore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/HomeAmministratore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewAggiungiTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewAggiungiTurno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewEliminaAddetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewEliminaAddetto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewInserisciAddetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewInserisciAddetto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/viewWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/viewWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAutenticazione/ViewLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAutenticazione/ViewLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaVeicolo/ViewEntrata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaVeicolo/ViewEntrata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaVeicolo/ViewUscita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaVeicolo/ViewUscita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
