@@ -67,16 +67,18 @@ public class InizioSostaController implements IInizioSosta {
     }
 
     private int minPostoCategoria(int min, int max){
-        SortedSet<Sosta> soste = new TreeSet<Sosta>();
+        SortedSet<Sosta> soste = new TreeSet<>(GestioneSostaController.getSosteAttive());
         int maxOccupato=min;
-        for(Sosta s:GestioneSostaController.getSosteAttive()){
+        for(Sosta s:soste){
             if(s.getPosto()>=min && s.getPosto()<=max){
-                if(maxOccupato+1<s.getPosto()){
+                if(maxOccupato==s.getPosto()){
+                    maxOccupato++;
+                } else if(maxOccupato+1<s.getPosto()){
                     return maxOccupato+1;
-                } else maxOccupato=s.getPosto();
+                }
             }
         }
-        return min;
+        return maxOccupato;
     }
 
 }
