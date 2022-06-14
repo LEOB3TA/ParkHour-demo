@@ -5,6 +5,8 @@ import com.parkHour.model.*;
 import com.parkHour.view.interfacciaVeicolo.ViewEntrata;
 
 import java.time.LocalDateTime;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 public class InizioSostaController implements IInizioSosta {
 
@@ -41,7 +43,40 @@ public class InizioSostaController implements IInizioSosta {
     }
 
     private int calcoloPosto(Veicolo v) { //implementarlo per i vari tipi di parcheggio, attenzione deve essere un numero progressivo
-        return 0;
+       TipologiaAuto tipo;
+       int posto = 0;
+        if(v instanceof Moto){
+            return this.minPostoCategoria(21,40);
+        }
+        if(v instanceof Auto){
+            tipo=((Auto) v).getTipologiaAuto();
+            switch (tipo){
+                case PREMIUM:
+                case DISABILE:
+                    posto=this.minPostoCategoria(1,20);
+                    break;
+                case GREEN:
+                    posto=this.minPostoCategoria(41,60);
+                    break;
+                case STANDARD:
+                    posto=this.minPostoCategoria(61,200);
+                    break;
+            }
+        }
+        return posto;
+    }
+
+    private int minPostoCategoria(int min, int max){
+        SortedSet<Sosta> soste = new TreeSet<Sosta>();
+        int maxOccupato=min;
+        for(Sosta s:GestioneSostaController.getSosteAttive()){
+            if(s.getPosto()>=min && s.getPosto()<=max){
+                if(maxOccupato+1<s.getPosto()){
+                    return maxOccupato+1;
+                } else maxOccupato=s.getPosto();
+            }
+        }
+        return -1;
     }
 
 }
