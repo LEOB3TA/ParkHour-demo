@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="inserimento package">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_06_22__11_45__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_06_2022_10_00__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" beforeDir="false" />
+    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="calcolaPosto e calcolaCosto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParkHour-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ParkHour-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/FineSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/FineSostaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/AggiungiAddettiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/GestioneSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/GestioneSostaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/InizioSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/InizioSostaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Sosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Sosta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaSimulazione/viewSimulazione.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/parkHour.view.interfacciaSimulazione/viewSimulazione.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +54,10 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <hideBySeverity>
+      <option value="15" />
+    </hideBySeverity>
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="29v8qWFo5tFP8kVFBautbLGKvvb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -312,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655116172215</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="calcolaPosto e calcolaCosto">
+      <created>1655222432380</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1655222432380</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +344,8 @@
     <MESSAGE value="inserimento interfaccia per la simulazione con annesso controller, aggiunte interfacce sia per la simuazione sia per BigController, tolte tutte le liste statichge dalle implementazioni e messe nelle interfacce, tolti un botto di warning" />
     <MESSAGE value="bestemmio finio a domain" />
     <MESSAGE value="risolti problemi con il discorso liste nelle interfacce" />
-    <option name="LAST_COMMIT_MESSAGE" value="risolti problemi con il discorso liste nelle interfacce" />
+    <MESSAGE value="calcolaPosto e calcolaCosto" />
+    <option name="LAST_COMMIT_MESSAGE" value="calcolaPosto e calcolaCosto" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

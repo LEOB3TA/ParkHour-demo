@@ -17,6 +17,7 @@ public class AggiungiAddettiController implements IAggiungiAddetti {
         for (Addetto a : GestioneAddettiController.getAddetti()) {
             matricolaMax = Math.max(matricolaMax, Integer.parseInt(a.getNumMatricola()));
         }
+        matricolaMax++;
         if (matricolaMax < 10) {
             return "0" + "0" + "0" + matricolaMax;
         } else if (matricolaMax < 100) {

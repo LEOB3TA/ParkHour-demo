@@ -2,7 +2,6 @@ package com.parkHour.controller.gestioneSosta;
 
 import com.parkHour.controller.BigController;
 import com.parkHour.model.*;
-import com.parkHour.view.interfacciaVeicolo.ViewEntrata;
 
 import java.time.LocalDateTime;
 import java.util.SortedSet;
@@ -21,22 +20,22 @@ public class InizioSostaController implements IInizioSosta {
             Auto auto;
             if (infoTarga.getCavalli() > 250) {
                 auto = new Auto(infoTarga.getTarga(), TipologiaAuto.PREMIUM);
-                tipologia = new String("Auto Premium");
+                tipologia = "Auto Premium";
             } else if (infoTarga.isDisabile()) {
                 auto = new Auto(infoTarga.getTarga(), TipologiaAuto.DISABILE);
-                tipologia = new String("Auto disabile");
+                tipologia = "Auto disabile";
             } else if (infoTarga.isGreen()) {
                 auto = new Auto(infoTarga.getTarga(), TipologiaAuto.GREEN);
-                tipologia = new String("Auto Green");
+                tipologia = "Auto Green";
             } else {
                 auto = new Auto(infoTarga.getTarga(), TipologiaAuto.STANDARD);
-                tipologia = new String("Auto Standard");
+                tipologia = "Auto Standard";
             }
             sosta = new Sosta(dataOrarioInizio, auto, this.calcoloPosto(auto));
         } else {
             Moto moto = new Moto(infoTarga.getTarga());
             sosta = new Sosta(dataOrarioInizio, moto, this.calcoloPosto(moto));
-            tipologia = new String("Moto");
+            tipologia = "Moto";
         }
         BigController.getViewEntrata().mostraValori(sosta.getVeicolo().getNumeroTarga(), tipologia, String.valueOf(sosta.getPosto()));
         return GestioneSostaController.aggiungiSostaAttiva(sosta);
@@ -67,16 +66,18 @@ public class InizioSostaController implements IInizioSosta {
     }
 
     private int minPostoCategoria(int min, int max){
-        SortedSet<Sosta> soste = new TreeSet<Sosta>();
+        SortedSet<Sosta> soste = new TreeSet<>(GestioneSostaController.getSosteAttive());
         int maxOccupato=min;
-        for(Sosta s:GestioneSostaController.getSosteAttive()){
+        for(Sosta s:soste){
             if(s.getPosto()>=min && s.getPosto()<=max){
-                if(maxOccupato+1<s.getPosto()){
+                if(maxOccupato==s.getPosto()){
+                    maxOccupato++;
+                } else if(maxOccupato+1<s.getPosto()){
                     return maxOccupato+1;
-                } else maxOccupato=s.getPosto();
+                }
             }
         }
-        return -1;
+        return maxOccupato;
     }
 
 }

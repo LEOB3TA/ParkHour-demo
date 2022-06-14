@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestioneSostaController implements IGestioneSosta{
-    private static List<Sosta> sosteAttive=new dList<>();
+    private static List<Sosta> sosteAttive=new ArrayList<>();
     private static List<Sosta> sosteConcluse=new ArrayList<>(); //simuliamo il db, non carichiamo nulla sul db ma su soste concluse
     private static IInizioSosta inizioSostaController;
     private static IFineSosta fineSostaController;
