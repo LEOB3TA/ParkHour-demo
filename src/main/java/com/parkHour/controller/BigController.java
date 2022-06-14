@@ -1,6 +1,5 @@
 package com.parkHour.controller;
 
-import com.parkHour.controller.gestioneAbbonamenti.AggiungiAbbonamentoController;
 import com.parkHour.controller.gestioneAbbonamenti.GestioneAbbonamentiController;
 import com.parkHour.controller.gestioneAbbonamenti.IGestioneAbbonamenti;
 import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
@@ -9,26 +8,33 @@ import com.parkHour.controller.gestioneSimulazione.GestioneSimulazioneController
 import com.parkHour.controller.gestioneSimulazione.IGestioneSimulazioneController;
 import com.parkHour.controller.gestioneSosta.GestioneSostaController;
 import com.parkHour.controller.gestioneSosta.IGestioneSosta;
+import com.parkHour.controller.letturaDati.IStatistiche;
+import com.parkHour.controller.letturaDati.StatisticheController;
 import com.parkHour.controller.login.ILogin;
 import com.parkHour.controller.login.LoginController;
-import com.parkHour.model.Amministratore;
+import com.parkHour.model.Statistiche;
 import com.parkHour.view.interfacciaVeicolo.ViewEntrata;
 import com.parkHour.view.interfacciaVeicolo.ViewUscita;
 
-import java.util.List;
-
 public class BigController implements IBigController{
     private static IGestioneAddetti gestioneAddettiController= new GestioneAddettiController();
-    private static ILogin loginController=new LoginController();
+    private static ILogin  loginController=new LoginController();
     private static IGestioneSosta gestioneSostaController=new GestioneSostaController();
-    private static IGestioneAbbonamenti gestioneAbbonamentiController=new GestioneAbbonamentiController();
-    private static IGestioneSimulazioneController gestioneSimulazioneController=new GestioneSimulazioneController();
+    private static IGestioneAbbonamenti  gestioneAbbonamentiController=new GestioneAbbonamentiController();
+    private static IGestioneSimulazioneController  gestioneSimulazioneController=new GestioneSimulazioneController();
+    private static IStatistiche  statisticheController =new StatisticheController();
     private static ViewEntrata viewEntrata;
     private static ViewUscita viewUscita;
 
     private static BigController istance=null;
 
     private BigController() {
+
+
+
+
+
+
     }
 
     public static BigController getInstance(){
@@ -70,7 +76,20 @@ public class BigController implements IBigController{
         return viewUscita;
     }
 
+    public static IStatistiche getStatisticheController() {
+        return statisticheController;
+    }
+
     public static void setViewUscita(ViewUscita viewUscita) {
         BigController.viewUscita = viewUscita;
+    }
+
+    public static Statistiche mostraStatistiche(){
+        return statisticheController.mostraStatistiche();
+    }
+
+    public static void calcolaAndSetstatistiche(){
+        Statistiche statistiche=new Statistiche(GestioneSostaController.getSosteAttive(),0,0,0,0,0,0,0,0,0);
+        statisticheController.setNewStatistiche(statistiche);
     }
 }

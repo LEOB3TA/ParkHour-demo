@@ -145,14 +145,14 @@
                                                 <Insets left="10.0" right="10.0" top="10.0" />
                                              </VBox.margin>
                                           </TextField>
-                                          <TextField id="Password" fx:id="password" alignment="CENTER" prefHeight="71.0" prefWidth="366.0" promptText="***************">
+                                          <PasswordField id="Password" fx:id="password" alignment="CENTER" prefHeight="71.0" prefWidth="366.0" promptText="***************">
                                              <font>
                                                 <Font name="Times New Roman Bold" size="18.0" />
                                              </font>
                                              <VBox.margin>
                                                 <Insets left="10.0" right="10.0" top="10.0" />
                                              </VBox.margin>
-                                          </TextField>
+                                          </PasswordField>
                                           <Button id="Aggiungi" mnemonicParsing="false" onAction="#onAggiungiClick" text="Aggiungi">
                                              <font>
                                                 <Font name="Times New Roman" size="14.0" />

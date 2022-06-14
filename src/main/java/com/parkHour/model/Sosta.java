@@ -42,4 +42,15 @@ public class Sosta {
     public Veicolo getVeicolo() {
         return veicolo;
     }
+
+    @Override
+    public String toString() {
+        return "Sosta{" +
+                "posto=" + posto +
+                ", dataOrarioInizio=" + dataOrarioInizio +
+                ", dataOrarioFine=" + dataOrarioFine +
+                ", costo=" + costo +
+                ", veicolo=" + veicolo.toString() +
+                '}';
+    }
 }

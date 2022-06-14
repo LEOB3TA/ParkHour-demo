@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parkHour.view.interfacciaSimulazione.ViewSimulazione">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.parkHour.view.interfacciaSimulazione.ViewSimulazione">
    <children>
       <SplitPane dividerPositions="0.1620603015075377" layoutX="-1.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
         <items>

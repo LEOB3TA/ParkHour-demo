@@ -19,7 +19,7 @@ import java.time.format.DateTimeFormatter;
 public class ViewAggiungiTurno extends viewWindow{
     private static IGestioneAddetti gestioneAddettiController;
     @FXML
-    private ChoiceBox<Addetto> listaAddetto=new ChoiceBox<>();
+    private ChoiceBox<String> listaAddetti;
     @FXML
     private DatePicker dataFine;
     @FXML
@@ -30,20 +30,30 @@ public class ViewAggiungiTurno extends viewWindow{
     private TextField orarioFine;
 
     public ViewAggiungiTurno() {
-
         gestioneAddettiController=BigController.getGestioneAddettiController();
-        ObservableList<Addetto> observableSegni= FXCollections.observableList(GestioneAddettiController.getAddetti());
-        this.listaAddetto.setItems(observableSegni);
+    }
+
+    @Override
+    protected void initialize() {
+        for(Addetto a:GestioneAddettiController.getAddetti()){
+            listaAddetti.getItems().add(a.toString());
+        }
+        listaAddetti.setValue(listaAddetti.getItems().get(0));
     }
 
     @FXML
     public void onAggiungiClick(){
-        Addetto addetto=listaAddetto.getValue();
+        Addetto found=null;
+        for(Addetto a:GestioneAddettiController.getAddetti()) {
+            if (listaAddetti.getValue().equals(a.toString())) {
+                found = a;
+            }
+        }
         LocalTime orarioI=LocalTime.parse(orarioInizio.getText(), DateTimeFormatter.ofPattern("HH:mm"));
         LocalTime orarioF=LocalTime.parse(orarioFine.getText(), DateTimeFormatter.ofPattern("HH:mm"));
         LocalDateTime dataOraInizio=LocalDateTime.of(dataInizio.getValue(), orarioI);
         LocalDateTime dataOraFine=LocalDateTime.of(dataFine.getValue(), orarioF);
-        if(gestioneAddettiController.aggiungiTurno(addetto,dataOraInizio,dataOraFine)){
+        if(gestioneAddettiController.aggiungiTurno(found,dataOraInizio,dataOraFine)){
             Alert alert=new Alert(Alert.AlertType.CONFIRMATION);
             alert.setContentText("aggiunto turno correttamente");
             alert.show();
