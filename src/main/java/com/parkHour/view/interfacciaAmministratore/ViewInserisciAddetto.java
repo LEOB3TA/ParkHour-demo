@@ -57,6 +57,33 @@ public class ViewInserisciAddetto extends ViewWindow {
             alert.show();
             return;
         }
+        if(password.getText().length()<8){
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("La password deve essere di almeno 8 caratteri");
+            alert.show();
+            return;
+        }else
+        if(!password.getText().contains("ABCDEFGHILMNOPQRSTUVZYXKJW"))
+        {
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("La password deve contenere almeno una maiuscola");
+            alert.show();
+            return;
+        }else
+        if(!password.getText().contains("1234567890"))
+        {
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("La password deve contenere almeno un numero");
+            alert.show();
+            return;
+        }else
+        if(!password.getText().contains("@!#$%'-/=^_`{}~+"))
+        {
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("La password deve contenere almeno un carattere speciale");
+            alert.show();
+            return;
+        }
 
         if(gestioneAddettiController.aggiungiAddetto(nome.getText(),cognome.getText(),codFisc.getText(),username.getText(),password.getText())){
             nome.clear();cognome.clear();codFisc.clear();username.clear();password.clear();    Alert alert=new Alert(Alert.AlertType.INFORMATION);
