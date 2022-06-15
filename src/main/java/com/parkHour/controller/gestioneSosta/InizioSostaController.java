@@ -19,24 +19,24 @@ public class InizioSostaController implements IInizioSosta {
         String tipologia;
         if (infoTarga.isAuto()) {
             Auto auto;
-            if (infoTarga.getCavalli() > 250) {
+            if (infoTarga.getCavalli() > 250 && !infoTarga.isDisabile() && !infoTarga.isGreen()) {
                 auto = new Auto(infoTarga.getTarga(), TipologiaAuto.PREMIUM);
-                tipologia = new String("Auto Premium");
+                tipologia = "Auto Premium";
             } else if (infoTarga.isDisabile()) {
                 auto = new Auto(infoTarga.getTarga(), TipologiaAuto.DISABILE);
-                tipologia = new String("Auto disabile");
+                tipologia = "Auto disabile";
             } else if (infoTarga.isGreen()) {
                 auto = new Auto(infoTarga.getTarga(), TipologiaAuto.GREEN);
-                tipologia = new String("Auto Green");
+                tipologia = "Auto Green";
             } else {
                 auto = new Auto(infoTarga.getTarga(), TipologiaAuto.STANDARD);
-                tipologia = new String("Auto Standard");
+                tipologia = "Auto Standard";
             }
             sosta = new Sosta(dataOrarioInizio, auto, this.calcoloPosto(auto));
         } else {
             Moto moto = new Moto(infoTarga.getTarga());
             sosta = new Sosta(dataOrarioInizio, moto, this.calcoloPosto(moto));
-            tipologia = new String("Moto");
+            tipologia = "Moto";
         }
         BigController.getViewEntrata().mostraValori(sosta.getVeicolo().getNumeroTarga(), tipologia, String.valueOf(sosta.getPosto()));
         return GestioneSostaController.aggiungiSostaAttiva(sosta);
