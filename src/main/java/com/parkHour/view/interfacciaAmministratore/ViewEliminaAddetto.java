@@ -39,6 +39,11 @@ public class ViewEliminaAddetto extends ViewWindow {
                 break;
             }
         }
+        if(found.getNumMatricola().equals("0000")){
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Non puoi eliminare l'addetto");
+            alert.show();
+        }
        if(!gestioneAddettiController.eliminaAddetto(found)){
             Alert alert=new Alert(Alert.AlertType.ERROR);
             alert.setContentText("impossibile eliminare l'addetto specificato");
