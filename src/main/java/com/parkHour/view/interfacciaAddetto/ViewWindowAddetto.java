@@ -1,4 +1,4 @@
-package com.parkHour.view.interfacciaAmministratore;
+package com.parkHour.view.interfacciaAddetto;
 
 import com.parkHour.ParkHourApplication;
 import com.parkHour.controller.BigController;
@@ -12,7 +12,7 @@ import javafx.scene.layout.AnchorPane;
 import java.io.IOException;
 import java.util.Objects;
 
-public class ViewWindow {
+public class ViewWindowAddetto {
     @FXML
     AnchorPane anchorPane;
 
@@ -21,16 +21,16 @@ public class ViewWindow {
 
     @FXML
     protected void onHomeClick() throws IOException {
-        ParkHourApplication.setRoot(anchorPane, FXMLLoader.load(Objects.requireNonNull(HomeAmministratore.class.getResource("/parkHour.view.interfacciaAmministratore/homeAmm.fxml"))));
+        ParkHourApplication.setRoot(anchorPane, FXMLLoader.load(Objects.requireNonNull(HomeAddetto.class.getResource("/parkHour.view.interfacciaAddetto/homeAddetto.fxml"))));
     }
 
     @FXML
     protected void onLogoutClick() throws IOException {
         if(loginController.logout()){
-            ParkHourApplication.setRoot(anchorPane,FXMLLoader.load(Objects.requireNonNull(HomeAmministratore.class.getResource("/parkHour.view.interfacciaAutenticazione/viewLogin.fxml"))));
+            ParkHourApplication.setRoot(anchorPane,FXMLLoader.load(Objects.requireNonNull(HomeAddetto.class.getResource("/parkHour.view.interfacciaAutenticazione/viewLogin.fxml"))));
         }else{
             Alert alert=new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("impossibile inserire un nuovo addetto");
+            alert.setContentText("impossibile eseguire il logout");
             alert.show();
         }
     }

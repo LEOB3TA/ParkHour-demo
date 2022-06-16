@@ -29,12 +29,6 @@ public class BigController implements IBigController{
     private static BigController istance=null;
 
     private BigController() {
-
-
-
-
-
-
     }
 
     public static BigController getInstance(){
@@ -89,7 +83,7 @@ public class BigController implements IBigController{
     }
 
     public static void calcolaAndSetstatistiche(){
-        Statistiche statistiche=new Statistiche(GestioneSostaController.getSosteAttive(),0,0,0,0,0,0,0,0,0);
+        Statistiche statistiche=new Statistiche(GestioneSostaController.getSosteAttive(),5,1,1,1,1,1,120,3,0);
         statisticheController.setNewStatistiche(statistiche);
     }
 }

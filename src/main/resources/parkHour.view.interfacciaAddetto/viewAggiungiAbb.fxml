@@ -16,7 +16,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.parkHour.view.interfacciaAddetto.ViewAggiungiAbb">
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.parkHour.view.interfacciaAddetto.ViewAggiungiAbbonamento">
    <children>
       <AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0">
          <children>
