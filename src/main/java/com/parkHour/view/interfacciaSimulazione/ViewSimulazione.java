@@ -1,6 +1,5 @@
 package com.parkHour.view.interfacciaSimulazione;
 
-import com.parkHour.controller.BigController;
 import com.parkHour.controller.gestioneSimulazione.GestioneSimulazioneController;
 import com.parkHour.controller.gestioneSimulazione.IGestioneSimulazioneController;
 import javafx.fxml.FXML;

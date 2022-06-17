@@ -1,6 +1,5 @@
 package com.parkHour.view.interfacciaAmministratore;
 
-import com.parkHour.controller.BigController;
 import com.parkHour.controller.gestioneAddetti.EliminaAddettiController;
 import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
 import com.parkHour.controller.gestioneAddetti.IEliminaAddetti;
@@ -9,6 +8,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.VBox;
+
+import java.util.Objects;
 
 public class ViewEliminaAddetto extends ViewWindow {
     private static IEliminaAddetti eliminaAddettiController;
@@ -40,7 +41,7 @@ public class ViewEliminaAddetto extends ViewWindow {
                 break;
             }
         }
-        if(found.getNumMatricola().equals("0000")){
+        if(Objects.requireNonNull(found).getNumMatricola().equals("0000")){
             Alert alert=new Alert(Alert.AlertType.ERROR);
             alert.setContentText("Non puoi eliminare l'ammininstratore");
             alert.show();

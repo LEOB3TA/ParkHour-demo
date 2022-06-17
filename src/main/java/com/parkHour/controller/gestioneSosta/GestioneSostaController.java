@@ -1,15 +1,13 @@
 package com.parkHour.controller.gestioneSosta;
 
-import com.parkHour.controller.gestioneSimulazione.GestioneSimulazioneController;
 import com.parkHour.model.*;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 public class GestioneSostaController implements IGestioneSosta{
-    private static List<Sosta> sosteAttive=new ArrayList<>();
-    private static List<Sosta> sosteConcluse=new ArrayList<>(); //simuliamo il db, non carichiamo nulla sul db ma su soste concluse
+    private static final List<Sosta> sosteAttive=new ArrayList<>();
+    private static final List<Sosta> sosteConcluse=new ArrayList<>(); //simuliamo il db, non carichiamo nulla sul db ma su soste concluse
     private static GestioneSostaController gestioneSostaController=null;
 
     public static GestioneSostaController getInstance(){

@@ -1,7 +1,6 @@
 package com.parkHour.model;
 
 import com.parkHour.controller.gestioneSosta.IFineSosta;
-import com.parkHour.controller.gestioneSosta.IGestioneSosta;
 import com.parkHour.controller.gestioneSosta.IInizioSosta;
 
 import java.time.LocalDateTime;
@@ -20,6 +19,6 @@ public class LetturaTarga implements ILetturaTarga{
 
     @Override
     public void notificaUscita(IFineSosta fineSosta, InfoTarga infoTarga) {
-        fineSosta.fineSosta(infoTarga,LocalDateTime.now());
+        fineSosta.fineSosta(infoTarga,LocalDateTime.now().plusHours(2)); //si simula la sosta di due ore
     }
 }

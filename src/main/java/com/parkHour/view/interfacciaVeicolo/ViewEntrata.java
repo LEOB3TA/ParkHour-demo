@@ -27,13 +27,10 @@ public class ViewEntrata {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Platform.runLater(new Runnable() {
-                    @Override
-                    public void run() {
-                        targa.clear();
-                        tipologia.clear();
-                        posto.clear();
-                    }
+                Platform.runLater(() -> {
+                    targa.clear();
+                    tipologia.clear();
+                    posto.clear();
                 });
 
             }

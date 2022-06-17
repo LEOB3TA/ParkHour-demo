@@ -6,101 +6,90 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.parkHour.view.interfacciaAmministratore.ViewEliminaAddetto">
-   <children>
-      <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="400.0" prefWidth="600.0">
-         <children>
-            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
-               <children>
-                  <SplitPane dividerPositions="0.18688118811881188" layoutY="-2.0" orientation="VERTICAL" prefHeight="406.0" prefWidth="600.0">
-                     <items>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                           <children>
-                              <HBox alignment="CENTER" fillHeight="false" layoutX="14.0" layoutY="2.0" prefHeight="66.0" prefWidth="606.0" spacing="10.0">
-                                 <children>
-                                    <ImageView fitHeight="66.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../logoLittleBlue.png" />
-                                       </image>
-                                       <HBox.margin>
-                                          <Insets left="-50.0" />
-                                       </HBox.margin>
-                                    </ImageView>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Elimina Addetto">
-                                       <font>
-                                          <Font name="Times New Roman" size="24.0" />
-                                       </font>
-                                       <HBox.margin>
-                                          <Insets left="30.0" />
-                                       </HBox.margin>
-                                    </Text>
-                                    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onLogoutClick" text="LOGOUT">
-                                       <font>
-                                          <Font name="Times New Roman" size="14.0" />
-                                       </font>
-                                       <HBox.margin>
-                                          <Insets left="40.0" />
-                                       </HBox.margin>
-                                    </Button>
-                                 </children>
-                              </HBox>
-                           </children>
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.parkHour.view.interfacciaAmministratore.ViewEliminaAddetto">
+    <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="400.0" prefWidth="600.0">
+        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+            <SplitPane dividerPositions="0.18688118811881188" layoutY="-2.0" orientation="VERTICAL"
+                       prefHeight="406.0" prefWidth="600.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <HBox alignment="CENTER" fillHeight="false" layoutX="14.0" layoutY="2.0"
+                          prefHeight="66.0" prefWidth="606.0" spacing="10.0">
+                        <ImageView fitHeight="66.0" fitWidth="177.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <HBox.margin>
+                                <Insets left="-50.0"/>
+                            </HBox.margin>
+                            <Image url="@../logoLittleBlue.png"/>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Elimina Addetto">
+                            <font>
+                                <Font name="Times New Roman" size="24.0"/>
+                            </font>
+                            <HBox.margin>
+                                <Insets left="30.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                                onAction="#onLogoutClick" text="LOGOUT">
+                            <font>
+                                <Font name="Times New Roman" size="14.0"/>
+                            </font>
+                            <HBox.margin>
+                                <Insets left="40.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </HBox>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <SplitPane dividerPositions="0.29797979797979796" layoutY="-1.0" prefHeight="331.0"
+                               prefWidth="600.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                            <VBox alignment="TOP_CENTER" layoutY="-1.0" prefHeight="331.0"
+                                  prefWidth="175.0">
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0"
+                                      text="Seleziona l'addetto che desideri eliminare"
+                                      textAlignment="CENTER" wrappingWidth="175.21630859375">
+                                    <font>
+                                        <Font name="Times New Roman" size="18.0"/>
+                                    </font>
+                                </Text>
+                                <Button id="Home" alignment="CENTER" mnemonicParsing="false"
+                                        onAction="#onHomeClick" text="Torna alla Home">
+                                    <font>
+                                        <Font name="Times New Roman" size="14.0"/>
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="240.0"/>
+                                    </VBox.margin>
+                                </Button>
+                            </VBox>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                           <children>
-                              <SplitPane dividerPositions="0.29797979797979796" layoutY="-1.0" prefHeight="331.0" prefWidth="600.0">
-                                 <items>
-                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                                       <children>
-                                          <VBox alignment="TOP_CENTER" layoutY="-1.0" prefHeight="331.0" prefWidth="175.0">
-                                             <children>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Seleziona l'addetto che desideri eliminare" textAlignment="CENTER" wrappingWidth="175.21630859375">
-                                                   <font>
-                                                      <Font name="Times New Roman" size="18.0" />
-                                                   </font>
-                                                </Text>
-                                                <Button id="Home" alignment="CENTER" mnemonicParsing="false" onAction="#onHomeClick" text="Torna alla Home">
-                                                   <font>
-                                                      <Font name="Times New Roman" size="14.0" />
-                                                   </font>
-                                                   <VBox.margin>
-                                                      <Insets top="240.0" />
-                                                   </VBox.margin>
-                                                </Button>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </AnchorPane>
-                                    <AnchorPane fx:id="pane1" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                                       <children>
-                                          <VBox fx:id="vbox" layoutX="-3.0" layoutY="-4.0" prefHeight="331.0" prefWidth="422.0">
-                                             <children>
-                                                <ComboBox id="ListaAddetto" fx:id="listaAddetti" prefHeight="26.0" prefWidth="418.0">
-                                                   <VBox.margin>
-                                                      <Insets left="10.0" right="10.0" top="15.0" />
-                                                   </VBox.margin>
-                                                </ComboBox>
-                                                <Button id="Elimina" mnemonicParsing="false" onAction="#onEliminaClick" text="Elimina">
-                                                   <font>
-                                                      <Font name="Times New Roman" size="14.0" />
-                                                   </font>
-                                                   <VBox.margin>
-                                                      <Insets left="325.0" top="240.0" />
-                                                   </VBox.margin>
-                                                </Button>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </AnchorPane>
-                                 </items>
-                              </SplitPane>
-                           </children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0"
+                                    prefWidth="100.0">
+                            <VBox fx:id="vbox" layoutX="-3.0" layoutY="-4.0" prefHeight="331.0"
+                                  prefWidth="422.0">
+                                <ComboBox id="ListaAddetto" fx:id="listaAddetti" prefHeight="26.0"
+                                          prefWidth="418.0">
+                                    <VBox.margin>
+                                        <Insets left="10.0" right="10.0" top="15.0"/>
+                                    </VBox.margin>
+                                </ComboBox>
+                                <Button id="Elimina" mnemonicParsing="false" onAction="#onEliminaClick"
+                                        text="Elimina">
+                                    <font>
+                                        <Font name="Times New Roman" size="14.0"/>
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets left="325.0" top="240.0"/>
+                                    </VBox.margin>
+                                </Button>
+                            </VBox>
                         </AnchorPane>
-                     </items>
-                  </SplitPane>
-               </children>
-            </AnchorPane>
-         </children>
-      </AnchorPane>
-   </children>
+                    </SplitPane>
+                </AnchorPane>
+            </SplitPane>
+        </AnchorPane>
+    </AnchorPane>
 </AnchorPane>

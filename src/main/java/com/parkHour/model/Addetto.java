@@ -9,8 +9,8 @@ public class Addetto {
     private final String codiceFiscale;
     private final String numMatricola;
     private String username;
-    private String passwordHash;
-    private List<Turno> turni;
+    private final String passwordHash;
+    private final List<Turno> turni;
 
     public Addetto(String nome, String cognome, String codiceFiscale, String numMatricola, String username, String passwordHash) {
         this.nome = nome;

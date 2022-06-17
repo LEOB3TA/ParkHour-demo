@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Veicolo {
     private final String numeroTarga;
-    private List<Abbonamento> abbonamenti;
+    private final List<Abbonamento> abbonamenti;
 
     public Veicolo(String numeroTarga) {
         this.numeroTarga = numeroTarga;

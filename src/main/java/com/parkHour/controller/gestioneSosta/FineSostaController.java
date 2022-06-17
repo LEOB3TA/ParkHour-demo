@@ -17,9 +17,6 @@ import java.util.TimerTask;
 
 public class FineSostaController implements IFineSosta {
 
-    private final float PREZZOSTANDARD = 1.30f;
-    private final float PREZZOPREMIUM = 1.70f;
-    private final float PREZZOMOTO = 1f;
     private int minuti = 0;
     private static FineSostaController fineSostaController=null;
 
@@ -39,29 +36,20 @@ public class FineSostaController implements IFineSosta {
         Sosta sostaConlusa;
         boolean abbonamento;
         float costo;
-        for (int i = 0; i < sosteAttive.size(); i++) {
-            if (sosteAttive.get(i).getVeicolo().getNumeroTarga().equals(infoTarga.getTarga())) {
-                sostaConlusa = sosteAttive.get(i);
+        for (Sosta sosta : sosteAttive) {
+            if (sosta.getVeicolo().getNumeroTarga().equals(infoTarga.getTarga())) {
+                sostaConlusa = sosta;
                 sostaConlusa.setDataOrarioFine(dataOrarioFine);
                 sostaConlusa.setCosto((costo = calcolaCosto(sostaConlusa)));
                 GestioneSostaController.rimuoviSostaAttiva(sostaConlusa);
-                if (sostaConlusa.getVeicolo().getAbbonamenti().size() == 0) {
-                    abbonamento = false;
-                } else {
-                    abbonamento = true;
-                }
+                abbonamento = sostaConlusa.getVeicolo().getAbbonamenti().size() != 0; //sbagliata
                 BigController.getViewUscita().mostraValori(sostaConlusa.getVeicolo().getNumeroTarga(), abbonamento, this.minuti, costo);
                 if (costo != 0) {
                     Timer timer = new Timer();
                     timer.schedule(new TimerTask() {
                         @Override
                         public void run() {
-                            Platform.runLater(new Runnable() {
-                                @Override
-                                public void run() {
-                                    BigController.getViewUscita().versa(costo);
-                                }
-                            });
+                            Platform.runLater(() -> BigController.getViewUscita().versa(costo));
                         }
                     }, 1000);
                 } else {
@@ -96,11 +84,14 @@ public class FineSostaController implements IFineSosta {
         this.minuti = (int) durata.toMinutes();
         int posto = s.getPosto();
         if (posto <= 20) {
-            return Math.floorDiv(durata.toMinutes(), 60) * this.PREZZOPREMIUM;
+            float PREZZOPREMIUM = 1.70f;
+            return Math.floorDiv(durata.toMinutes(), 60) * PREZZOPREMIUM;
         } else if (posto <= 40) {
-            return Math.floorDiv(durata.toMinutes(), 60) * this.PREZZOMOTO;
+            float PREZZOMOTO = 1f;
+            return Math.floorDiv(durata.toMinutes(), 60) * PREZZOMOTO;
         } else {
-            return Math.floorDiv(durata.toMinutes(), 60) * this.PREZZOSTANDARD;
+            float PREZZOSTANDARD = 1.30f;
+            return Math.floorDiv(durata.toMinutes(), 60) * PREZZOSTANDARD;
         }
     }
 }

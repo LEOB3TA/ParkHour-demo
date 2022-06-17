@@ -8,7 +8,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
 
 import java.io.IOException;
 
@@ -18,10 +17,9 @@ public class ParkHourApplication extends Application {
     public static Scene sceneEntrata;
     public static Scene sceneUscita;
     public static Scene sceneSimulazione;
-    private static IBigController bigController;
 
     public static void main(String[] args) {
-        bigController=BigController.getInstance();
+        IBigController bigController = BigController.getInstance();
         launch();
     }
 

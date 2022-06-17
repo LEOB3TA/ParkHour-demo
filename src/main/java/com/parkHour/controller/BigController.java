@@ -1,23 +1,14 @@
 package com.parkHour.controller;
 
-import com.parkHour.controller.gestioneAbbonamenti.GestioneAbbonamentiController;
-import com.parkHour.controller.gestioneAbbonamenti.IGestioneAbbonamenti;
-import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
-import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
-import com.parkHour.controller.gestioneSimulazione.GestioneSimulazioneController;
-import com.parkHour.controller.gestioneSimulazione.IGestioneSimulazioneController;
 import com.parkHour.controller.gestioneSosta.GestioneSostaController;
-import com.parkHour.controller.gestioneSosta.IGestioneSosta;
 import com.parkHour.controller.letturaDati.IStatistiche;
 import com.parkHour.controller.letturaDati.StatisticheController;
-import com.parkHour.controller.login.ILogin;
-import com.parkHour.controller.login.LoginController;
 import com.parkHour.model.Statistiche;
 import com.parkHour.view.interfacciaVeicolo.ViewEntrata;
 import com.parkHour.view.interfacciaVeicolo.ViewUscita;
 
 public class BigController implements IBigController{
-    private static IStatistiche  statisticheController = StatisticheController.getInstance();
+    private static final IStatistiche  statisticheController = StatisticheController.getInstance();
     private static ViewEntrata viewEntrata;
     private static ViewUscita viewUscita;
 

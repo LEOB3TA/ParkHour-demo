@@ -4,11 +4,13 @@ package com.parkHour.model;
 import java.time.LocalDate;
 
 public class Abbonamento {
-    private LocalDate dataInizio;
-    private TipologiaAbbonamento tipologiaAbbonamento;
+    private final String targa;
+    private final LocalDate dataInizio;
+    private final TipologiaAbbonamento tipologiaAbbonamento;
     private boolean valido;
 
-    public Abbonamento(LocalDate dataInizio, TipologiaAbbonamento tipologiaAbbonamento) {
+    public Abbonamento(String targa,LocalDate dataInizio, TipologiaAbbonamento tipologiaAbbonamento) {
+        this.targa = targa;
         this.dataInizio = dataInizio;
         this.tipologiaAbbonamento = tipologiaAbbonamento;
         this.valido=true;
@@ -30,7 +32,17 @@ public class Abbonamento {
         this.valido = valido;
     }
 
-    private void verificaValidità(){
+    @Override
+    public String toString() {
+        return "Abbonamento{" +
+                "targa='" + targa + '\'' +
+                ", dataInizio=" + dataInizio +
+                ", tipologiaAbbonamento=" + tipologiaAbbonamento +
+                ", valido=" + valido +
+                '}';
+    }
+
+    private void verificaValidita(){
         switch (this.tipologiaAbbonamento){
             case ANNUALE:
                 if(this.dataInizio.plusYears(1).compareTo(LocalDate.now())>0){
@@ -49,4 +61,9 @@ public class Abbonamento {
                 break;
         }
     }
+
+    public String getTarga() {
+        return targa;
+    }
+
 }

@@ -1,12 +1,12 @@
 package com.parkHour.view.interfacciaAddetto;
 
 import com.parkHour.ParkHourApplication;
-import com.parkHour.view.interfacciaAmministratore.ViewWindow;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class HomeAddetto extends ViewWindowAddetto {
     @FXML
@@ -14,10 +14,10 @@ public class HomeAddetto extends ViewWindowAddetto {
 
     @FXML
     protected void onAggiungiAbbonamentoClick() throws IOException {
-        ParkHourApplication.setRoot(anchorPane, FXMLLoader.load(HomeAddetto.class.getResource("/parkHour.view.interfacciaAddetto/viewAggiungiAbb.fxml")));
+        ParkHourApplication.setRoot(anchorPane, FXMLLoader.load(Objects.requireNonNull(HomeAddetto.class.getResource("/parkHour.view.interfacciaAddetto/viewAggiungiAbb.fxml"))));
     }
     @FXML
     protected void onRimuoviAbbonamentoClick() throws IOException {
-        ParkHourApplication.setRoot(anchorPane, FXMLLoader.load(HomeAddetto.class.getResource("/parkHour.view.interfacciaAddetto/viewRimuoviAbb.fxml")));
+        ParkHourApplication.setRoot(anchorPane, FXMLLoader.load(Objects.requireNonNull(HomeAddetto.class.getResource("/parkHour.view.interfacciaAddetto/viewRimuoviAbb.fxml"))));
     }
 }

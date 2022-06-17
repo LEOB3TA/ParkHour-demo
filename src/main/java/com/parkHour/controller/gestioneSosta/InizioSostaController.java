@@ -2,7 +2,6 @@ package com.parkHour.controller.gestioneSosta;
 
 import com.parkHour.controller.BigController;
 import com.parkHour.model.*;
-import com.parkHour.view.interfacciaVeicolo.ViewEntrata;
 
 import java.time.LocalDateTime;
 import java.util.SortedSet;

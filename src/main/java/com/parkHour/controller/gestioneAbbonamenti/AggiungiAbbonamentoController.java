@@ -1,6 +1,5 @@
 package com.parkHour.controller.gestioneAbbonamenti;
 
-import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
 import com.parkHour.model.Abbonamento;
 import com.parkHour.model.TipologiaAbbonamento;
 import com.parkHour.model.Veicolo;
@@ -24,20 +23,24 @@ public class AggiungiAbbonamentoController implements IAggiungiAbbonamento {
     }
 
 
-
-    //questo è sbagliato da riprendere da quello salvato su windows accidenta a me e a quando non ho fatto la commit
     @Override
     public boolean aggiungiAbbonamento(String targa, TipologiaAbbonamento type, LocalDate dataInizio) {
+        boolean controllo;
         List<Veicolo> v = GestioneAbbonamentiController.getVeicoli();
-
         for (Veicolo vei : v) {
             if (vei.getNumeroTarga().equals(targa)) {
-                return vei.inserisciAbbonamento(new Abbonamento(dataInizio, type));
+                Abbonamento a=new Abbonamento(vei.getNumeroTarga(),dataInizio, type);
+                controllo=GestioneAbbonamentiController.aggiungiAbbonamento(a);
+                controllo=vei.inserisciAbbonamento(a);
+                return controllo;
             }
         }
         Veicolo veicolo;
-        GestioneAbbonamentiController.aggiungiVeicolo((veicolo=new Veicolo(targa)));
-        return GestioneAbbonamentiController.getVeicoli().get(GestioneAbbonamentiController.getVeicoli().size()-1).inserisciAbbonamento(new Abbonamento(dataInizio,type));
+        controllo=GestioneAbbonamentiController.aggiungiVeicolo((veicolo=new Veicolo(targa)));
+        Abbonamento a=new Abbonamento(targa,dataInizio, type);
+        controllo=GestioneAbbonamentiController.aggiungiAbbonamento(a);
+        controllo=GestioneAbbonamentiController.getVeicoli().get(GestioneAbbonamentiController.getVeicoli().size()-1).inserisciAbbonamento(new Abbonamento(veicolo.getNumeroTarga(), dataInizio,type));
+        return controllo;
     }
 }
 

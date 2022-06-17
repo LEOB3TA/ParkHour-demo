@@ -67,16 +67,13 @@ public class ViewUscita {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Platform.runLater(new Runnable() {
-                    @Override
-                    public void run() {
-                        targa.clear();
-                        abbonamento.clear();
-                        durataSosta.clear();
-                        daPagare.clear();
-                        versato.clear();
-                        alert.close();
-                    }
+                Platform.runLater(() -> {
+                    targa.clear();
+                    abbonamento.clear();
+                    durataSosta.clear();
+                    daPagare.clear();
+                    versato.clear();
+                    alert.close();
                 });
 
             }

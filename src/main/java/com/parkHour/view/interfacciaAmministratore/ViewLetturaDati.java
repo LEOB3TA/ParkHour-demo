@@ -13,7 +13,6 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
 public class ViewLetturaDati extends ViewWindow {
-    private static IStatistiche statistiche;
     @FXML
     private ListView<String> elencoSoste;
     @FXML
@@ -29,7 +28,7 @@ public class ViewLetturaDati extends ViewWindow {
 
     @Override
     protected void initialize() {
-        statistiche = StatisticheController.getInstance();
+        IStatistiche statistiche = StatisticheController.getInstance();
         Statistiche statisticheS = statistiche.mostraStatistiche();
         ObservableList<PieChart.Data> pieChartData =
                 FXCollections.observableArrayList(

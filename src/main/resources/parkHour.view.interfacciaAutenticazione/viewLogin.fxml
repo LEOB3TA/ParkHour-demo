@@ -6,41 +6,38 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.parkHour.view.interfacciaAutenticazione.ViewLogin">
-   <children>
-      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0">
-         <children>
-            <ImageView fitHeight="150.0" fitWidth="601.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Logo.png" />
-               </image>
-            </ImageView>
-            <TextField id="username" fx:id="username" alignment="CENTER" promptText="Username">
-               <VBox.margin>
-                  <Insets left="175.0" right="175.0" top="10.0" />
-               </VBox.margin>
-            </TextField>
-            <PasswordField fx:id="password" alignment="CENTER" promptText="Password">
-               <font>
-                  <Font name="Times New Roman" size="14.0" />
-               </font>
-               <VBox.margin>
-                  <Insets left="175.0" right="175.0" top="10.0" />
-               </VBox.margin>
-            </PasswordField>
-            <Button id="login" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="26.0" prefWidth="249.0" text="Login">
-               <VBox.margin>
-                  <Insets top="20.0" />
-               </VBox.margin>
-            </Button>
-            <Label fx:id="error" alignment="CENTER" contentDisplay="CENTER" textFill="RED">
-               <font>
-                  <Font name="Times New Roman" size="14.0" />
-               </font>
-               <VBox.margin>
-                  <Insets top="50.0" />
-               </VBox.margin></Label>
-         </children>
-      </VBox>
-   </children>
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.parkHour.view.interfacciaAutenticazione.ViewLogin">
+    <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0">
+        <ImageView fitHeight="150.0" fitWidth="601.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Logo.png"/>
+        </ImageView>
+        <TextField id="username" fx:id="username" alignment="CENTER" promptText="Username">
+            <VBox.margin>
+                <Insets left="175.0" right="175.0" top="10.0"/>
+            </VBox.margin>
+        </TextField>
+        <PasswordField fx:id="password" alignment="CENTER" promptText="Password">
+            <font>
+                <Font name="Times New Roman" size="14.0"/>
+            </font>
+            <VBox.margin>
+                <Insets left="175.0" right="175.0" top="10.0"/>
+            </VBox.margin>
+        </PasswordField>
+        <Button id="login" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="26.0" prefWidth="249.0"
+                text="Login">
+            <VBox.margin>
+                <Insets top="20.0"/>
+            </VBox.margin>
+        </Button>
+        <Label fx:id="error" alignment="CENTER" contentDisplay="CENTER" textFill="RED">
+            <font>
+                <Font name="Times New Roman" size="14.0"/>
+            </font>
+            <VBox.margin>
+                <Insets top="50.0"/>
+            </VBox.margin>
+        </Label>
+    </VBox>
 </AnchorPane>

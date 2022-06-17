@@ -1,7 +1,5 @@
 package com.parkHour.model;
 
-import javafx.scene.control.ComboBox;
-
 import java.time.LocalDateTime;
 
 public class Sosta implements Comparable {
@@ -9,7 +7,7 @@ public class Sosta implements Comparable {
     private final LocalDateTime dataOrarioInizio;
     private LocalDateTime dataOrarioFine;
     private float costo;
-    private Veicolo veicolo;
+    private final Veicolo veicolo;
 
     public Sosta(LocalDateTime dataOrarioInizio,Veicolo veicolo,int posto) {
         this.dataOrarioInizio = dataOrarioInizio;

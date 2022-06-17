@@ -1,16 +1,14 @@
 package com.parkHour.controller.gestioneAbbonamenti;
 
 import com.parkHour.model.Abbonamento;
-import com.parkHour.model.TipologiaAbbonamento;
 import com.parkHour.model.Veicolo;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 public class GestioneAbbonamentiController implements IGestioneAbbonamenti {
-    private static List<Veicolo> veicoli=new ArrayList<>();
-    private static List<Abbonamento> abbonamenti=new ArrayList<>();
+    private static final List<Veicolo> veicoli=new ArrayList<>();
+    private static final List<Abbonamento> abbonamenti=new ArrayList<>();
 
     private static GestioneAbbonamentiController gestioneAbbonamentiController=null;
 
@@ -43,17 +41,9 @@ public class GestioneAbbonamentiController implements IGestioneAbbonamenti {
        return abbonamenti.add(a);
 }
 
-   /* public  boolean aggiungiAbbonamento(String targa, TipologiaAbbonamento type, LocalDate data){
-        return aggiungiAbbonamentoController.aggiungiAbbonamento(targa, type, data);
-    }*/
-
     public static boolean rimuoviAbbonamento(Abbonamento a){
         return abbonamenti.remove(a);
     }
-
-   /* public boolean eliminaAbbonamento(String targa,Abbonamento toRemove) {
-        return rimuoviAbbonamentoController.rimuoviAbbonamento(targa,toRemove);
-    }*/
 
     public static List<Abbonamento> getAbbonamenti() {
 return abbonamenti;
