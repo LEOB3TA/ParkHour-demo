@@ -5,8 +5,21 @@ import com.parkHour.model.Turno;
 
 public class RimuoviTurnoController  implements IRimuoviTurno{
 
-    public RimuoviTurnoController() {
+
+    private static RimuoviTurnoController rimuoviTurnoController=null;
+
+
+    private RimuoviTurnoController() {
     }
+
+
+    public static RimuoviTurnoController getInstance(){
+        if(rimuoviTurnoController==null){
+            rimuoviTurnoController=new RimuoviTurnoController();
+        }
+        return rimuoviTurnoController;
+    }
+
 
     @Override
     public boolean rimuoviTurno(Addetto addetto,Turno toRemove) {

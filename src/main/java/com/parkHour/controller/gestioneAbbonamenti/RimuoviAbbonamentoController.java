@@ -5,8 +5,19 @@ import com.parkHour.model.Veicolo;
 
 public class RimuoviAbbonamentoController implements IRimuoviAbbonamento {
 
-    public RimuoviAbbonamentoController() {
+    private static RimuoviAbbonamentoController aggiungiAbbonamentoController=null;
+
+
+    private RimuoviAbbonamentoController() {
     }
+
+    public static RimuoviAbbonamentoController getInstance(){
+        if(aggiungiAbbonamentoController==null){
+            aggiungiAbbonamentoController=new RimuoviAbbonamentoController();
+        }
+        return aggiungiAbbonamentoController;
+    }
+
 
     @Override
     public boolean rimuoviAbbonamento(String targa, Abbonamento toRemove) {

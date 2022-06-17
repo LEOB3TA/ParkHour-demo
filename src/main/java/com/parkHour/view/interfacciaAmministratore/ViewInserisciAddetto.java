@@ -1,14 +1,15 @@
 package com.parkHour.view.interfacciaAmministratore;
 
 import com.parkHour.controller.BigController;
-import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
+import com.parkHour.controller.gestioneAddetti.AggiungiAddettiController;
+import com.parkHour.controller.gestioneAddetti.IAggiungiAddetti;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 public class ViewInserisciAddetto extends ViewWindow {
-    private static IGestioneAddetti gestioneAddettiController;
+    private static IAggiungiAddetti aggiungiAddettiController;
     @FXML
     private TextField nome;
     @FXML
@@ -21,7 +22,7 @@ public class ViewInserisciAddetto extends ViewWindow {
     private PasswordField password;
 
     public ViewInserisciAddetto() {
-        gestioneAddettiController = BigController.getGestioneAddettiController();
+        aggiungiAddettiController = AggiungiAddettiController.getInstance();
     }
 
     @FXML
@@ -32,7 +33,7 @@ public class ViewInserisciAddetto extends ViewWindow {
             alert.show();
             return;
         }
-        if (gestioneAddettiController.aggiungiAddetto(nome.getText(), cognome.getText(), codFisc.getText(), username.getText(), password.getText())) {
+        if (aggiungiAddettiController.inserisciAddetto(nome.getText(), cognome.getText(), codFisc.getText(), username.getText(), password.getText())) {
             nome.clear();
             cognome.clear();
             codFisc.clear();

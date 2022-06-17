@@ -5,8 +5,16 @@ import com.parkHour.model.Statistiche;
 public class StatisticheController implements IStatistiche {
 
     private Statistiche statistiche;
+    private static StatisticheController statisticheController=null;
 
-    public StatisticheController() {
+    public static StatisticheController getInstance(){
+        if (statisticheController == null) {
+            statisticheController= new StatisticheController();
+        }
+        return statisticheController;
+    }
+
+    private StatisticheController() {
     }
 
     @Override

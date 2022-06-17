@@ -1,5 +1,6 @@
 package com.parkHour.controller.gestioneAbbonamenti;
 
+import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
 import com.parkHour.model.Abbonamento;
 import com.parkHour.model.TipologiaAbbonamento;
 import com.parkHour.model.Veicolo;
@@ -9,13 +10,22 @@ import java.util.List;
 
 public class AggiungiAbbonamentoController implements IAggiungiAbbonamento {
 
+    private static AggiungiAbbonamentoController aggiungiAbbonamentoController=null;
 
 
-    public AggiungiAbbonamentoController() {
+    private AggiungiAbbonamentoController() {
+    }
+
+    public static AggiungiAbbonamentoController getInstance(){
+        if(aggiungiAbbonamentoController==null){
+            aggiungiAbbonamentoController=new AggiungiAbbonamentoController();
+        }
+        return aggiungiAbbonamentoController;
     }
 
 
 
+    //questo è sbagliato da riprendere da quello salvato su windows accidenta a me e a quando non ho fatto la commit
     @Override
     public boolean aggiungiAbbonamento(String targa, TipologiaAbbonamento type, LocalDate dataInizio) {
         List<Veicolo> v = GestioneAbbonamentiController.getVeicoli();

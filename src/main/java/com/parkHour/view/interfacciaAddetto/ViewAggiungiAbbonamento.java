@@ -1,6 +1,8 @@
 package com.parkHour.view.interfacciaAddetto;
 
 import com.parkHour.controller.BigController;
+import com.parkHour.controller.gestioneAbbonamenti.AggiungiAbbonamentoController;
+import com.parkHour.controller.gestioneAbbonamenti.IAggiungiAbbonamento;
 import com.parkHour.controller.gestioneAbbonamenti.IGestioneAbbonamenti;
 import com.parkHour.model.TipologiaAbbonamento;
 import com.parkHour.view.interfacciaAmministratore.ViewWindow;
@@ -12,7 +14,7 @@ import javafx.scene.control.TextField;
 
 
 public class ViewAggiungiAbbonamento extends ViewWindowAddetto {
-    private IGestioneAbbonamenti gestioneAbbonamentiController;
+    private IAggiungiAbbonamento aggiungiAbbonamentoController;
 
     @FXML
     private TextField numTarga;
@@ -26,7 +28,7 @@ public class ViewAggiungiAbbonamento extends ViewWindowAddetto {
     private DatePicker dataInizio;
 
     public ViewAggiungiAbbonamento() {
-        gestioneAbbonamentiController= BigController.getGestioneAbbonamentiController();
+       aggiungiAbbonamentoController= AggiungiAbbonamentoController.getInstance();
     }
 
     @FXML
@@ -41,7 +43,7 @@ public class ViewAggiungiAbbonamento extends ViewWindowAddetto {
         else if(settimanale.isArmed()){
             tipologiaAbbonamento=TipologiaAbbonamento.ANNUALE;
         }
-        if(!gestioneAbbonamentiController.aggiungiAbbonamento(numTarga.getText(),tipologiaAbbonamento,dataInizio.getValue())){
+        if(!aggiungiAbbonamentoController.aggiungiAbbonamento(numTarga.getText(),tipologiaAbbonamento,dataInizio.getValue())){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText("impossibile inserire un nuovo abbonemento");
             alert.show();

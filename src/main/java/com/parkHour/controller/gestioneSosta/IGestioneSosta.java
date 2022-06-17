@@ -8,8 +8,4 @@ import java.util.List;
 
 public interface IGestioneSosta {
 
-
-
-     boolean inputEntrata(InfoTarga infoTarga);
-     boolean inputUscita(InfoTarga infoTarga);
 }

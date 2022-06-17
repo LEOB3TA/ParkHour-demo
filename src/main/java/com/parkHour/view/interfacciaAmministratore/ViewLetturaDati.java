@@ -2,6 +2,7 @@ package com.parkHour.view.interfacciaAmministratore;
 
 import com.parkHour.controller.BigController;
 import com.parkHour.controller.letturaDati.IStatistiche;
+import com.parkHour.controller.letturaDati.StatisticheController;
 import com.parkHour.model.Sosta;
 import com.parkHour.model.Statistiche;
 import javafx.collections.FXCollections;
@@ -28,7 +29,7 @@ public class ViewLetturaDati extends ViewWindow {
 
     @Override
     protected void initialize() {
-        statistiche = BigController.getStatisticheController();
+        statistiche = StatisticheController.getInstance();
         Statistiche statisticheS = statistiche.mostraStatistiche();
         ObservableList<PieChart.Data> pieChartData =
                 FXCollections.observableArrayList(

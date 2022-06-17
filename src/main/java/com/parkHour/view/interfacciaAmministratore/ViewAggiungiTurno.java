@@ -1,7 +1,9 @@
 package com.parkHour.view.interfacciaAmministratore;
 
 import com.parkHour.controller.BigController;
+import com.parkHour.controller.gestioneAddetti.AggiungiTurnoController;
 import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
+import com.parkHour.controller.gestioneAddetti.IAggiungiTurno;
 import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
 import com.parkHour.model.Addetto;
 import javafx.fxml.FXML;
@@ -16,7 +18,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
 public class ViewAggiungiTurno extends ViewWindow {
-    private static IGestioneAddetti gestioneAddettiController;
+    private static IAggiungiTurno aggiungiTurnoController;
     @FXML
     private ChoiceBox<String> listaAddetti;
     @FXML
@@ -29,7 +31,7 @@ public class ViewAggiungiTurno extends ViewWindow {
     private TextField orarioFine;
 
     public ViewAggiungiTurno() {
-        gestioneAddettiController = BigController.getGestioneAddettiController();
+        aggiungiTurnoController = AggiungiTurnoController.getInstance();
     }
 
 
@@ -57,7 +59,7 @@ public class ViewAggiungiTurno extends ViewWindow {
             LocalDateTime dataOraInizio=LocalDateTime.of(dataInizio.getValue(), orarioI);
             LocalDateTime dataOraFine=LocalDateTime.of(dataFine.getValue(), orarioF);
 
-            if(gestioneAddettiController.aggiungiTurno(found,dataOraInizio,dataOraFine)){
+            if(aggiungiTurnoController.aggiungiTurno(found,dataOraInizio,dataOraFine)){
                  alert=new Alert(Alert.AlertType.CONFIRMATION);
                 alert.setContentText("aggiunto turno correttamente");
                 alert.show();

@@ -9,12 +9,20 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class InizioSostaController implements IInizioSosta {
+    private static InizioSostaController inizioSostaController=null;
 
-    public InizioSostaController() {
+    public static InizioSostaController getInstance(){
+        if (inizioSostaController == null) {
+            inizioSostaController=new InizioSostaController();
+        }
+        return  inizioSostaController;
+    }
+
+    private InizioSostaController() {
     }
 
     @Override
-    public boolean InizioSosta(InfoTarga infoTarga, LocalDateTime dataOrarioInizio) {
+    public boolean inizioSosta(InfoTarga infoTarga, LocalDateTime dataOrarioInizio) {
         Sosta sosta;
         String tipologia;
         if (infoTarga.isAuto()) {

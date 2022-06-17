@@ -17,9 +17,17 @@ public class GestioneSimulazioneController implements IGestioneSimulazioneContro
     private static List<InfoTarga> informazioniTargheEntrate = new ArrayList<>();
     private static IGestioneSosta gestioneSostaController;
     private static ILetturaTarga letturaTarga;
+    private static GestioneSimulazioneController gestioneSimulazioneController=null;
+
+    public static GestioneSimulazioneController getInstance(){
+        if (gestioneSimulazioneController == null) {
+            gestioneSimulazioneController=new GestioneSimulazioneController();
+        }
+        return gestioneSimulazioneController;
+    }
 
 
-    public GestioneSimulazioneController() {
+    private GestioneSimulazioneController() {
         gestioneSostaController = BigController.getGestioneSostaController();
         letturaTarga = new LetturaTarga();
         InfoTarga i = new InfoTarga("AA000BB", true, false, false, 90);

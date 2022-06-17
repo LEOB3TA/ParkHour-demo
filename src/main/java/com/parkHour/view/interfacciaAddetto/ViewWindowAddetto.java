@@ -3,6 +3,7 @@ package com.parkHour.view.interfacciaAddetto;
 import com.parkHour.ParkHourApplication;
 import com.parkHour.controller.BigController;
 import com.parkHour.controller.login.ILogin;
+import com.parkHour.controller.login.LoginController;
 import com.parkHour.view.interfacciaAmministratore.HomeAmministratore;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,7 +18,7 @@ public class ViewWindowAddetto {
     AnchorPane anchorPane;
 
 
-    private static final ILogin loginController= BigController.getLoginController();
+    private static final ILogin loginController= LoginController.getInstance();
 
     @FXML
     protected void onHomeClick() throws IOException {

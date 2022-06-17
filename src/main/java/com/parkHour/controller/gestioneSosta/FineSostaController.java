@@ -21,8 +21,16 @@ public class FineSostaController implements IFineSosta {
     private final float PREZZOPREMIUM = 1.70f;
     private final float PREZZOMOTO = 1f;
     private int minuti = 0;
+    private static FineSostaController fineSostaController=null;
 
-    public FineSostaController() {
+    public static FineSostaController getInstance(){
+        if (fineSostaController == null) {
+            fineSostaController=new FineSostaController();
+        }
+        return fineSostaController;
+    }
+
+    private FineSostaController() {
     }
 
     @Override

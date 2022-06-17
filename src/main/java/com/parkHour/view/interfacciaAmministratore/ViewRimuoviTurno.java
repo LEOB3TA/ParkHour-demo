@@ -2,7 +2,8 @@ package com.parkHour.view.interfacciaAmministratore;
 
 import com.parkHour.controller.BigController;
 import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
-import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
+import com.parkHour.controller.gestioneAddetti.IRimuoviTurno;
+import com.parkHour.controller.gestioneAddetti.RimuoviTurnoController;
 import com.parkHour.model.Addetto;
 import com.parkHour.model.Turno;
 import javafx.fxml.FXML;
@@ -10,7 +11,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ChoiceBox;
 
 public class ViewRimuoviTurno extends ViewWindow {
-    private static IGestioneAddetti gestioneAddettiController;
+    private static IRimuoviTurno rimuoviTurnoController;
     private Addetto found=null;
     @FXML
     private ChoiceBox<String> listaAddetti;
@@ -19,7 +20,7 @@ public class ViewRimuoviTurno extends ViewWindow {
 
 
     public ViewRimuoviTurno() {
-        gestioneAddettiController= BigController.getGestioneAddettiController();
+        rimuoviTurnoController = RimuoviTurnoController.getInstance();
     }
 
     @Override
@@ -61,7 +62,7 @@ public class ViewRimuoviTurno extends ViewWindow {
                 break;
             }
         }
-        if(gestioneAddettiController.rimuoviTurno(found,foundT)){
+        if(rimuoviTurnoController.rimuoviTurno(found,foundT)){
             alert=new Alert(Alert.AlertType.INFORMATION);
             alert.setContentText("Turno rimosso correttamente");
             alert.show();

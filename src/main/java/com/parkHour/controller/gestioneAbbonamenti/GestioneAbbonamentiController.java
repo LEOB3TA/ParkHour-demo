@@ -11,13 +11,20 @@ import java.util.List;
 public class GestioneAbbonamentiController implements IGestioneAbbonamenti {
     private static List<Veicolo> veicoli=new ArrayList<>();
     private static List<Abbonamento> abbonamenti=new ArrayList<>();
-    private IAggiungiAbbonamento aggiungiAbbonamentoController=new AggiungiAbbonamentoController();
-    private IRimuoviAbbonamento  rimuoviAbbonamentoController=new RimuoviAbbonamentoController();
+
+    private static GestioneAbbonamentiController gestioneAbbonamentiController=null;
 
 
-
-    public GestioneAbbonamentiController(){
+    private GestioneAbbonamentiController() {
     }
+
+    public static GestioneAbbonamentiController getInstance(){
+        if(gestioneAbbonamentiController==null){
+           gestioneAbbonamentiController=new GestioneAbbonamentiController();
+        }
+        return gestioneAbbonamentiController;
+    }
+
 
     public static boolean aggiungiVeicolo(Veicolo v){
         return veicoli.add(v);
@@ -36,18 +43,17 @@ public class GestioneAbbonamentiController implements IGestioneAbbonamenti {
        return abbonamenti.add(a);
 }
 
-    public  boolean aggiungiAbbonamento(String targa, TipologiaAbbonamento type, LocalDate data){
+   /* public  boolean aggiungiAbbonamento(String targa, TipologiaAbbonamento type, LocalDate data){
         return aggiungiAbbonamentoController.aggiungiAbbonamento(targa, type, data);
-    }
+    }*/
 
     public static boolean rimuoviAbbonamento(Abbonamento a){
         return abbonamenti.remove(a);
     }
 
-    public boolean eliminaAbbonamento(String targa,Abbonamento toRemove) {
+   /* public boolean eliminaAbbonamento(String targa,Abbonamento toRemove) {
         return rimuoviAbbonamentoController.rimuoviAbbonamento(targa,toRemove);
-    }
-
+    }*/
 
     public static List<Abbonamento> getAbbonamenti() {
 return abbonamenti;

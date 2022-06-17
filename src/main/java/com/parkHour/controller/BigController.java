@@ -17,12 +17,7 @@ import com.parkHour.view.interfacciaVeicolo.ViewEntrata;
 import com.parkHour.view.interfacciaVeicolo.ViewUscita;
 
 public class BigController implements IBigController{
-    private static IGestioneAddetti gestioneAddettiController= new GestioneAddettiController();
-    private static ILogin  loginController=new LoginController();
-    private static IGestioneSosta gestioneSostaController=new GestioneSostaController();
-    private static IGestioneAbbonamenti  gestioneAbbonamentiController=new GestioneAbbonamentiController();
-    private static IGestioneSimulazioneController  gestioneSimulazioneController=new GestioneSimulazioneController();
-    private static IStatistiche  statisticheController =new StatisticheController();
+    private static IStatistiche  statisticheController = StatisticheController.getInstance();
     private static ViewEntrata viewEntrata;
     private static ViewUscita viewUscita;
 
@@ -38,25 +33,6 @@ public class BigController implements IBigController{
         return istance;
     }
 
-    public static GestioneAddettiController getGestioneAddettiController() {
-        return (GestioneAddettiController) gestioneAddettiController;
-    }
-
-    public static LoginController getLoginController() {
-        return (LoginController) loginController;
-    }
-
-    public static GestioneSostaController getGestioneSostaController() {
-        return (GestioneSostaController) gestioneSostaController;
-    }
-
-    public static GestioneAbbonamentiController getGestioneAbbonamentiController() {
-        return (GestioneAbbonamentiController) gestioneAbbonamentiController;
-    }
-
-    public static GestioneSimulazioneController getGestioneSimulazioneController(){
-        return (GestioneSimulazioneController) gestioneSimulazioneController;
-    }
 
     public static ViewEntrata getViewEntrata() {
         return viewEntrata;

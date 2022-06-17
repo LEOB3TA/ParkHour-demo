@@ -1,8 +1,9 @@
 package com.parkHour.view.interfacciaAmministratore;
 
 import com.parkHour.controller.BigController;
+import com.parkHour.controller.gestioneAddetti.EliminaAddettiController;
 import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
-import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
+import com.parkHour.controller.gestioneAddetti.IEliminaAddetti;
 import com.parkHour.model.Addetto;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -10,7 +11,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.layout.VBox;
 
 public class ViewEliminaAddetto extends ViewWindow {
-    private static IGestioneAddetti gestioneAddettiController;
+    private static IEliminaAddetti eliminaAddettiController;
     @FXML
     private ComboBox<String> listaAddetti;
     @FXML
@@ -18,7 +19,7 @@ public class ViewEliminaAddetto extends ViewWindow {
 
 
     public ViewEliminaAddetto() {
-        gestioneAddettiController = BigController.getGestioneAddettiController();
+        eliminaAddettiController = EliminaAddettiController.getInstance();
     }
 
 
@@ -44,7 +45,7 @@ public class ViewEliminaAddetto extends ViewWindow {
             alert.setContentText("Non puoi eliminare l'ammininstratore");
             alert.show();
         }
-       if(!gestioneAddettiController.eliminaAddetto(found)){
+       if(!eliminaAddettiController.eliminaAddetto(found)){
             Alert alert=new Alert(Alert.AlertType.ERROR);
             alert.setContentText("impossibile eliminare l'addetto specificato");
             alert.show();

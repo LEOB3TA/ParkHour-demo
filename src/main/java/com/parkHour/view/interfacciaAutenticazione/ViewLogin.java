@@ -4,6 +4,7 @@ package com.parkHour.view.interfacciaAutenticazione;
 import com.parkHour.ParkHourApplication;
 import com.parkHour.controller.BigController;
 import com.parkHour.controller.login.ILogin;
+import com.parkHour.controller.login.LoginController;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
@@ -27,7 +28,7 @@ public class ViewLogin {
 
 
     public ViewLogin() {
-        loginController=BigController.getLoginController();
+        loginController= LoginController.getInstance();
     }
 /*commentato soltanto per fare il fast login,( entrre sen<a credenziali)
     @FXML

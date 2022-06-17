@@ -11,20 +11,26 @@ import java.util.List;
 public class GestioneAddettiController implements IGestioneAddetti{
     private static final Amministratore amministratore=new Amministratore("Leonardo","Focardi","FCRLD00000000","0000","leob3ta","1234");
     private static List<Addetto>addetti;
-    private final IAggiungiAddetti aggiungiAddettiController;
-    private final IAggiungiTurno aggiungiTurnoController;
-    private final IRimuoviTurno rimuoviTurnoController;
-    private final IEliminaAddetti eliminaAddettiController;
 
 
-    public GestioneAddettiController() {
+
+    private static GestioneAddettiController gestioneAddettiController=null;
+
+
+
+    private GestioneAddettiController() {
         addetti=new ArrayList<>();
         addetti.add(amministratore);
-        this.aggiungiAddettiController=new AggiungiAddettiController();
-        this.aggiungiTurnoController=new AggiungiTurnoController();
-        this.rimuoviTurnoController=new RimuoviTurnoController();
-        this.eliminaAddettiController=new EliminaAddettiController();
     }
+
+    public static GestioneAddettiController getInstance(){
+        if(gestioneAddettiController==null){
+            gestioneAddettiController=new GestioneAddettiController();
+        }
+        return gestioneAddettiController;
+    }
+
+
 
     public static boolean aggiungiAddetto(Addetto a){
        for(Addetto addetto:addetti){
@@ -40,7 +46,7 @@ public class GestioneAddettiController implements IGestioneAddetti{
         return addetti.remove(a);
     }
 
-    public boolean aggiungiTurno(Addetto addetto, LocalDateTime inizio,LocalDateTime fine){
+    /*public boolean aggiungiTurno(Addetto addetto, LocalDateTime inizio,LocalDateTime fine){
         return aggiungiTurnoController.aggiungiTurno(addetto,inizio,fine);
     }
     public boolean rimuoviTurno(Addetto addetto,Turno toRemove){
@@ -53,10 +59,10 @@ public class GestioneAddettiController implements IGestioneAddetti{
 
     public boolean eliminaAddetto(Addetto toDelete){
         return eliminaAddettiController.eliminaAddetto(toDelete);
-    }
+    }*/
 
     public static Amministratore getAmministratore(){
-        return GestioneAddettiController.amministratore;
+        return com.parkHour.controller.gestioneAddetti.GestioneAddettiController.amministratore;
     }
 
     public static List<Addetto> getAddetti() {

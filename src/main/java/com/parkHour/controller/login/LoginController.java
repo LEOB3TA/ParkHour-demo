@@ -5,7 +5,16 @@ import com.parkHour.model.Addetto;
 
 public class LoginController implements ILogin{
 
-    public LoginController() {
+    private static LoginController loginController=null;
+
+    public static LoginController getInstance(){
+        if (loginController == null) {
+            loginController= new LoginController();
+        }
+        return loginController;
+    }
+
+    private LoginController() {
     }
 
     @Override
