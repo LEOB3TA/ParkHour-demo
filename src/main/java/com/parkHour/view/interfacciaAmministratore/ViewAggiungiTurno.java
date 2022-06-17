@@ -4,8 +4,6 @@ import com.parkHour.controller.BigController;
 import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
 import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
 import com.parkHour.model.Addetto;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ChoiceBox;
@@ -17,7 +15,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
-public class ViewAggiungiTurno extends viewWindow {
+public class ViewAggiungiTurno extends ViewWindow {
     private static IGestioneAddetti gestioneAddettiController;
     @FXML
     private ChoiceBox<String> listaAddetti;
@@ -58,20 +56,6 @@ public class ViewAggiungiTurno extends viewWindow {
             LocalTime orarioF=LocalTime.parse(orarioFine.getText(), DateTimeFormatter.ofPattern("HH:mm"));
             LocalDateTime dataOraInizio=LocalDateTime.of(dataInizio.getValue(), orarioI);
             LocalDateTime dataOraFine=LocalDateTime.of(dataFine.getValue(), orarioF);
-
-
-
-            if(dataOraFine.isBefore(dataOraInizio)){
-                 alert=new Alert(Alert.AlertType.ERROR);
-                alert.setContentText("La data di fine deve essere successiva alla data di inizio");
-                alert.show();
-            }
-
-            if(!dataOraFine.minusHours(8).equals(dataOraInizio)){
-                 alert=new Alert(Alert.AlertType.ERROR);
-                alert.setContentText("Il turno deve essere di 8 ore");
-                alert.show();
-            }
 
             if(gestioneAddettiController.aggiungiTurno(found,dataOraInizio,dataOraFine)){
                  alert=new Alert(Alert.AlertType.CONFIRMATION);
