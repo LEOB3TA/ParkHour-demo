@@ -21,7 +21,7 @@
                      <Font name="Times New Roman" size="24.0"/>
                   </font>
                </Text>
-               <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="LOGOUT">
+               <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onLogoutClick" text="LOGOUT">
                   <font>
                      <Font name="Times New Roman" size="14.0"/>
                   </font>
