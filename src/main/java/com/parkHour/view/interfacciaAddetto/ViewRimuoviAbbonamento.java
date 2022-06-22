@@ -31,8 +31,7 @@ public class ViewRimuoviAbbonamento extends ViewWindowAddetto{
 
     @FXML
     protected void onRimuoviClick(){
-        List<Abbonamento> temp=new ArrayList<>(GestioneAbbonamentiController.getAbbonamenti());
-        for(Abbonamento a:temp){
+        for(Abbonamento a:GestioneAbbonamentiController.getAbbonamenti()){
             if(a.toString().equals(listaAbbonamento.getValue())){
                 if(rimuoviAbbonamentoController.rimuoviAbbonamento(a)){
                     Alert alert=new Alert(Alert.AlertType.INFORMATION);
