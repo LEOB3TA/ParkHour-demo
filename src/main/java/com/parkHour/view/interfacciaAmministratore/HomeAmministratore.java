@@ -38,10 +38,10 @@ public class HomeAmministratore extends ViewWindow {
     }
     @FXML
     protected void onAggiungiAbbonamentoClick() throws IOException {
-        ParkHourApplication.setRoot(anchorPane,FXMLLoader.load(Objects.requireNonNull(HomeAmministratore.class.getResource("/parkHour.view.interfacciaAddetto/viewAggiungiTurno.fxml"))));
+        ParkHourApplication.setRoot(anchorPane,FXMLLoader.load(Objects.requireNonNull(HomeAmministratore.class.getResource("/parkHour.view.interfacciaAddetto/viewAggiungiAbb.fxml"))));
     }
     @FXML
     protected void onRimuoviAbbonamentoClick() throws IOException {
-        ParkHourApplication.setRoot(anchorPane,FXMLLoader.load(Objects.requireNonNull(HomeAmministratore.class.getResource("/parkHour.view.interfacciaAddetto/viewRimuoviTur.fxml"))));
+        ParkHourApplication.setRoot(anchorPane,FXMLLoader.load(Objects.requireNonNull(HomeAmministratore.class.getResource("/parkHour.view.interfacciaAddetto/viewRimuoviAbb.fxml"))));
     }
 }

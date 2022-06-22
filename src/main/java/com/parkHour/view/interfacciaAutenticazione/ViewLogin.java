@@ -51,6 +51,6 @@ public class ViewLogin {
  */
     @FXML
     public void onLoginButtonClick() throws IOException {
-        ParkHourApplication.setRoot(anchorPane,FXMLLoader.load(Objects.requireNonNull(ViewLogin.class.getResource("/parkHour.view.interfacciaAddetto/homeAddetto.fxml"))));
+        ParkHourApplication.setRoot(anchorPane,FXMLLoader.load(ViewLogin.class.getResource("/parkHour.view.interfacciaAmministratore/homeAmm.fxml")));
     }
 }

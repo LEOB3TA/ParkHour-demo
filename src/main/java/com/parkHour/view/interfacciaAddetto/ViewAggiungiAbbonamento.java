@@ -46,7 +46,7 @@ public class ViewAggiungiAbbonamento extends ViewWindowAddetto {
         }
         for(int i=0;i<numTarga.getText().length();i++){
             char c=numTarga.getCharacters().charAt(i);
-            if(i<2 || i>4){
+            if(i<2){
                 if(!Character.isUpperCase(c)){
                     alert=new Alert(Alert.AlertType.ERROR);
                     alert.setContentText("Formato targa errato");
@@ -61,7 +61,26 @@ public class ViewAggiungiAbbonamento extends ViewWindowAddetto {
                     alert.show();
                     return;
                 }
+                else if(i>4){
+                    if(!Character.isDigit(c) || !Character.isUpperCase(c)){
+                        alert=new Alert(Alert.AlertType.ERROR);
+                        alert.setContentText("Formato targa errato");
+                        alert.show();
+                        return;
+                    }
+
+                }
+
             }
+
+        }
+        char c5=numTarga.getCharacters().charAt(5);
+        char c6=numTarga.getCharacters().charAt(6);
+        if(Character.isUpperCase(c5) && Character.isDigit(c6) || Character.isDigit(c5) && Character.isUpperCase(c6)){
+            alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Formato targa errato");
+            alert.show();
+            return;
         }
 
         if(giornaliero.isSelected()){

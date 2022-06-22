@@ -9,11 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="test">
+    <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="controlli spero finiti">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/ParkHourApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/ParkHourApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAddetto/ViewAggiungiAbbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAddetto/ViewAggiungiAbbonamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewAggiungiTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewAggiungiTurno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewInserisciAddetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewInserisciAddetto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/HomeAmministratore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/HomeAmministratore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAutenticazione/ViewLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAutenticazione/ViewLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,6 +211,8 @@
       <workItem from="1655302488469" duration="3063000" />
       <workItem from="1655411628269" duration="170000" />
       <workItem from="1655466407204" duration="4363000" />
+      <workItem from="1655899131920" duration="1190000" />
+      <workItem from="1655914911268" duration="944000" />
     </task>
     <task id="LOCAL-00001" summary="inserimento package">
       <created>1653988128583</created>
@@ -358,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655411752487</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="controlli spero finiti">
+      <created>1655832292578</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1655832292578</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +403,9 @@
     <MESSAGE value="interfacce che funzionano praticamente tutte, fare controllo che l'addetto rimosso non sia l'amministratore (matricola 0000), validare input, mettere grafico in statistiche da fare interfaccia Addetto" />
     <MESSAGE value="inzioSosta controller e viewAggiungiTurno.fxml" />
     <MESSAGE value="AggiungiAbbonamento fatta da rivedere come sono strutturati i controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="AggiungiAbbonamento fatta da rivedere come sono strutturati i controller" />
+    <MESSAGE value="test" />
+    <MESSAGE value="controlli spero finiti" />
+    <option name="LAST_COMMIT_MESSAGE" value="controlli spero finiti" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
