@@ -35,8 +35,4 @@ public class ViewWindow {
         }
     }
 
-    @FXML
-    protected void initialize() {}
-
-
 }

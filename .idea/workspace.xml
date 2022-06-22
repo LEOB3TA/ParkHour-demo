@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="3" />
-  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="ParkHour-demo:jar" />
@@ -13,8 +10,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adf379bc-04d2-41f9-9536-09c0d86e7443" name="Changes" comment="Controller apposto, aggiungi e rimuovi abbonamento apposto, codice pulito e senza import a caso mancano i controlli">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkHour-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ParkHour-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/BigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/BigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/AggiungiAbbonamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/AggiungiAbbonamentoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/GestioneAbbonamentiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/RimuoviAbbonamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAbbonamenti/RimuoviAbbonamentoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/AggiungiTurnoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/AggiungiTurnoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/GestioneAddettiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/GestioneAddettiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/FineSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/FineSostaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/GestioneSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/GestioneSostaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/IFineSosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/IFineSosta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/IInizioSosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/IInizioSosta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/InizioSostaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/InizioSostaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Abbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Abbonamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Addetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Addetto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Sosta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Sosta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/model/TipologiaAbbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/TipologiaAbbonamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Veicolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/model/Veicolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAddetto/ViewAggiungiAbbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAddetto/ViewAggiungiAbbonamento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAddetto/ViewRimuoviAbbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAddetto/ViewRimuoviAbbonamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAddetto/ViewWindowAddetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAddetto/ViewWindowAddetto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewAggiungiAbbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewAggiungiAbbonamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewAggiungiTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewAggiungiTurno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewEliminaAddetto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewEliminaAddetto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewLetturaDati.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewLetturaDati.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewRimuoviAbbonamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewRimuoviAbbonamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewRimuoviTurno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewRimuoviTurno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore/ViewWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAutenticazione/ViewLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAutenticazione/ViewLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +85,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="29v8qWFo5tFP8kVFBautbLGKvvb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -77,7 +102,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="13" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/parkHour/view/interfacciaAmministratore" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.47356322" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -370,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655470832829</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="prima del merge di davide">
+      <created>1655915105211</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1655915105211</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,9 +438,24 @@
     <MESSAGE value="inzioSosta controller e viewAggiungiTurno.fxml" />
     <MESSAGE value="AggiungiAbbonamento fatta da rivedere come sono strutturati i controller" />
     <MESSAGE value="Controller apposto, aggiungi e rimuovi abbonamento apposto, codice pulito e senza import a caso mancano i controlli" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controller apposto, aggiungi e rimuovi abbonamento apposto, codice pulito e senza import a caso mancano i controlli" />
+    <MESSAGE value="prima del merge di davide" />
+    <option name="LAST_COMMIT_MESSAGE" value="prima del merge di davide" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneAddetti/AggiungiTurnoController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/parkHour/controller/gestioneSosta/FineSostaController.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="fxmlLoader" />

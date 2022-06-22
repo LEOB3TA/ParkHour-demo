@@ -34,8 +34,4 @@ public class ViewWindowAddetto {
         }
     }
 
-    @FXML
-    protected void initialize() {}
-
-
 }

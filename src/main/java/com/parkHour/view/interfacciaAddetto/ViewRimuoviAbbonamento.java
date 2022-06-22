@@ -8,9 +8,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ChoiceBox;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ViewRimuoviAbbonamento extends ViewWindowAddetto{
 
     private final IRimuoviAbbonamento rimuoviAbbonamentoController;
@@ -21,12 +18,12 @@ public class ViewRimuoviAbbonamento extends ViewWindowAddetto{
         rimuoviAbbonamentoController= RimuoviAbbonamentoController.getInstance();
     }
 
-    @Override
+    @FXML
     protected void initialize() {
-        super.initialize();
         for(Abbonamento a:GestioneAbbonamentiController.getAbbonamenti()){
             listaAbbonamento.getItems().add(a.toString());
         }
+        listaAbbonamento.setValue(listaAbbonamento.getItems().get(0));
     }
 
     @FXML

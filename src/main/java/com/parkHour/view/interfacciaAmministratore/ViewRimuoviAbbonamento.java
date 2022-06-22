@@ -4,7 +4,6 @@ import com.parkHour.controller.gestioneAbbonamenti.GestioneAbbonamentiController
 import com.parkHour.controller.gestioneAbbonamenti.IRimuoviAbbonamento;
 import com.parkHour.controller.gestioneAbbonamenti.RimuoviAbbonamentoController;
 import com.parkHour.model.Abbonamento;
-import com.parkHour.view.interfacciaAddetto.ViewWindowAddetto;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ChoiceBox;
@@ -22,12 +21,13 @@ public class ViewRimuoviAbbonamento extends ViewWindow {
         rimuoviAbbonamentoController= RimuoviAbbonamentoController.getInstance();
     }
 
-    @Override
+
+    @FXML
     protected void initialize() {
-        super.initialize();
         for(Abbonamento a:GestioneAbbonamentiController.getAbbonamenti()){
             listaAbbonamento.getItems().add(a.toString());
         }
+        listaAbbonamento.setValue(listaAbbonamento.getItems().get(0));
     }
 
     @FXML

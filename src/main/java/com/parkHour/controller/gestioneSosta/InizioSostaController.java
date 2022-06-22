@@ -21,7 +21,7 @@ public class InizioSostaController implements IInizioSosta {
     }
 
     @Override
-    public boolean inizioSosta(InfoTarga infoTarga, LocalDateTime dataOrarioInizio) {
+    public void inizioSosta(InfoTarga infoTarga, LocalDateTime dataOrarioInizio) {
         Sosta sosta;
         String tipologia;
         if (infoTarga.isAuto()) {
@@ -46,7 +46,7 @@ public class InizioSostaController implements IInizioSosta {
             tipologia = "Moto";
         }
         BigController.getViewEntrata().mostraValori(sosta.getVeicolo().getNumeroTarga(), tipologia, String.valueOf(sosta.getPosto()));
-        return GestioneSostaController.aggiungiSostaAttiva(sosta);
+        GestioneSostaController.aggiungiSostaAttiva(sosta);
     }
 
     private int calcoloPosto(Veicolo v) { //implementarlo per i vari tipi di parcheggio, attenzione deve essere un numero progressivo

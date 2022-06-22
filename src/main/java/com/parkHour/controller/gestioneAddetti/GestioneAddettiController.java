@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestioneAddettiController implements IGestioneAddetti{
-    private static final Amministratore amministratore=new Amministratore("Leonardo","Focardi","FCRLD00000000","0000","leob3ta","1234");
+    private static final Amministratore amministratore=new Amministratore("Leonardo","Focardi","FCRLD00000000","0000","admin","admin");
     private static List<Addetto>addetti;
 
 

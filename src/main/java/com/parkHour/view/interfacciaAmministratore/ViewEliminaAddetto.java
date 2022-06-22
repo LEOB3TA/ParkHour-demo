@@ -24,7 +24,8 @@ public class ViewEliminaAddetto extends ViewWindow {
     }
 
 
-    @Override
+
+    @FXML
     protected void initialize() {
         for(Addetto a:GestioneAddettiController.getAddetti()){
             listaAddetti.getItems().add(a.toString());

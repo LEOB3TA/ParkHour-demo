@@ -28,8 +28,8 @@ public class Abbonamento {
         return valido;
     }
 
-    public void setValido(boolean valido) {
-        this.valido = valido;
+    private void setValido() {
+        this.valido = false;
     }
 
     @Override
@@ -42,21 +42,21 @@ public class Abbonamento {
                 '}';
     }
 
-    private void verificaValidita(){
+    public void verificaValidita(){
         switch (this.tipologiaAbbonamento){
-            case ANNUALE:
-                if(this.dataInizio.plusYears(1).compareTo(LocalDate.now())>0){
-                    this.setValido(false);
+            case SETTIMANALE:
+                if(this.dataInizio.plusDays(7).compareTo(LocalDate.now())<0){
+                    this.setValido();
                 }
                 break;
             case MENSILE:
-                if(this.dataInizio.plusMonths(1).compareTo(LocalDate.now())>0){
-                    this.setValido(false);
+                if(this.dataInizio.plusMonths(1).compareTo(LocalDate.now())<0){
+                    this.setValido();
                 }
                 break;
             case GIORNALIERO:
-                if(this.dataInizio.plusDays(1).compareTo(LocalDate.now())>0){
-                    this.setValido(false);
+                if(this.dataInizio.plusDays(1).compareTo(LocalDate.now())<0){
+                    this.setValido();
                 }
                 break;
         }

@@ -26,7 +26,8 @@ public class ViewLetturaDati extends ViewWindow {
         BigController.calcolaAndSetstatistiche();
     }
 
-    @Override
+
+    @FXML
     protected void initialize() {
         IStatistiche statistiche = StatisticheController.getInstance();
         Statistiche statisticheS = statistiche.mostraStatistiche();

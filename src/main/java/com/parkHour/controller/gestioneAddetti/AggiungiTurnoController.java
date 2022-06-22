@@ -22,18 +22,23 @@ public class AggiungiTurnoController implements IAggiungiTurno {
 
 
     @Override
-    public boolean aggiungiTurno(Addetto addetto, LocalDateTime dataOrarioInizio, LocalDateTime dataOrarioFine) {
+    public boolean aggiungiTurno(Addetto addetto,LocalDateTime dataOrarioInizio, LocalDateTime dataOrarioFine) {
     int i=0;
         for (Addetto a : GestioneAddettiController.getAddetti()) {
-            i++;
-            for (Turno t : a.getTurni()) {
-                if(dataOrarioInizio.isAfter(t.getDataOrarioInizio()) && dataOrarioInizio.isBefore(t.getDataOrarioFine())
-                || dataOrarioFine.isAfter(t.getDataOrarioInizio()) && dataOrarioFine.isBefore(t.getDataOrarioFine())){
-                    return false;
-                } else{
-                   return GestioneAddettiController.getAddetti().get(i).addTurno(new Turno(dataOrarioInizio, dataOrarioFine));
+            if(a.equals(addetto)) {
+                if(a.getTurni().size()==0){
+                    return GestioneAddettiController.getAddetti().get(i).addTurno(new Turno(dataOrarioInizio, dataOrarioFine));
+                }
+                for (Turno t : a.getTurni()) {
+                    if (dataOrarioInizio.isAfter(t.getDataOrarioInizio()) && dataOrarioInizio.isBefore(t.getDataOrarioFine())
+                            || dataOrarioFine.isAfter(t.getDataOrarioInizio()) && dataOrarioFine.isBefore(t.getDataOrarioFine())) {
+                        return false;
+                    } else {
+                        return GestioneAddettiController.getAddetti().get(i).addTurno(new Turno(dataOrarioInizio, dataOrarioFine));
+                    }
                 }
             }
+            i++;
         }
         return false;
     }

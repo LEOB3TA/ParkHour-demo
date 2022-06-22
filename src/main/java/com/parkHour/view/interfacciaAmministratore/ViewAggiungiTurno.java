@@ -33,6 +33,7 @@ public class ViewAggiungiTurno extends ViewWindow {
     }
 
 
+    @FXML
     protected void initialize() {
         for (Addetto a : GestioneAddettiController.getAddetti()) {
             listaAddetti.getItems().add(a.toString());
@@ -72,7 +73,7 @@ public class ViewAggiungiTurno extends ViewWindow {
             }
 
             if(aggiungiTurnoController.aggiungiTurno(found,dataOraInizio,dataOraFine)){
-                 alert=new Alert(Alert.AlertType.CONFIRMATION);
+                 alert=new Alert(Alert.AlertType.INFORMATION);
                 alert.setContentText("aggiunto turno correttamente");
                 alert.show();
             }

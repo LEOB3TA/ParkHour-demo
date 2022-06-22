@@ -39,14 +39,6 @@ public class Addetto {
         return this.turni.remove(toRemove);
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public String getCognome() {
-        return cognome;
-    }
-
     public String getCodiceFiscale() {
         return codiceFiscale;
     }

@@ -2,6 +2,7 @@ package com.parkHour.model;
 
 import java.time.LocalDateTime;
 
+@SuppressWarnings("rawtypes")
 public class Sosta implements Comparable {
     private final int posto;
     private final LocalDateTime dataOrarioInizio;
@@ -25,10 +26,6 @@ public class Sosta implements Comparable {
 
     public LocalDateTime getDataOrarioFine() {
         return dataOrarioFine;
-    }
-
-    public float getCosto() {
-        return this.costo;
     }
 
     public void setDataOrarioFine(LocalDateTime dataOrarioFine) {

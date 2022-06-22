@@ -26,9 +26,9 @@ public class ViewAggiungiAbbonamento extends ViewWindowAddetto {
        aggiungiAbbonamentoController= AggiungiAbbonamentoController.getInstance();
     }
 
-    @Override
+
+    @FXML
     protected void initialize() {
-        super.initialize();
         giornaliero.setToggleGroup(group);
         settimanale.setToggleGroup(group);
         mensile.setToggleGroup(group);
@@ -36,10 +36,10 @@ public class ViewAggiungiAbbonamento extends ViewWindowAddetto {
 
     @FXML
     protected void onAggiungiClick(){
-        Alert alert;
+
         TipologiaAbbonamento tipologiaAbbonamento = null;
         if(numTarga.getText().length()!=7){
-            alert=new Alert(Alert.AlertType.ERROR);
+            Alert alert=new Alert(Alert.AlertType.ERROR);
             alert.setContentText("La targa deve essere esattamente di 7 caratteri");
             alert.show();
             return;
@@ -48,7 +48,7 @@ public class ViewAggiungiAbbonamento extends ViewWindowAddetto {
             char c=numTarga.getCharacters().charAt(i);
             if(i<2){
                 if(!Character.isUpperCase(c)){
-                    alert=new Alert(Alert.AlertType.ERROR);
+                    Alert alert=new Alert(Alert.AlertType.ERROR);
                     alert.setContentText("Formato targa errato");
                     alert.show();
                     return;
@@ -56,14 +56,14 @@ public class ViewAggiungiAbbonamento extends ViewWindowAddetto {
             }
             else if(i>1 && i<5){
                 if(!Character.isDigit(c)){
-                    alert=new Alert(Alert.AlertType.ERROR);
+                    Alert alert=new Alert(Alert.AlertType.ERROR);
                     alert.setContentText("Formato targa errato");
                     alert.show();
                     return;
                 }
                 else if(i>4){
                     if(!Character.isDigit(c) || !Character.isUpperCase(c)){
-                        alert=new Alert(Alert.AlertType.ERROR);
+                        Alert alert=new Alert(Alert.AlertType.ERROR);
                         alert.setContentText("Formato targa errato");
                         alert.show();
                         return;
@@ -77,7 +77,7 @@ public class ViewAggiungiAbbonamento extends ViewWindowAddetto {
         char c5=numTarga.getCharacters().charAt(5);
         char c6=numTarga.getCharacters().charAt(6);
         if(Character.isUpperCase(c5) && Character.isDigit(c6) || Character.isDigit(c5) && Character.isUpperCase(c6)){
-            alert=new Alert(Alert.AlertType.ERROR);
+            Alert alert=new Alert(Alert.AlertType.ERROR);
             alert.setContentText("Formato targa errato");
             alert.show();
             return;
@@ -90,14 +90,14 @@ public class ViewAggiungiAbbonamento extends ViewWindowAddetto {
             tipologiaAbbonamento=TipologiaAbbonamento.MENSILE;
         }
         else if(settimanale.isSelected()){
-            tipologiaAbbonamento=TipologiaAbbonamento.ANNUALE;
+            tipologiaAbbonamento=TipologiaAbbonamento.SETTIMANALE;
         }
-        if(!aggiungiAbbonamentoController.aggiungiAbbonamento(numTarga.getText(),tipologiaAbbonamento,dataInizio.getValue())){
-             alert = new Alert(Alert.AlertType.ERROR);
+        if(aggiungiAbbonamentoController.aggiungiAbbonamento(numTarga.getText(), tipologiaAbbonamento, dataInizio.getValue())){
+            Alert alert=new Alert(Alert.AlertType.ERROR);
             alert.setContentText("impossibile inserire un nuovo abbonemento");
             alert.show();
         }else {
-             alert = new Alert(Alert.AlertType.INFORMATION);
+            Alert alert=new Alert(Alert.AlertType.INFORMATION);
             alert.setContentText("Abbonamento inserito correttamente");
             alert.show();
             numTarga.clear();
@@ -105,8 +105,6 @@ public class ViewAggiungiAbbonamento extends ViewWindowAddetto {
             settimanale.setSelected(false);
             mensile.setSelected(false);
         }
-        //controlli da inserire con tanto di specifica sulla targa, suggerimento fare un metodo compareTo sugli abbonamenti in modo  da vedere se sono prima o dopo o sovrapposti
-        //capire anche come rendere i radio button mutuamente esclusive
     }
 
 }

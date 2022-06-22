@@ -22,7 +22,8 @@ public class ViewRimuoviTurno extends ViewWindow {
         rimuoviTurnoController = RimuoviTurnoController.getInstance();
     }
 
-    @Override
+
+    @FXML
     protected void initialize() {
         for(Addetto a: GestioneAddettiController.getAddetti()){
             listaAddetti.getItems().add(a.toString());

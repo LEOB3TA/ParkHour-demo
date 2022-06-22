@@ -8,14 +8,6 @@ import java.util.List;
 public class GestioneSostaController implements IGestioneSosta{
     private static final List<Sosta> sosteAttive=new ArrayList<>();
     private static final List<Sosta> sosteConcluse=new ArrayList<>(); //simuliamo il db, non carichiamo nulla sul db ma su soste concluse
-    private static GestioneSostaController gestioneSostaController=null;
-
-    public static GestioneSostaController getInstance(){
-        if (gestioneSostaController == null) {
-            gestioneSostaController=new GestioneSostaController();
-        }
-        return gestioneSostaController;
-    }
 
     private GestioneSostaController() {
     }
@@ -24,21 +16,16 @@ public class GestioneSostaController implements IGestioneSosta{
        return sosteAttive.add(s);
     }
 
-    public static boolean rimuoviSostaAttiva(Sosta s){
-        return sosteAttive.remove(s);
+    public static void rimuoviSostaAttiva(Sosta s){
+        sosteAttive.remove(s);
     }
 
     public static boolean aggiungiSostaConclusa(Sosta s){
         return sosteConcluse.add(s);
     }
 
-    public static boolean rimuoviSostaConclusa(Sosta s){
-        return sosteConcluse.remove(s);
-    }
-
     public static List<Sosta> getSosteAttive() {
         return sosteAttive;
     }
 
-    public static List<Sosta>getSosteConcluse(){return sosteConcluse;}
 }

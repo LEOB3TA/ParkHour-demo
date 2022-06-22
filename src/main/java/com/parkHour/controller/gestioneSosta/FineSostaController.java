@@ -19,11 +19,11 @@ import java.util.TimerTask;
 public class FineSostaController implements IFineSosta {
 
     private int minuti = 0;
-    private static FineSostaController fineSostaController=null;
+    private static FineSostaController fineSostaController = null;
 
-    public static FineSostaController getInstance(){
+    public static FineSostaController getInstance() {
         if (fineSostaController == null) {
-            fineSostaController=new FineSostaController();
+            fineSostaController = new FineSostaController();
         }
         return fineSostaController;
     }
@@ -32,10 +32,10 @@ public class FineSostaController implements IFineSosta {
     }
 
     @Override
-    public boolean fineSosta(InfoTarga infoTarga, LocalDateTime dataOrarioFine) {
+    public void fineSosta(InfoTarga infoTarga, LocalDateTime dataOrarioFine) {
         List<Sosta> sosteAttive = GestioneSostaController.getSosteAttive();
         Sosta sostaConlusa;
-        boolean abbonamento;
+        boolean abbonamento=false;
         float costo;
         for (Sosta sosta : sosteAttive) {
             if (sosta.getVeicolo().getNumeroTarga().equals(infoTarga.getTarga())) {
@@ -43,7 +43,12 @@ public class FineSostaController implements IFineSosta {
                 sostaConlusa.setDataOrarioFine(dataOrarioFine);
                 sostaConlusa.setCosto((costo = calcolaCosto(sostaConlusa)));
                 GestioneSostaController.rimuoviSostaAttiva(sostaConlusa);
-                abbonamento = sostaConlusa.getVeicolo().getAbbonamenti().size() != 0; //sbagliata
+                for(Abbonamento a:GestioneAbbonamentiController.getAbbonamenti()){
+                    if(a.getTarga().equals(infoTarga.getTarga()) && a.isValido()){
+                        abbonamento=true;
+                        break;
+                    }
+                }
                 BigController.getViewUscita().mostraValori(sostaConlusa.getVeicolo().getNumeroTarga(), abbonamento, this.minuti, costo);
                 if (costo != 0) {
                     Timer timer = new Timer();
@@ -56,36 +61,51 @@ public class FineSostaController implements IFineSosta {
                 } else {
                     BigController.getViewUscita().esci();
                 }
-                return GestioneSostaController.aggiungiSostaConclusa(sostaConlusa);
+                GestioneSostaController.aggiungiSostaConclusa(sostaConlusa);
+                return;
             }
         }
-        return false;
     }
 
     private float calcolaCosto(Sosta s) {
-        Duration dutaraAbbonamenti=Duration.ZERO;
-        LocalDateTime inizio=s.getDataOrarioInizio(), fine=s.getDataOrarioFine(), inizioAbb, fineAbb;
+        int posto;
+        LocalDateTime inizio = s.getDataOrarioInizio(), fine = s.getDataOrarioFine(), inizioAbb = null, fineAbb = null;
         List<Abbonamento> abbonamenti = GestioneAbbonamentiController.getAbbonamenti();
-        for(Abbonamento a:abbonamenti){
-            if(a.getTarga().equals(s.getVeicolo().getNumeroTarga())) {
-                inizioAbb = LocalDateTime.of(a.getDataInizio(), LocalTime.MIN);
+        Duration durataAbb, durata = null,duratareal;
+        for (Abbonamento a : abbonamenti) {
+            a.verificaValidita();
+            if (a.getTarga().equals(s.getVeicolo().getNumeroTarga()) && a.isValido()) {
+                inizioAbb = LocalDateTime.of(a.getDataInizio(), LocalTime.MAX);
                 if (a.getTipologiaAbbonamento().equals(TipologiaAbbonamento.GIORNALIERO)) {
                     fineAbb = inizioAbb.plusDays(1);
                 } else if (a.getTipologiaAbbonamento().equals(TipologiaAbbonamento.MENSILE)) {
                     fineAbb = inizioAbb.plusDays(30);
-                } else fineAbb = inizioAbb.plusDays(365);
-                if (inizioAbb.isAfter(inizio) && fineAbb.isBefore(fine)) {
-                    if (a.getTipologiaAbbonamento().equals(TipologiaAbbonamento.GIORNALIERO)) {
-                        dutaraAbbonamenti.plusDays(1);
-                    } else if (a.getTipologiaAbbonamento().equals(TipologiaAbbonamento.MENSILE)) {
-                        dutaraAbbonamenti.plusDays(30);
-                    } else dutaraAbbonamenti.plusDays(365);
-                }
+                } else fineAbb = inizioAbb.plusDays(7);
             }
         }
-        Duration durata = Duration.between(s.getDataOrarioInizio(), s.getDataOrarioFine()).minus(dutaraAbbonamenti);
-        this.minuti = (int) durata.toMinutes();
-        int posto = s.getPosto();
+        if (inizioAbb != null && fineAbb!=null) {
+            if (inizio.isBefore(inizioAbb) && fine.isAfter(fineAbb)) {
+                durataAbb = Duration.between(inizioAbb, fineAbb);
+                durata = Duration.between(s.getDataOrarioInizio(), s.getDataOrarioFine()).minus(durataAbb);
+            } else if (inizio.isAfter(inizioAbb) && fine.isBefore(fineAbb)) {
+                durata = Duration.between(s.getDataOrarioInizio(), s.getDataOrarioFine());
+                this.minuti = (int) durata.toMinutes();
+                return 0;
+            } else if (inizio.isBefore(inizioAbb) && fine.isAfter(inizioAbb) && fine.isBefore(fineAbb)) {
+                durataAbb = Duration.between(inizioAbb, fine);
+                durata = Duration.between(s.getDataOrarioInizio(), s.getDataOrarioFine()).minus(durataAbb);
+            }else if (inizio.isAfter(inizioAbb) && inizio.isBefore(fineAbb) && fine.isAfter(fineAbb)) {
+                durataAbb = Duration.between(inizioAbb, fine);
+                durata = Duration.between(s.getDataOrarioInizio(), s.getDataOrarioFine()).minus(durataAbb);
+            }
+        }
+        else{
+            durata = Duration.between(s.getDataOrarioInizio(), s.getDataOrarioFine());
+        }
+        duratareal=Duration.between(s.getDataOrarioInizio(), s.getDataOrarioFine());
+        posto = s.getPosto();
+        assert durata != null;
+        this.minuti = (int) duratareal.toMinutes();
         if (posto <= 20) {
             float PREZZOPREMIUM = 1.70f;
             return Math.floorDiv(durata.toMinutes(), 60) * PREZZOPREMIUM;
