@@ -1,6 +1,13 @@
 package com.parkHour.controller;
 
+import com.parkHour.controller.gestioneAbbonamenti.GestioneAbbonamentiController;
+import com.parkHour.controller.gestioneAbbonamenti.IGestioneAbbonamenti;
+import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
+import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
+import com.parkHour.controller.gestioneSimulazione.GestioneSimulazioneController;
+import com.parkHour.controller.gestioneSimulazione.IGestioneSimulazioneController;
 import com.parkHour.controller.gestioneSosta.GestioneSostaController;
+import com.parkHour.controller.gestioneSosta.IGestioneSosta;
 import com.parkHour.controller.letturaDati.IStatistiche;
 import com.parkHour.controller.letturaDati.StatisticheController;
 import com.parkHour.model.Statistiche;
@@ -8,13 +15,24 @@ import com.parkHour.view.interfacciaVeicolo.ViewEntrata;
 import com.parkHour.view.interfacciaVeicolo.ViewUscita;
 
 public class BigController implements IBigController{
-    private static final IStatistiche  statisticheController = StatisticheController.getInstance();
+    private static IStatistiche  statisticheController;
+    private static IGestioneAddetti gestioneAddettiController;
+    private static IGestioneAbbonamenti gestioneAbbonamenti;
+    private static IGestioneSosta gestioneSosta;
+    private static IGestioneSimulazioneController gestioneSimulazioneController;
     private static ViewEntrata viewEntrata;
     private static ViewUscita viewUscita;
 
     private static BigController istance=null;
 
     private BigController() {
+        gestioneSosta= GestioneSostaController.getInstance();
+        statisticheController = StatisticheController.getInstance();
+        gestioneAddettiController= GestioneAddettiController.getInstance();
+        gestioneAbbonamenti= GestioneAbbonamentiController.getInstance();
+        gestioneSimulazioneController= GestioneSimulazioneController.getInstance();
+
+
     }
 
     public static BigController getInstance(){
@@ -23,7 +41,6 @@ public class BigController implements IBigController{
         }
         return istance;
     }
-
 
     public static ViewEntrata getViewEntrata() {
         return viewEntrata;
@@ -37,16 +54,8 @@ public class BigController implements IBigController{
         return viewUscita;
     }
 
-    public static IStatistiche getStatisticheController() {
-        return statisticheController;
-    }
-
     public static void setViewUscita(ViewUscita viewUscita) {
         BigController.viewUscita = viewUscita;
-    }
-
-    public static Statistiche mostraStatistiche(){
-        return statisticheController.mostraStatistiche();
     }
 
     public static void calcolaAndSetstatistiche(){

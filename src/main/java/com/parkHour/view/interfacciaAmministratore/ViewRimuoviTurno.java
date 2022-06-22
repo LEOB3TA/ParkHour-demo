@@ -39,10 +39,14 @@ public class ViewRimuoviTurno extends ViewWindow {
                     break;
                 }
             }
-            for(Turno t: found.getTurni()){
-                listaTurni.getItems().add(t.toString());
+            try {
+                for (Turno t : found.getTurni()) {
+                    listaTurni.getItems().add(t.toString());
+                }
+                listaTurni.setValue(listaTurni.getItems().get(0));
+            }catch (IndexOutOfBoundsException e){
+                //do nothing
             }
-            listaTurni.setValue(listaTurni.getItems().get(0));
         }
     }
 

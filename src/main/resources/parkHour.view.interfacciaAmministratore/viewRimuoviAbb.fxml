@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.parkHour.view.interfacciaAmministratore.ViewRimuoviAbbonamento">
+   <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+      <SplitPane dividerPositions="0.18688118811881188" layoutY="-2.0" orientation="VERTICAL" prefHeight="406.0"
+                 prefWidth="600.0">
+         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <HBox alignment="CENTER" fillHeight="false" layoutX="14.0" layoutY="2.0" prefHeight="66.0"
+                  prefWidth="606.0" spacing="10.0">
+               <ImageView fitHeight="66.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true">
+                  <HBox.margin>
+                     <Insets left="-50.0"/>
+                  </HBox.margin>
+                  <Image url="@../logoLittleBlue.png"/>
+               </ImageView>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rimuovi Abbonamento">
+                  <font>
+                     <Font name="Times New Roman" size="24.0"/>
+                  </font>
+                  <HBox.margin>
+                     <Insets left="30.0"/>
+                  </HBox.margin>
+               </Text>
+               <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                       onAction="#onLogoutClick" text="LOGOUT">
+                  <font>
+                     <Font name="Times New Roman" size="14.0"/>
+                  </font>
+                  <HBox.margin>
+                     <Insets left="40.0"/>
+                  </HBox.margin>
+               </Button>
+            </HBox>
+         </AnchorPane>
+         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <SplitPane dividerPositions="0.29797979797979796" layoutY="-1.0" prefHeight="331.0"
+                       prefWidth="600.0">
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                  <VBox alignment="TOP_CENTER" layoutX="1.0" prefHeight="331.0" prefWidth="175.0">
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0"
+                           text="Seleziona l'abbonamento che desideri rimuovere"
+                           textAlignment="CENTER" wrappingWidth="175.21630859375">
+                        <font>
+                           <Font name="Times New Roman" size="18.0"/>
+                        </font>
+                     </Text>
+                     <Button id="Home" alignment="CENTER" mnemonicParsing="false"
+                             onAction="#onHomeClick" text="Torna alla Home">
+                        <font>
+                           <Font name="Times New Roman" size="14.0"/>
+                        </font>
+                        <VBox.margin>
+                           <Insets top="215.0"/>
+                        </VBox.margin>
+                     </Button>
+                  </VBox>
+               </AnchorPane>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                  <VBox layoutX="-3.0" layoutY="-4.0" prefHeight="331.0" prefWidth="422.0">
+                     <ChoiceBox id="ListaAbbonamento" fx:id="listaAbbonamento" prefHeight="26.0"
+                                prefWidth="418.0">
+                        <VBox.margin>
+                           <Insets left="10.0" right="10.0" top="15.0"/>
+                        </VBox.margin>
+                     </ChoiceBox>
+                     <Button id="Aggiungi" mnemonicParsing="false" onAction="#onRimuoviClick"
+                             text="Rimuovi">
+                        <font>
+                           <Font name="Times New Roman" size="14.0"/>
+                        </font>
+                        <VBox.margin>
+                           <Insets left="325.0" top="240.0"/>
+                        </VBox.margin>
+                     </Button>
+                  </VBox>
+               </AnchorPane>
+            </SplitPane>
+         </AnchorPane>
+      </SplitPane>
+   </AnchorPane>
+</AnchorPane>
