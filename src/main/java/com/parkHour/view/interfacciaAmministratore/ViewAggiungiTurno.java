@@ -57,6 +57,20 @@ public class ViewAggiungiTurno extends ViewWindow {
             LocalDateTime dataOraInizio=LocalDateTime.of(dataInizio.getValue(), orarioI);
             LocalDateTime dataOraFine=LocalDateTime.of(dataFine.getValue(), orarioF);
 
+            if(dataOraFine.isBefore(dataOraInizio)){
+                alert=new Alert(Alert.AlertType.ERROR);
+                alert.setContentText("La data di fine deve essere successiva alla data di inizio");
+                alert.show();
+                return;
+            }
+
+            if(!dataOraFine.minusHours(8).equals(dataOraInizio)){
+                alert=new Alert(Alert.AlertType.ERROR);
+                alert.setContentText("Il turno deve essere di 8 ore");
+                alert.show();
+                return;
+            }
+
             if(aggiungiTurnoController.aggiungiTurno(found,dataOraInizio,dataOraFine)){
                  alert=new Alert(Alert.AlertType.CONFIRMATION);
                 alert.setContentText("aggiunto turno correttamente");

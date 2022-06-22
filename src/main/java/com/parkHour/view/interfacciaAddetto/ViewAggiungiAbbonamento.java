@@ -36,7 +36,34 @@ public class ViewAggiungiAbbonamento extends ViewWindowAddetto {
 
     @FXML
     protected void onAggiungiClick(){
+        Alert alert;
         TipologiaAbbonamento tipologiaAbbonamento = null;
+        if(numTarga.getText().length()!=7){
+            alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("La targa deve essere esattamente di 7 caratteri");
+            alert.show();
+            return;
+        }
+        for(int i=0;i<numTarga.getText().length();i++){
+            char c=numTarga.getCharacters().charAt(i);
+            if(i<2 || i>4){
+                if(!Character.isUpperCase(c)){
+                    alert=new Alert(Alert.AlertType.ERROR);
+                    alert.setContentText("Formato targa errato");
+                    alert.show();
+                    return;
+                }
+            }
+            else if(i>1 && i<5){
+                if(!Character.isDigit(c)){
+                    alert=new Alert(Alert.AlertType.ERROR);
+                    alert.setContentText("Formato targa errato");
+                    alert.show();
+                    return;
+                }
+            }
+        }
+
         if(giornaliero.isSelected()){
             tipologiaAbbonamento=TipologiaAbbonamento.GIORNALIERO;
         }
@@ -47,11 +74,11 @@ public class ViewAggiungiAbbonamento extends ViewWindowAddetto {
             tipologiaAbbonamento=TipologiaAbbonamento.ANNUALE;
         }
         if(!aggiungiAbbonamentoController.aggiungiAbbonamento(numTarga.getText(),tipologiaAbbonamento,dataInizio.getValue())){
-            Alert alert = new Alert(Alert.AlertType.ERROR);
+             alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText("impossibile inserire un nuovo abbonemento");
             alert.show();
         }else {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+             alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setContentText("Abbonamento inserito correttamente");
             alert.show();
             numTarga.clear();

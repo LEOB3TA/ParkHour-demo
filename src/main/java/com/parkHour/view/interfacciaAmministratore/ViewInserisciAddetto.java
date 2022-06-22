@@ -32,6 +32,70 @@ public class ViewInserisciAddetto extends ViewWindow {
             alert.show();
             return;
         }
+
+        if(nome.getText().length()>20){
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Nome troppo lungo, deve essere inferiore a 20 caratteri");
+            alert.show();
+            return;
+
+        }
+        if(cognome.getText().length()>20){
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Cognome troppo lungo, deve essere inferiore a 20 caratteri");
+            alert.show();
+            return;
+        }
+        if(codFisc.getText().length()!=16){
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("formato codice fiscale errato, deve essere di esattamente 16 caratteri");
+            alert.show();
+            return;
+        }
+        if(username.getText().length()>20){
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Username troppo lungo, deve essere inferiore a 20 caratteri");
+            alert.show();
+            return;
+        }
+if(password.getText().length()<8){
+    Alert alert=new Alert(Alert.AlertType.ERROR);
+    alert.setContentText("Password troppo corta, deve essere di almeno 8 caratteri");
+    alert.show();
+    return;
+}
+int counterSpecial=0;
+int counterUpper=0;
+int counterNumber=0;
+        for(int i=0;i< password.getText().length();i++){
+            char c=password.getCharacters().charAt(i);
+            if(Character.isUpperCase(c)){
+                counterUpper++;
+            }else if(Character.isDigit(c)){
+                counterNumber++;
+            }else if(c == '$' || c == '#' || c == '?' || c == '!' || c == '_' || c == '=' || c == '%'||c=='@'){
+                counterSpecial++;
+            }
+        }
+        if(counterNumber<1){
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("La password deve contenere almeno un numero");
+            alert.show();
+            return;
+        }
+        if(counterSpecial<1){
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("La password deve contenere almeno un carattere speciale");
+            alert.show();
+            return;
+        }
+        if(counterUpper<1){
+            Alert alert=new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("La password deve contenere almeno una lettera maiuscola");
+            alert.show();
+            return;
+        }
+
         if (aggiungiAddettiController.inserisciAddetto(nome.getText(), cognome.getText(), codFisc.getText(), username.getText(), password.getText())) {
             nome.clear();
             cognome.clear();
