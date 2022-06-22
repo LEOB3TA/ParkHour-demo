@@ -2,6 +2,10 @@ package com.parkHour;
 
 import com.parkHour.controller.BigController;
 import com.parkHour.controller.IBigController;
+import com.parkHour.controller.gestioneAbbonamenti.GestioneAbbonamentiController;
+import com.parkHour.controller.gestioneAbbonamenti.IGestioneAbbonamenti;
+import com.parkHour.controller.gestioneAddetti.GestioneAddettiController;
+import com.parkHour.controller.gestioneAddetti.IGestioneAddetti;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -20,6 +24,8 @@ public class ParkHourApplication extends Application {
 
     public static void main(String[] args) {
         IBigController bigController = BigController.getInstance();
+        IGestioneAddetti gestioneAddetti= GestioneAddettiController.getInstance();
+        IGestioneAbbonamenti gestioneAbbonamenti= GestioneAbbonamentiController.getInstance();
         launch();
     }
 
