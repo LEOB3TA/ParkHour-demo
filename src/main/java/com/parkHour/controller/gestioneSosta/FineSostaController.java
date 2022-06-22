@@ -1,6 +1,7 @@
 package com.parkHour.controller.gestioneSosta;
 
 import com.parkHour.controller.BigController;
+import com.parkHour.controller.gestioneAbbonamenti.GestioneAbbonamentiController;
 import com.parkHour.model.Abbonamento;
 import com.parkHour.model.InfoTarga;
 import com.parkHour.model.Sosta;
@@ -64,20 +65,22 @@ public class FineSostaController implements IFineSosta {
     private float calcolaCosto(Sosta s) {
         Duration dutaraAbbonamenti=Duration.ZERO;
         LocalDateTime inizio=s.getDataOrarioInizio(), fine=s.getDataOrarioFine(), inizioAbb, fineAbb;
-        List<Abbonamento> abbonamenti = s.getVeicolo().getAbbonamenti();
+        List<Abbonamento> abbonamenti = GestioneAbbonamentiController.getAbbonamenti();
         for(Abbonamento a:abbonamenti){
-            inizioAbb=LocalDateTime.of(a.getDataInizio(), LocalTime.MIN);
-            if (a.getTipologiaAbbonamento().equals(TipologiaAbbonamento.GIORNALIERO)) {
-                fineAbb=inizioAbb.plusDays(1);
-            } else if (a.getTipologiaAbbonamento().equals(TipologiaAbbonamento.MENSILE)) {
-                fineAbb=inizioAbb.plusDays(30);
-            } else fineAbb=inizioAbb.plusDays(365);
-            if(inizioAbb.isAfter(inizio) && fineAbb.isBefore(fine)) {
+            if(a.getTarga().equals(s.getVeicolo().getNumeroTarga())) {
+                inizioAbb = LocalDateTime.of(a.getDataInizio(), LocalTime.MIN);
                 if (a.getTipologiaAbbonamento().equals(TipologiaAbbonamento.GIORNALIERO)) {
-                    dutaraAbbonamenti.plusDays(1);
+                    fineAbb = inizioAbb.plusDays(1);
                 } else if (a.getTipologiaAbbonamento().equals(TipologiaAbbonamento.MENSILE)) {
-                    dutaraAbbonamenti.plusDays(30);
-                } else dutaraAbbonamenti.plusDays(365);
+                    fineAbb = inizioAbb.plusDays(30);
+                } else fineAbb = inizioAbb.plusDays(365);
+                if (inizioAbb.isAfter(inizio) && fineAbb.isBefore(fine)) {
+                    if (a.getTipologiaAbbonamento().equals(TipologiaAbbonamento.GIORNALIERO)) {
+                        dutaraAbbonamenti.plusDays(1);
+                    } else if (a.getTipologiaAbbonamento().equals(TipologiaAbbonamento.MENSILE)) {
+                        dutaraAbbonamenti.plusDays(30);
+                    } else dutaraAbbonamenti.plusDays(365);
+                }
             }
         }
         Duration durata = Duration.between(s.getDataOrarioInizio(), s.getDataOrarioFine()).minus(dutaraAbbonamenti);
